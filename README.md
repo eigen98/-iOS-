@@ -8,6 +8,9 @@
 ❌  **Not Done** <br>
 ♾️  **Permanently** <br>
 
+
+
+  
 <hr><br>
 
 
@@ -17,8 +20,32 @@
 |           기획서 제출                 |                                                                                  |      ✅     |
 |           프로젝트 생성                 |                                                                                  |      ✅     |
 |           Git First Commit                 |                                                                             |      ✅     |
-|                   Git Convention 수립              |                                                                        |   ❌   |
-|                 Github WIKI에 Git Convention 작성         |                                                               |      ❌     |
+
 
 <br>
+
+<hr><br>
+
+
+### 2022/03/20 (일)
+|                           내용                           |                             비고                             |  완료 여부 |
+| :-------------------------------------------------------: | :----------------------------------------------------------: | :-------: |
+|          로그인 화면                |          UI구성                                                            |      ✅     |
+|          회원가입 화면               |           UI구성 및 유효성 검사 적용                                              |      ✅     |
+|                          |                                                                             |          |
+<br>
+<details>
+  <summary>개발 현황</summary>
+  <div markdown="1">
+    <img width="392" alt="스크린샷 2022-03-20 오후 11 52 36" src="https://user-images.githubusercontent.com/68258365/159168426-b42d6750-4af0-4f61-bb5f-fa121ec14deb.png">
+<img width="387" alt="스크린샷 2022-03-20 오후 11 52 44" src="https://user-images.githubusercontent.com/68258365/159168431-e489a38b-2669-469e-a2ba-d04f130500e7.png">
+<img width="390" alt="스크린샷 2022-03-20 오후 11 52 54" src="https://user-images.githubusercontent.com/68258365/159168435-a9063ba5-a75c-4137-8ffd-887c0dd6b254.png">
+<img width="393" alt="스크린샷 2022-03-20 오후 11 53 02" src="https://user-images.githubusercontent.com/68258365/159168437-e9caee88-443d-4ffc-b6d3-0ee7714d17b6.png">
+<img width="394" alt="스크린샷 2022-03-20 오후 11 53 52" src="https://user-images.githubusercontent.com/68258365/159168439-cecafa53-2f7b-41f1-9382-037c5d61510e.png">
+    <img width="394" alt="스크린샷 2022-03-20 오후 11 53 09" src="https://user-images.githubusercontent.com/68258365/159168442-5dc62d9d-5dbd-4f1a-984c-a04465594c41.png">
+
+
+    
+  </div>
+</details>
 
