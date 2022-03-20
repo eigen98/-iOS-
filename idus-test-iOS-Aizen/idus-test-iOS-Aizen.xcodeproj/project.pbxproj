@@ -7,15 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AFAEE23C5D1723F457F2D21F /* Pods_idus_test_iOS_Aizen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063EC1EF1AD05E603772C333 /* Pods_idus_test_iOS_Aizen.framework */; };
+		EE3365EF27E772C4006DF058 /* EmailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3365EE27E772C4006DF058 /* EmailLoginViewController.swift */; };
 		EED3AFE727E5AFD100C4DBC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED3AFE627E5AFD100C4DBC7 /* AppDelegate.swift */; };
 		EED3AFE927E5AFD100C4DBC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED3AFE827E5AFD100C4DBC7 /* SceneDelegate.swift */; };
 		EED3AFEB27E5AFD100C4DBC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED3AFEA27E5AFD100C4DBC7 /* ViewController.swift */; };
 		EED3AFEE27E5AFD100C4DBC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED3AFEC27E5AFD100C4DBC7 /* Main.storyboard */; };
 		EED3AFF027E5AFD100C4DBC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EED3AFEF27E5AFD100C4DBC7 /* Assets.xcassets */; };
 		EED3AFF327E5AFD100C4DBC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED3AFF127E5AFD100C4DBC7 /* LaunchScreen.storyboard */; };
+		EEDFFD9B27E6398500B572C3 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEDFFD9A27E6398500B572C3 /* LoginStoryboard.storyboard */; };
+		EEDFFD9E27E645B500B572C3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDFFD9D27E645B500B572C3 /* BaseViewController.swift */; };
+		EEDFFDA027E645FF00B572C3 /* LoginMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDFFD9F27E645FF00B572C3 /* LoginMainViewController.swift */; };
+		EEDFFDA327E64E4B00B572C3 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDFFDA227E64E4B00B572C3 /* UIViewController.swift */; };
+		EEDFFDA827E6516D00B572C3 /* NotoSansCJKkr-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EEDFFDA727E650DC00B572C3 /* NotoSansCJKkr-Bold.otf */; };
+		EEDFFDA927E6517000B572C3 /* NotoSansCJKkr-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EEDFFDA527E650DB00B572C3 /* NotoSansCJKkr-Regular.otf */; };
+		EEDFFDAA27E6517300B572C3 /* NotoSansCJKkr-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = EEDFFDA627E650DB00B572C3 /* NotoSansCJKkr-Medium.otf */; };
+		EEDFFDAC27E6520C00B572C3 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDFFDAB27E6520C00B572C3 /* UIFont.swift */; };
+		EEDFFDAE27E6523E00B572C3 /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDFFDAD27E6523E00B572C3 /* IndicatorView.swift */; };
+		EEDFFDB027E6528100B572C3 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDFFDAF27E6528100B572C3 /* UIColor.swift */; };
+		EEDFFDB227E65E2D00B572C3 /* EmailSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDFFDB127E65E2D00B572C3 /* EmailSignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		063EC1EF1AD05E603772C333 /* Pods_idus_test_iOS_Aizen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_idus_test_iOS_Aizen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27289B969A0813B7F676BD13 /* Pods-idus-test-iOS-Aizen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-idus-test-iOS-Aizen.release.xcconfig"; path = "Target Support Files/Pods-idus-test-iOS-Aizen/Pods-idus-test-iOS-Aizen.release.xcconfig"; sourceTree = "<group>"; };
+		EE3365EE27E772C4006DF058 /* EmailLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginViewController.swift; sourceTree = "<group>"; };
 		EED3AFE327E5AFD100C4DBC7 /* idus-test-iOS-Aizen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "idus-test-iOS-Aizen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED3AFE627E5AFD100C4DBC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EED3AFE827E5AFD100C4DBC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +40,18 @@
 		EED3AFEF27E5AFD100C4DBC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EED3AFF227E5AFD100C4DBC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EED3AFF427E5AFD100C4DBC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEDFFD9A27E6398500B572C3 /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
+		EEDFFD9D27E645B500B572C3 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		EEDFFD9F27E645FF00B572C3 /* LoginMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMainViewController.swift; sourceTree = "<group>"; };
+		EEDFFDA227E64E4B00B572C3 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		EEDFFDA527E650DB00B572C3 /* NotoSansCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Regular.otf"; sourceTree = "<group>"; };
+		EEDFFDA627E650DB00B572C3 /* NotoSansCJKkr-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Medium.otf"; sourceTree = "<group>"; };
+		EEDFFDA727E650DC00B572C3 /* NotoSansCJKkr-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Bold.otf"; sourceTree = "<group>"; };
+		EEDFFDAB27E6520C00B572C3 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		EEDFFDAD27E6523E00B572C3 /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
+		EEDFFDAF27E6528100B572C3 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		EEDFFDB127E65E2D00B572C3 /* EmailSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignUpViewController.swift; sourceTree = "<group>"; };
+		F2C5FFC6BBB74190F5BCFB71 /* Pods-idus-test-iOS-Aizen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-idus-test-iOS-Aizen.debug.xcconfig"; path = "Target Support Files/Pods-idus-test-iOS-Aizen/Pods-idus-test-iOS-Aizen.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +59,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFAEE23C5D1723F457F2D21F /* Pods_idus_test_iOS_Aizen.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B9CA3B6D746D0CE52B50CB71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				063EC1EF1AD05E603772C333 /* Pods_idus_test_iOS_Aizen.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5FCDB607B925105E13594F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2C5FFC6BBB74190F5BCFB71 /* Pods-idus-test-iOS-Aizen.debug.xcconfig */,
+				27289B969A0813B7F676BD13 /* Pods-idus-test-iOS-Aizen.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EED3AFDA27E5AFD100C4DBC7 = {
 			isa = PBXGroup;
 			children = (
 				EED3AFE527E5AFD100C4DBC7 /* idus-test-iOS-Aizen */,
 				EED3AFE427E5AFD100C4DBC7 /* Products */,
+				E5FCDB607B925105E13594F6 /* Pods */,
+				B9CA3B6D746D0CE52B50CB71 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +104,10 @@
 		EED3AFE527E5AFD100C4DBC7 /* idus-test-iOS-Aizen */ = {
 			isa = PBXGroup;
 			children = (
+				EEDFFD9827E636D600B572C3 /* Network */,
+				EEDFFD9727E636C900B572C3 /* Util */,
+				EEDFFD9627E6368100B572C3 /* Source */,
+				EEDFFD9527E6367300B572C3 /* Configuration */,
 				EED3AFE627E5AFD100C4DBC7 /* AppDelegate.swift */,
 				EED3AFE827E5AFD100C4DBC7 /* SceneDelegate.swift */,
 				EED3AFEA27E5AFD100C4DBC7 /* ViewController.swift */,
@@ -67,6 +119,78 @@
 			path = "idus-test-iOS-Aizen";
 			sourceTree = "<group>";
 		};
+		EEDFFD9527E6367300B572C3 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				EEDFFDA427E6507800B572C3 /* Font */,
+				EEDFFD9C27E6450400B572C3 /* Base */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		EEDFFD9627E6368100B572C3 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				EEDFFD9927E6370000B572C3 /* Login */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		EEDFFD9727E636C900B572C3 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				EEDFFDAD27E6523E00B572C3 /* IndicatorView.swift */,
+				EEDFFDA127E64E2300B572C3 /* Extension */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		EEDFFD9827E636D600B572C3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EEDFFD9927E6370000B572C3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EEDFFD9A27E6398500B572C3 /* LoginStoryboard.storyboard */,
+				EEDFFD9F27E645FF00B572C3 /* LoginMainViewController.swift */,
+				EEDFFDB127E65E2D00B572C3 /* EmailSignUpViewController.swift */,
+				EE3365EE27E772C4006DF058 /* EmailLoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		EEDFFD9C27E6450400B572C3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EEDFFD9D27E645B500B572C3 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		EEDFFDA127E64E2300B572C3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EEDFFDA227E64E4B00B572C3 /* UIViewController.swift */,
+				EEDFFDAB27E6520C00B572C3 /* UIFont.swift */,
+				EEDFFDAF27E6528100B572C3 /* UIColor.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EEDFFDA427E6507800B572C3 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				EEDFFDA727E650DC00B572C3 /* NotoSansCJKkr-Bold.otf */,
+				EEDFFDA627E650DB00B572C3 /* NotoSansCJKkr-Medium.otf */,
+				EEDFFDA527E650DB00B572C3 /* NotoSansCJKkr-Regular.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +198,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EED3AFF727E5AFD100C4DBC7 /* Build configuration list for PBXNativeTarget "idus-test-iOS-Aizen" */;
 			buildPhases = (
+				A173DB9F7D6E495AFF129D36 /* [CP] Check Pods Manifest.lock */,
 				EED3AFDF27E5AFD100C4DBC7 /* Sources */,
 				EED3AFE027E5AFD100C4DBC7 /* Frameworks */,
 				EED3AFE127E5AFD100C4DBC7 /* Resources */,
+				C4A537E1F833F369012C9464 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +252,58 @@
 			buildActionMask = 2147483647;
 			files = (
 				EED3AFF327E5AFD100C4DBC7 /* LaunchScreen.storyboard in Resources */,
+				EEDFFDAA27E6517300B572C3 /* NotoSansCJKkr-Medium.otf in Resources */,
+				EEDFFDA927E6517000B572C3 /* NotoSansCJKkr-Regular.otf in Resources */,
+				EEDFFDA827E6516D00B572C3 /* NotoSansCJKkr-Bold.otf in Resources */,
 				EED3AFF027E5AFD100C4DBC7 /* Assets.xcassets in Resources */,
 				EED3AFEE27E5AFD100C4DBC7 /* Main.storyboard in Resources */,
+				EEDFFD9B27E6398500B572C3 /* LoginStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A173DB9F7D6E495AFF129D36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-idus-test-iOS-Aizen-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4A537E1F833F369012C9464 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-idus-test-iOS-Aizen/Pods-idus-test-iOS-Aizen-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-idus-test-iOS-Aizen/Pods-idus-test-iOS-Aizen-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-idus-test-iOS-Aizen/Pods-idus-test-iOS-Aizen-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EED3AFDF27E5AFD100C4DBC7 /* Sources */ = {
@@ -139,8 +311,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				EED3AFEB27E5AFD100C4DBC7 /* ViewController.swift in Sources */,
+				EEDFFD9E27E645B500B572C3 /* BaseViewController.swift in Sources */,
+				EEDFFDA327E64E4B00B572C3 /* UIViewController.swift in Sources */,
+				EEDFFDAC27E6520C00B572C3 /* UIFont.swift in Sources */,
+				EEDFFDB027E6528100B572C3 /* UIColor.swift in Sources */,
+				EE3365EF27E772C4006DF058 /* EmailLoginViewController.swift in Sources */,
 				EED3AFE727E5AFD100C4DBC7 /* AppDelegate.swift in Sources */,
+				EEDFFDA027E645FF00B572C3 /* LoginMainViewController.swift in Sources */,
+				EEDFFDAE27E6523E00B572C3 /* IndicatorView.swift in Sources */,
 				EED3AFE927E5AFD100C4DBC7 /* SceneDelegate.swift in Sources */,
+				EEDFFDB227E65E2D00B572C3 /* EmailSignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +464,7 @@
 		};
 		EED3AFF827E5AFD100C4DBC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2C5FFC6BBB74190F5BCFB71 /* Pods-idus-test-iOS-Aizen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -294,9 +475,11 @@
 				INFOPLIST_FILE = "idus-test-iOS-Aizen/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LoginStoryboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +495,7 @@
 		};
 		EED3AFF927E5AFD100C4DBC7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27289B969A0813B7F676BD13 /* Pods-idus-test-iOS-Aizen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,9 +506,11 @@
 				INFOPLIST_FILE = "idus-test-iOS-Aizen/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LoginStoryboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
