@@ -24,6 +24,16 @@ class LoginMainViewController: BaseViewController {
         presentActionSheet()
     }
     
+    //회원가입 없이 둘러보기
+    @IBAction func tapNoLogin(_ sender: UIButton) {
+//        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "MainStoryboard")  else {return}
+//        vc.modalPresentationStyle = .fullScreen
+//        self.present(vc, animated: true)
+        
+        let mainController = UIStoryboard(name: "MainStoryboard", bundle: nil).instantiateViewController(identifier: "MainTabbarController")
+        changeRootViewController(mainController)
+    }
+    
     //가입 방법형태 선택 다이얼로그
     func presentActionSheet(){
         let actionNaver = UIAlertAction(title: "네이버", style: .default){ action in

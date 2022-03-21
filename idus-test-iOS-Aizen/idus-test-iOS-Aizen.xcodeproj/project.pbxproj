@@ -26,6 +26,23 @@
 		EEDFFDAE27E6523E00B572C3 /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDFFDAD27E6523E00B572C3 /* IndicatorView.swift */; };
 		EEDFFDB027E6528100B572C3 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDFFDAF27E6528100B572C3 /* UIColor.swift */; };
 		EEDFFDB227E65E2D00B572C3 /* EmailSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDFFDB127E65E2D00B572C3 /* EmailSignUpViewController.swift */; };
+		EEE2B8C027E81A4C00A97E8E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEE2B8BF27E81A4C00A97E8E /* MainStoryboard.storyboard */; };
+		EEE2B8C227E81B9700A97E8E /* MyInfoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEE2B8C127E81B9700A97E8E /* MyInfoStoryboard.storyboard */; };
+		EEE2B8CA27E8296200A97E8E /* MyInfoProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE2B8C827E8296200A97E8E /* MyInfoProfileTableViewCell.swift */; };
+		EEE2B8CB27E8296200A97E8E /* MyInfoProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE2B8C927E8296200A97E8E /* MyInfoProfileTableViewCell.xib */; };
+		EEE2B8CE27E82A4900A97E8E /* MyInfoPlusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE2B8CC27E82A4900A97E8E /* MyInfoPlusTableViewCell.swift */; };
+		EEE2B8CF27E82A4900A97E8E /* MyInfoPlusTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE2B8CD27E82A4900A97E8E /* MyInfoPlusTableViewCell.xib */; };
+		EEE2B8D227E82A6F00A97E8E /* addBannerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE2B8D027E82A6F00A97E8E /* addBannerTableViewCell.swift */; };
+		EEE2B8D327E82A6F00A97E8E /* addBannerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE2B8D127E82A6F00A97E8E /* addBannerTableViewCell.xib */; };
+		EEE2B8D627E82AD700A97E8E /* RecentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE2B8D427E82AD700A97E8E /* RecentTableViewCell.swift */; };
+		EEE2B8D727E82AD700A97E8E /* RecentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE2B8D527E82AD700A97E8E /* RecentTableViewCell.xib */; };
+		EEE2B8DA27E82AF100A97E8E /* NoticeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE2B8D827E82AF100A97E8E /* NoticeTableViewCell.swift */; };
+		EEE2B8DB27E82AF100A97E8E /* NoticeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE2B8D927E82AF100A97E8E /* NoticeTableViewCell.xib */; };
+		EEE2B8E027E82B6200A97E8E /* CorInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE2B8DE27E82B6200A97E8E /* CorInfoTableViewCell.swift */; };
+		EEE2B8E127E82B6200A97E8E /* CorInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE2B8DF27E82B6200A97E8E /* CorInfoTableViewCell.xib */; };
+		EEE2B8E427E82C2200A97E8E /* MyInfoNoLoginTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE2B8E227E82C2200A97E8E /* MyInfoNoLoginTableViewCell.swift */; };
+		EEE2B8E527E82C2200A97E8E /* MyInfoNoLoginTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE2B8E327E82C2200A97E8E /* MyInfoNoLoginTableViewCell.xib */; };
+		EEE2B8E927E8539800A97E8E /* MyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE2B8E827E8539800A97E8E /* MyInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +68,23 @@
 		EEDFFDAD27E6523E00B572C3 /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
 		EEDFFDAF27E6528100B572C3 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		EEDFFDB127E65E2D00B572C3 /* EmailSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignUpViewController.swift; sourceTree = "<group>"; };
+		EEE2B8BF27E81A4C00A97E8E /* MainStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		EEE2B8C127E81B9700A97E8E /* MyInfoStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyInfoStoryboard.storyboard; sourceTree = "<group>"; };
+		EEE2B8C827E8296200A97E8E /* MyInfoProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoProfileTableViewCell.swift; sourceTree = "<group>"; };
+		EEE2B8C927E8296200A97E8E /* MyInfoProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyInfoProfileTableViewCell.xib; sourceTree = "<group>"; };
+		EEE2B8CC27E82A4900A97E8E /* MyInfoPlusTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoPlusTableViewCell.swift; sourceTree = "<group>"; };
+		EEE2B8CD27E82A4900A97E8E /* MyInfoPlusTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyInfoPlusTableViewCell.xib; sourceTree = "<group>"; };
+		EEE2B8D027E82A6F00A97E8E /* addBannerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addBannerTableViewCell.swift; sourceTree = "<group>"; };
+		EEE2B8D127E82A6F00A97E8E /* addBannerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = addBannerTableViewCell.xib; sourceTree = "<group>"; };
+		EEE2B8D427E82AD700A97E8E /* RecentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTableViewCell.swift; sourceTree = "<group>"; };
+		EEE2B8D527E82AD700A97E8E /* RecentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentTableViewCell.xib; sourceTree = "<group>"; };
+		EEE2B8D827E82AF100A97E8E /* NoticeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeTableViewCell.swift; sourceTree = "<group>"; };
+		EEE2B8D927E82AF100A97E8E /* NoticeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoticeTableViewCell.xib; sourceTree = "<group>"; };
+		EEE2B8DE27E82B6200A97E8E /* CorInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorInfoTableViewCell.swift; sourceTree = "<group>"; };
+		EEE2B8DF27E82B6200A97E8E /* CorInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CorInfoTableViewCell.xib; sourceTree = "<group>"; };
+		EEE2B8E227E82C2200A97E8E /* MyInfoNoLoginTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoNoLoginTableViewCell.swift; sourceTree = "<group>"; };
+		EEE2B8E327E82C2200A97E8E /* MyInfoNoLoginTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyInfoNoLoginTableViewCell.xib; sourceTree = "<group>"; };
+		EEE2B8E827E8539800A97E8E /* MyInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoViewController.swift; sourceTree = "<group>"; };
 		F2C5FFC6BBB74190F5BCFB71 /* Pods-idus-test-iOS-Aizen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-idus-test-iOS-Aizen.debug.xcconfig"; path = "Target Support Files/Pods-idus-test-iOS-Aizen/Pods-idus-test-iOS-Aizen.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +165,7 @@
 		EEDFFD9627E6368100B572C3 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				EEE2B8BA27E8198D00A97E8E /* Main */,
 				EEDFFD9927E6370000B572C3 /* Login */,
 			);
 			path = Source;
@@ -189,6 +224,54 @@
 				EEDFFDA527E650DB00B572C3 /* NotoSansCJKkr-Regular.otf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		EEE2B8BA27E8198D00A97E8E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EEE2B8BE27E81A3500A97E8E /* New Group */,
+				EEE2B8BB27E819B500A97E8E /* MyInfo */,
+				EEE2B8BF27E81A4C00A97E8E /* MainStoryboard.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EEE2B8BB27E819B500A97E8E /* MyInfo */ = {
+			isa = PBXGroup;
+			children = (
+				EEE2B8C327E828FD00A97E8E /* cell */,
+				EEE2B8C127E81B9700A97E8E /* MyInfoStoryboard.storyboard */,
+				EEE2B8E827E8539800A97E8E /* MyInfoViewController.swift */,
+			);
+			path = MyInfo;
+			sourceTree = "<group>";
+		};
+		EEE2B8BE27E81A3500A97E8E /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		EEE2B8C327E828FD00A97E8E /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				EEE2B8C827E8296200A97E8E /* MyInfoProfileTableViewCell.swift */,
+				EEE2B8C927E8296200A97E8E /* MyInfoProfileTableViewCell.xib */,
+				EEE2B8CC27E82A4900A97E8E /* MyInfoPlusTableViewCell.swift */,
+				EEE2B8CD27E82A4900A97E8E /* MyInfoPlusTableViewCell.xib */,
+				EEE2B8D027E82A6F00A97E8E /* addBannerTableViewCell.swift */,
+				EEE2B8D127E82A6F00A97E8E /* addBannerTableViewCell.xib */,
+				EEE2B8D427E82AD700A97E8E /* RecentTableViewCell.swift */,
+				EEE2B8D527E82AD700A97E8E /* RecentTableViewCell.xib */,
+				EEE2B8D827E82AF100A97E8E /* NoticeTableViewCell.swift */,
+				EEE2B8D927E82AF100A97E8E /* NoticeTableViewCell.xib */,
+				EEE2B8DE27E82B6200A97E8E /* CorInfoTableViewCell.swift */,
+				EEE2B8DF27E82B6200A97E8E /* CorInfoTableViewCell.xib */,
+				EEE2B8E227E82C2200A97E8E /* MyInfoNoLoginTableViewCell.swift */,
+				EEE2B8E327E82C2200A97E8E /* MyInfoNoLoginTableViewCell.xib */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,10 +335,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				EED3AFF327E5AFD100C4DBC7 /* LaunchScreen.storyboard in Resources */,
+				EEE2B8CF27E82A4900A97E8E /* MyInfoPlusTableViewCell.xib in Resources */,
+				EEE2B8CB27E8296200A97E8E /* MyInfoProfileTableViewCell.xib in Resources */,
+				EEE2B8D727E82AD700A97E8E /* RecentTableViewCell.xib in Resources */,
 				EEDFFDAA27E6517300B572C3 /* NotoSansCJKkr-Medium.otf in Resources */,
+				EEE2B8DB27E82AF100A97E8E /* NoticeTableViewCell.xib in Resources */,
+				EEE2B8E127E82B6200A97E8E /* CorInfoTableViewCell.xib in Resources */,
 				EEDFFDA927E6517000B572C3 /* NotoSansCJKkr-Regular.otf in Resources */,
 				EEDFFDA827E6516D00B572C3 /* NotoSansCJKkr-Bold.otf in Resources */,
 				EED3AFF027E5AFD100C4DBC7 /* Assets.xcassets in Resources */,
+				EEE2B8E527E82C2200A97E8E /* MyInfoNoLoginTableViewCell.xib in Resources */,
+				EEE2B8C027E81A4C00A97E8E /* MainStoryboard.storyboard in Resources */,
+				EEE2B8C227E81B9700A97E8E /* MyInfoStoryboard.storyboard in Resources */,
+				EEE2B8D327E82A6F00A97E8E /* addBannerTableViewCell.xib in Resources */,
 				EED3AFEE27E5AFD100C4DBC7 /* Main.storyboard in Resources */,
 				EEDFFD9B27E6398500B572C3 /* LoginStoryboard.storyboard in Resources */,
 			);
@@ -311,16 +403,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				EED3AFEB27E5AFD100C4DBC7 /* ViewController.swift in Sources */,
+				EEE2B8E027E82B6200A97E8E /* CorInfoTableViewCell.swift in Sources */,
+				EEE2B8D627E82AD700A97E8E /* RecentTableViewCell.swift in Sources */,
 				EEDFFD9E27E645B500B572C3 /* BaseViewController.swift in Sources */,
+				EEE2B8CA27E8296200A97E8E /* MyInfoProfileTableViewCell.swift in Sources */,
 				EEDFFDA327E64E4B00B572C3 /* UIViewController.swift in Sources */,
+				EEE2B8E427E82C2200A97E8E /* MyInfoNoLoginTableViewCell.swift in Sources */,
 				EEDFFDAC27E6520C00B572C3 /* UIFont.swift in Sources */,
 				EEDFFDB027E6528100B572C3 /* UIColor.swift in Sources */,
 				EE3365EF27E772C4006DF058 /* EmailLoginViewController.swift in Sources */,
 				EED3AFE727E5AFD100C4DBC7 /* AppDelegate.swift in Sources */,
+				EEE2B8DA27E82AF100A97E8E /* NoticeTableViewCell.swift in Sources */,
+				EEE2B8CE27E82A4900A97E8E /* MyInfoPlusTableViewCell.swift in Sources */,
 				EEDFFDA027E645FF00B572C3 /* LoginMainViewController.swift in Sources */,
+				EEE2B8E927E8539800A97E8E /* MyInfoViewController.swift in Sources */,
 				EEDFFDAE27E6523E00B572C3 /* IndicatorView.swift in Sources */,
 				EED3AFE927E5AFD100C4DBC7 /* SceneDelegate.swift in Sources */,
 				EEDFFDB227E65E2D00B572C3 /* EmailSignUpViewController.swift in Sources */,
+				EEE2B8D227E82A6F00A97E8E /* addBannerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
