@@ -75,6 +75,10 @@ class MyInfoViewController: BaseViewController {
         
 
     }
+    
+    @objc func tapInfo(){
+        
+    }
     @objc func tapMessageBtn() {
         
     }
@@ -190,3 +194,4 @@ extension MyInfoViewController :UITableViewDelegate, UITableViewDataSource {
     
     
 }
+

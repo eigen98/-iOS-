@@ -7,5 +7,6 @@ target 'idus-test-iOS-Aizen' do
 
   # Pods for idus-test-iOS-Aizen
   pod 'Alamofire'
+  pod 'XLPagerTabStrip', '~> 9.0'
 
 end

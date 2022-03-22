@@ -24,7 +24,7 @@
             </objects>
             <point key="canvasLocation" x="-625" y="52"/>
         </scene>
-        <!--Item-->
+        <!--내 정보-->
         <scene sceneID="RZc-vE-aPx">
             <objects>
                 <viewController storyboardIdentifier="MyInfoViewController" id="gfd-Rm-cNO" customClass="MyInfoViewController" customModule="idus_test_iOS_Aizen" customModuleProvider="target" sceneMemberID="viewController">
@@ -42,7 +42,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="r9O-KA-ySb"/>
+                    <tabBarItem key="tabBarItem" title="내 정보" image="img_bottom_my_info" selectedImage="img_bottom_my_info_selected" id="r9O-KA-ySb">
+                        <color key="badgeColor" systemColor="systemOrangeColor"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="fDy-Y9-1Ay">
                         <barButtonItem key="leftBarButtonItem" title="내 정보" width="2" id="3zv-h4-Au8">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -59,8 +61,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="img_bottom_my_info" width="44" height="40"/>
+        <image name="img_bottom_my_info_selected" width="40" height="36"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

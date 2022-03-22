@@ -11,13 +11,18 @@
         <scene sceneID="oQa-jw-zKm">
             <objects>
                 <tabBarController storyboardIdentifier="MainTabbarController" id="zUe-nc-QeB" sceneMemberID="viewController">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8pp-SV-ZiR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="hFV-Id-Gqr" kind="relationship" relationship="viewControllers" id="Lvk-Rw-f5i"/>
+                        <segue destination="Mhb-J3-u0e" kind="relationship" relationship="viewControllers" id="HwI-tu-Nkg"/>
+                        <segue destination="D0Q-cB-8U0" kind="relationship" relationship="viewControllers" id="O9Z-7y-eBC"/>
+                        <segue destination="fJL-Gk-VYL" kind="relationship" relationship="viewControllers" id="C1u-yV-JzD"/>
+                        <segue destination="JJM-1G-eBd" kind="relationship" relationship="viewControllers" id="j6k-C0-6AW"/>
+                        <segue destination="hFV-Id-Gqr" kind="relationship" relationship="viewControllers" id="WR9-8d-evv"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qPN-m1-YHi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -28,7 +33,7 @@
         <scene sceneID="X7P-rp-mOu">
             <objects>
                 <viewControllerPlaceholder storyboardIdentifier="MainInfoNavigationController" storyboardName="MyInfoStoryboard" referencedIdentifier="MyInfoNavigationController" id="hFV-Id-Gqr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="person" catalog="system" selectedImage="person" id="9BF-j0-6vz">
+                    <tabBarItem key="tabBarItem" title="내 정보" image="img_bottom_my_info" selectedImage="img_bottom_my_info_selected" id="9BF-j0-6vz">
                         <color key="badgeColor" systemColor="systemOrangeColor"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="iGN-fo-dPV"/>
@@ -37,42 +42,50 @@
             </objects>
             <point key="canvasLocation" x="-632" y="146"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--ArticleNavigationController-->
         <scene sceneID="R9x-xi-TOX">
             <objects>
-                <viewControllerPlaceholder id="Mhb-J3-u0e" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="EmA-51-TNo"/>
+                <viewControllerPlaceholder storyboardIdentifier="ArticleStoryboard" storyboardName="ArticleStoryboard" referencedIdentifier="ArticleNavigationController" id="Mhb-J3-u0e" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="작품" image="img_bottom_article_selected" selectedImage="img_bottom_article_selected" id="EmA-51-TNo">
+                        <color key="badgeColor" systemColor="systemOrangeColor"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="hb4-TN-Iwq"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hSU-MZ-WJ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-623" y="-318"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--ClassNavigationController-->
         <scene sceneID="HiA-fS-cEf">
             <objects>
-                <viewControllerPlaceholder id="D0Q-cB-8U0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="iCb-bL-Ues"/>
+                <viewControllerPlaceholder storyboardIdentifier="ClassStoryboard" storyboardName="ClassStoryboard" referencedIdentifier="ClassNavigationController" id="D0Q-cB-8U0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="클래스" image="img_bottom_class" selectedImage="img_bottom_class_selected" id="iCb-bL-Ues">
+                        <color key="badgeColor" systemColor="systemOrangeColor"/>
+                    </tabBarItem>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="60I-IZ-ogX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-623" y="-181"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--SearchNavigationController-->
         <scene sceneID="dJC-Iq-f2J">
             <objects>
-                <viewControllerPlaceholder id="fJL-Gk-VYL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Him-Jw-4vy"/>
+                <viewControllerPlaceholder storyboardName="SearchStoryboard" referencedIdentifier="SearchNavigationController" id="fJL-Gk-VYL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="검색" image="img_bottom_search" selectedImage="img_bottom_search" id="Him-Jw-4vy">
+                        <color key="badgeColor" systemColor="systemOrangeColor"/>
+                    </tabBarItem>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ph-Nq-eOI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-604" y="-72"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--CategoryNavigationController-->
         <scene sceneID="eI3-xf-qgU">
             <objects>
-                <viewControllerPlaceholder id="JJM-1G-eBd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ZdZ-lN-IMr"/>
+                <viewControllerPlaceholder storyboardName="CategoryStoryboard" referencedIdentifier="CategoryNavigationController" id="JJM-1G-eBd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="카테고리" image="img_bottom_category" selectedImage="img_bottom_category_selected" id="ZdZ-lN-IMr">
+                        <color key="badgeColor" systemColor="systemOrangeColor"/>
+                    </tabBarItem>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J9E-hb-C6V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -80,7 +93,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="img_bottom_article_selected" width="46" height="52"/>
+        <image name="img_bottom_category" width="44" height="42"/>
+        <image name="img_bottom_category_selected" width="42" height="40"/>
+        <image name="img_bottom_class" width="44" height="42"/>
+        <image name="img_bottom_class_selected" width="44" height="40"/>
+        <image name="img_bottom_my_info" width="44" height="40"/>
+        <image name="img_bottom_my_info_selected" width="40" height="36"/>
+        <image name="img_bottom_search" width="42" height="42"/>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

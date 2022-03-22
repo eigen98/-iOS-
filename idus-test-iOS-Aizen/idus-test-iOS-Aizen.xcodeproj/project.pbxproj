@@ -9,6 +9,20 @@
 /* Begin PBXBuildFile section */
 		AFAEE23C5D1723F457F2D21F /* Pods_idus_test_iOS_Aizen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063EC1EF1AD05E603772C333 /* Pods_idus_test_iOS_Aizen.framework */; };
 		EE3365EF27E772C4006DF058 /* EmailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3365EE27E772C4006DF058 /* EmailLoginViewController.swift */; };
+		EE3CC32B27EA12DB0075D5AA /* ClassStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE3CC32A27EA12DB0075D5AA /* ClassStoryboard.storyboard */; };
+		EE3CC32D27EA12EF0075D5AA /* ClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CC32C27EA12EF0075D5AA /* ClassViewController.swift */; };
+		EE3CC33027EA130A0075D5AA /* SearchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE3CC32F27EA130A0075D5AA /* SearchStoryboard.storyboard */; };
+		EE3CC33227EA13180075D5AA /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CC33127EA13180075D5AA /* SearchViewController.swift */; };
+		EE3CC33527EA13340075D5AA /* CategoryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE3CC33427EA13340075D5AA /* CategoryStoryboard.storyboard */; };
+		EE3CC33727EA13420075D5AA /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CC33627EA13420075D5AA /* CategoryViewController.swift */; };
+		EE3CC33B27EA13B00075D5AA /* OnlineStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE3CC33A27EA13B00075D5AA /* OnlineStoryboard.storyboard */; };
+		EE3CC33D27EA13BB0075D5AA /* OnlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CC33C27EA13BB0075D5AA /* OnlineViewController.swift */; };
+		EE3CC33F27EA13C70075D5AA /* OfflineStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE3CC33E27EA13C70075D5AA /* OfflineStoryboard.storyboard */; };
+		EE3CC34127EA13D30075D5AA /* OfflineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CC34027EA13D30075D5AA /* OfflineViewController.swift */; };
+		EE42A92E27E9B23D00A4002F /* ArticleStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE42A92D27E9B23D00A4002F /* ArticleStoryboard.storyboard */; };
+		EE42A93227E9B53100A4002F /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE42A93127E9B53100A4002F /* ParentViewController.swift */; };
+		EE471CF127E9E6A700C777C8 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE471CF027E9E6A700C777C8 /* NewViewController.swift */; };
+		EE471CF327E9E76200C777C8 /* NewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE471CF227E9E76200C777C8 /* NewStoryboard.storyboard */; };
 		EED3AFE727E5AFD100C4DBC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED3AFE627E5AFD100C4DBC7 /* AppDelegate.swift */; };
 		EED3AFE927E5AFD100C4DBC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED3AFE827E5AFD100C4DBC7 /* SceneDelegate.swift */; };
 		EED3AFEB27E5AFD100C4DBC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED3AFEA27E5AFD100C4DBC7 /* ViewController.swift */; };
@@ -49,6 +63,20 @@
 		063EC1EF1AD05E603772C333 /* Pods_idus_test_iOS_Aizen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_idus_test_iOS_Aizen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27289B969A0813B7F676BD13 /* Pods-idus-test-iOS-Aizen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-idus-test-iOS-Aizen.release.xcconfig"; path = "Target Support Files/Pods-idus-test-iOS-Aizen/Pods-idus-test-iOS-Aizen.release.xcconfig"; sourceTree = "<group>"; };
 		EE3365EE27E772C4006DF058 /* EmailLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginViewController.swift; sourceTree = "<group>"; };
+		EE3CC32A27EA12DB0075D5AA /* ClassStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ClassStoryboard.storyboard; sourceTree = "<group>"; };
+		EE3CC32C27EA12EF0075D5AA /* ClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassViewController.swift; sourceTree = "<group>"; };
+		EE3CC32F27EA130A0075D5AA /* SearchStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchStoryboard.storyboard; sourceTree = "<group>"; };
+		EE3CC33127EA13180075D5AA /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		EE3CC33427EA13340075D5AA /* CategoryStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CategoryStoryboard.storyboard; sourceTree = "<group>"; };
+		EE3CC33627EA13420075D5AA /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		EE3CC33A27EA13B00075D5AA /* OnlineStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnlineStoryboard.storyboard; sourceTree = "<group>"; };
+		EE3CC33C27EA13BB0075D5AA /* OnlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineViewController.swift; sourceTree = "<group>"; };
+		EE3CC33E27EA13C70075D5AA /* OfflineStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OfflineStoryboard.storyboard; sourceTree = "<group>"; };
+		EE3CC34027EA13D30075D5AA /* OfflineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineViewController.swift; sourceTree = "<group>"; };
+		EE42A92D27E9B23D00A4002F /* ArticleStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArticleStoryboard.storyboard; sourceTree = "<group>"; };
+		EE42A93127E9B53100A4002F /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
+		EE471CF027E9E6A700C777C8 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		EE471CF227E9E76200C777C8 /* NewStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewStoryboard.storyboard; sourceTree = "<group>"; };
 		EED3AFE327E5AFD100C4DBC7 /* idus-test-iOS-Aizen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "idus-test-iOS-Aizen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED3AFE627E5AFD100C4DBC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EED3AFE827E5AFD100C4DBC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +143,62 @@
 				27289B969A0813B7F676BD13 /* Pods-idus-test-iOS-Aizen.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EE3CC32927EA12BE0075D5AA /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				EE3CC33927EA139E0075D5AA /* Offline */,
+				EE3CC33827EA13940075D5AA /* Online */,
+				EE3CC32A27EA12DB0075D5AA /* ClassStoryboard.storyboard */,
+				EE3CC32C27EA12EF0075D5AA /* ClassViewController.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		EE3CC32E27EA12F30075D5AA /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				EE3CC32F27EA130A0075D5AA /* SearchStoryboard.storyboard */,
+				EE3CC33127EA13180075D5AA /* SearchViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		EE3CC33327EA131C0075D5AA /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				EE3CC33427EA13340075D5AA /* CategoryStoryboard.storyboard */,
+				EE3CC33627EA13420075D5AA /* CategoryViewController.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		EE3CC33827EA13940075D5AA /* Online */ = {
+			isa = PBXGroup;
+			children = (
+				EE3CC33A27EA13B00075D5AA /* OnlineStoryboard.storyboard */,
+				EE3CC33C27EA13BB0075D5AA /* OnlineViewController.swift */,
+			);
+			path = Online;
+			sourceTree = "<group>";
+		};
+		EE3CC33927EA139E0075D5AA /* Offline */ = {
+			isa = PBXGroup;
+			children = (
+				EE3CC33E27EA13C70075D5AA /* OfflineStoryboard.storyboard */,
+				EE3CC34027EA13D30075D5AA /* OfflineViewController.swift */,
+			);
+			path = Offline;
+			sourceTree = "<group>";
+		};
+		EE471CEC27E9E66F00C777C8 /* New */ = {
+			isa = PBXGroup;
+			children = (
+				EE471CF027E9E6A700C777C8 /* NewViewController.swift */,
+				EE471CF227E9E76200C777C8 /* NewStoryboard.storyboard */,
+			);
+			path = New;
 			sourceTree = "<group>";
 		};
 		EED3AFDA27E5AFD100C4DBC7 = {
@@ -229,7 +313,10 @@
 		EEE2B8BA27E8198D00A97E8E /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				EEE2B8BE27E81A3500A97E8E /* New Group */,
+				EE3CC33327EA131C0075D5AA /* Category */,
+				EE3CC32E27EA12F30075D5AA /* Search */,
+				EE3CC32927EA12BE0075D5AA /* Class */,
+				EEE2B8BE27E81A3500A97E8E /* Article */,
 				EEE2B8BB27E819B500A97E8E /* MyInfo */,
 				EEE2B8BF27E81A4C00A97E8E /* MainStoryboard.storyboard */,
 			);
@@ -246,11 +333,14 @@
 			path = MyInfo;
 			sourceTree = "<group>";
 		};
-		EEE2B8BE27E81A3500A97E8E /* New Group */ = {
+		EEE2B8BE27E81A3500A97E8E /* Article */ = {
 			isa = PBXGroup;
 			children = (
+				EE471CEC27E9E66F00C777C8 /* New */,
+				EE42A92D27E9B23D00A4002F /* ArticleStoryboard.storyboard */,
+				EE42A93127E9B53100A4002F /* ParentViewController.swift */,
 			);
-			path = "New Group";
+			path = Article;
 			sourceTree = "<group>";
 		};
 		EEE2B8C327E828FD00A97E8E /* cell */ = {
@@ -335,6 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EED3AFF327E5AFD100C4DBC7 /* LaunchScreen.storyboard in Resources */,
+				EE3CC33027EA130A0075D5AA /* SearchStoryboard.storyboard in Resources */,
 				EEE2B8CF27E82A4900A97E8E /* MyInfoPlusTableViewCell.xib in Resources */,
 				EEE2B8CB27E8296200A97E8E /* MyInfoProfileTableViewCell.xib in Resources */,
 				EEE2B8D727E82AD700A97E8E /* RecentTableViewCell.xib in Resources */,
@@ -342,10 +433,16 @@
 				EEE2B8DB27E82AF100A97E8E /* NoticeTableViewCell.xib in Resources */,
 				EEE2B8E127E82B6200A97E8E /* CorInfoTableViewCell.xib in Resources */,
 				EEDFFDA927E6517000B572C3 /* NotoSansCJKkr-Regular.otf in Resources */,
+				EE42A92E27E9B23D00A4002F /* ArticleStoryboard.storyboard in Resources */,
 				EEDFFDA827E6516D00B572C3 /* NotoSansCJKkr-Bold.otf in Resources */,
+				EE3CC32B27EA12DB0075D5AA /* ClassStoryboard.storyboard in Resources */,
+				EE3CC33F27EA13C70075D5AA /* OfflineStoryboard.storyboard in Resources */,
+				EE3CC33B27EA13B00075D5AA /* OnlineStoryboard.storyboard in Resources */,
+				EE471CF327E9E76200C777C8 /* NewStoryboard.storyboard in Resources */,
 				EED3AFF027E5AFD100C4DBC7 /* Assets.xcassets in Resources */,
 				EEE2B8E527E82C2200A97E8E /* MyInfoNoLoginTableViewCell.xib in Resources */,
 				EEE2B8C027E81A4C00A97E8E /* MainStoryboard.storyboard in Resources */,
+				EE3CC33527EA13340075D5AA /* CategoryStoryboard.storyboard in Resources */,
 				EEE2B8C227E81B9700A97E8E /* MyInfoStoryboard.storyboard in Resources */,
 				EEE2B8D327E82A6F00A97E8E /* addBannerTableViewCell.xib in Resources */,
 				EED3AFEE27E5AFD100C4DBC7 /* Main.storyboard in Resources */,
@@ -406,13 +503,18 @@
 				EEE2B8E027E82B6200A97E8E /* CorInfoTableViewCell.swift in Sources */,
 				EEE2B8D627E82AD700A97E8E /* RecentTableViewCell.swift in Sources */,
 				EEDFFD9E27E645B500B572C3 /* BaseViewController.swift in Sources */,
+				EE3CC33727EA13420075D5AA /* CategoryViewController.swift in Sources */,
 				EEE2B8CA27E8296200A97E8E /* MyInfoProfileTableViewCell.swift in Sources */,
 				EEDFFDA327E64E4B00B572C3 /* UIViewController.swift in Sources */,
+				EE42A93227E9B53100A4002F /* ParentViewController.swift in Sources */,
 				EEE2B8E427E82C2200A97E8E /* MyInfoNoLoginTableViewCell.swift in Sources */,
 				EEDFFDAC27E6520C00B572C3 /* UIFont.swift in Sources */,
+				EE471CF127E9E6A700C777C8 /* NewViewController.swift in Sources */,
 				EEDFFDB027E6528100B572C3 /* UIColor.swift in Sources */,
 				EE3365EF27E772C4006DF058 /* EmailLoginViewController.swift in Sources */,
 				EED3AFE727E5AFD100C4DBC7 /* AppDelegate.swift in Sources */,
+				EE3CC34127EA13D30075D5AA /* OfflineViewController.swift in Sources */,
+				EE3CC33227EA13180075D5AA /* SearchViewController.swift in Sources */,
 				EEE2B8DA27E82AF100A97E8E /* NoticeTableViewCell.swift in Sources */,
 				EEE2B8CE27E82A4900A97E8E /* MyInfoPlusTableViewCell.swift in Sources */,
 				EEDFFDA027E645FF00B572C3 /* LoginMainViewController.swift in Sources */,
@@ -421,6 +523,8 @@
 				EED3AFE927E5AFD100C4DBC7 /* SceneDelegate.swift in Sources */,
 				EEDFFDB227E65E2D00B572C3 /* EmailSignUpViewController.swift in Sources */,
 				EEE2B8D227E82A6F00A97E8E /* addBannerTableViewCell.swift in Sources */,
+				EE3CC32D27EA12EF0075D5AA /* ClassViewController.swift in Sources */,
+				EE3CC33D27EA13BB0075D5AA /* OnlineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
