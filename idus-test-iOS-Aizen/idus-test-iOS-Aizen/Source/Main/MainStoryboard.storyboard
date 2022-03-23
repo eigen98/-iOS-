@@ -33,7 +33,7 @@
         <scene sceneID="X7P-rp-mOu">
             <objects>
                 <viewControllerPlaceholder storyboardIdentifier="MainInfoNavigationController" storyboardName="MyInfoStoryboard" referencedIdentifier="MyInfoNavigationController" id="hFV-Id-Gqr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="내 정보" image="img_bottom_my_info" selectedImage="img_bottom_my_info_selected" id="9BF-j0-6vz">
+                    <tabBarItem key="tabBarItem" title="내 정보" selectedImage="img_bottom_my_info_selected" id="9BF-j0-6vz">
                         <color key="badgeColor" systemColor="systemOrangeColor"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="iGN-fo-dPV"/>
@@ -98,7 +98,6 @@
         <image name="img_bottom_category_selected" width="42" height="40"/>
         <image name="img_bottom_class" width="44" height="42"/>
         <image name="img_bottom_class_selected" width="44" height="40"/>
-        <image name="img_bottom_my_info" width="44" height="40"/>
         <image name="img_bottom_my_info_selected" width="40" height="36"/>
         <image name="img_bottom_search" width="42" height="42"/>
         <systemColor name="systemOrangeColor">
