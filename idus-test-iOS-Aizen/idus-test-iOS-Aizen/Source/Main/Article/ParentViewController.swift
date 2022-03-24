@@ -55,7 +55,6 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
 
         
         self.navigationItem.searchController = searchController
-        //self.navigationItem.title = "아이디어스"
         searchController.hidesNavigationBarDuringPresentation = true
         searchController.automaticallyShowsCancelButton = false
     }

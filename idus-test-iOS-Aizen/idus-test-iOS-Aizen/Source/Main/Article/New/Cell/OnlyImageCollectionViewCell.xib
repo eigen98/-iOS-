@@ -45,9 +45,8 @@
                                 <color key="textColor" white="0.4889721514" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3월 23일 15:08 기준" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQ1-Xt-EvX">
-                                <rect key="frame" x="300" y="45" width="106" height="15"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3월 23일 15:08 기준" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQ1-Xt-EvX">
+                                <rect key="frame" x="300" y="45.5" width="106" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" white="0.43157419219999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -56,7 +55,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="gj9-hj-RKi" firstAttribute="top" secondItem="KuC-L6-0MV" secondAttribute="top" constant="8" id="7N6-zK-0nV"/>
+                            <constraint firstAttribute="bottom" secondItem="MQ1-Xt-EvX" secondAttribute="bottom" constant="12" id="BpV-ix-7bj"/>
+                            <constraint firstAttribute="width" constant="414" id="MQq-Cc-vZu"/>
                             <constraint firstItem="gj9-hj-RKi" firstAttribute="leading" secondItem="KuC-L6-0MV" secondAttribute="leading" id="g5z-wP-JRl"/>
+                            <constraint firstAttribute="trailing" secondItem="MQ1-Xt-EvX" secondAttribute="trailing" constant="8" id="ysh-Lf-nH1"/>
+                            <constraint firstAttribute="height" constant="72" id="z62-X5-VVW"/>
                         </constraints>
                     </view>
                 </subviews>

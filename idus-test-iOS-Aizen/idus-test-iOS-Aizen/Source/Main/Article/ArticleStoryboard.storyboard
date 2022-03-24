@@ -75,7 +75,7 @@
         <!--작품-->
         <scene sceneID="Hcx-i1-Dco">
             <objects>
-                <viewController storyboardIdentifier="GoodsViewController" id="BWI-PQ-Xcg" customClass="ParentViewController" customModule="idus_test_iOS_Aizen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BWI-PQ-Xcg" customClass="ParentViewController" customModule="idus_test_iOS_Aizen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D3e-ww-WP7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -8,6 +8,7 @@
 import UIKit
 import XLPagerTabStrip
 
+//임시 엔티티
 struct Article{
     let articleName : String
     let belong : String
@@ -28,6 +29,7 @@ struct Article{
         ]
     }
 }
+
 class NewViewController: UIViewController , IndicatorInfoProvider {
     var tabName: String = ""
 
@@ -74,12 +76,19 @@ extension NewViewController : UICollectionViewDelegate, UICollectionViewDataSour
     }
     //섹션 의 아이템 개수
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        self.cellData.count-1
+        if section == 0 { //첫번 째 섹션의 셀은 하나만 가짐
+            return 1
+        }else {
+            
+            return self.cellData.count - 1
+        }
+        
     }
     
     //셀 생성
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if cellData[indexPath.row].articleName == "이미지만 볼게요"{
+        //첫번째 섹션일 때
+        if indexPath.section == 0 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OnlyImageCollectionViewCell", for: indexPath)
             return cell
         }else{
@@ -87,6 +96,14 @@ extension NewViewController : UICollectionViewDelegate, UICollectionViewDataSour
             return cell
         }
     }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("작품 상세 화면 호출")
+        let detailController = UIStoryboard(name: "DetailStoryboard", bundle: nil).instantiateViewController(identifier: "DetailViewControllerSB")
+        changeRootViewController(detailController)
+    }
+    
     
     
     
