@@ -21,6 +21,10 @@
 		EE42A93227E9B53100A4002F /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE42A93127E9B53100A4002F /* ParentViewController.swift */; };
 		EE471CF127E9E6A700C777C8 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE471CF027E9E6A700C777C8 /* NewViewController.swift */; };
 		EE471CF327E9E76200C777C8 /* NewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE471CF227E9E76200C777C8 /* NewStoryboard.storyboard */; };
+		EE6551D027EE2CDF00BBCF90 /* SignUpDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6551CF27EE2CDF00BBCF90 /* SignUpDataManager.swift */; };
+		EE6551D327EE2DB700BBCF90 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6551D227EE2DB700BBCF90 /* Constant.swift */; };
+		EE6551D627EE313600BBCF90 /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6551D527EE313600BBCF90 /* SignUpRequest.swift */; };
+		EE6551D827EE314800BBCF90 /* SignUpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6551D727EE314800BBCF90 /* SignUpResponse.swift */; };
 		EE8594C127EAF12F00F274A4 /* OnlyImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8594BF27EAF12F00F274A4 /* OnlyImageCollectionViewCell.swift */; };
 		EE8594C227EAF12F00F274A4 /* OnlyImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE8594C027EAF12F00F274A4 /* OnlyImageCollectionViewCell.xib */; };
 		EE8594C527EAF30A00F274A4 /* NewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8594C327EAF30A00F274A4 /* NewCollectionViewCell.swift */; };
@@ -103,6 +107,10 @@
 		EE42A93127E9B53100A4002F /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
 		EE471CF027E9E6A700C777C8 /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		EE471CF227E9E76200C777C8 /* NewStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewStoryboard.storyboard; sourceTree = "<group>"; };
+		EE6551CF27EE2CDF00BBCF90 /* SignUpDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpDataManager.swift; sourceTree = "<group>"; };
+		EE6551D227EE2DB700BBCF90 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		EE6551D527EE313600BBCF90 /* SignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
+		EE6551D727EE314800BBCF90 /* SignUpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpResponse.swift; sourceTree = "<group>"; };
 		EE8594BF27EAF12F00F274A4 /* OnlyImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlyImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		EE8594C027EAF12F00F274A4 /* OnlyImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnlyImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		EE8594C327EAF30A00F274A4 /* NewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -256,6 +264,39 @@
 				EE471CF227E9E76200C777C8 /* NewStoryboard.storyboard */,
 			);
 			path = New;
+			sourceTree = "<group>";
+		};
+		EE6551CC27EE2B3A00BBCF90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE6551D427EE30F500BBCF90 /* SignUpEntity */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE6551CD27EE2C2900BBCF90 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				EE6551CE27EE2CBE00BBCF90 /* SignUpDataManager */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		EE6551CE27EE2CBE00BBCF90 /* SignUpDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				EE6551CF27EE2CDF00BBCF90 /* SignUpDataManager.swift */,
+			);
+			path = SignUpDataManager;
+			sourceTree = "<group>";
+		};
+		EE6551D427EE30F500BBCF90 /* SignUpEntity */ = {
+			isa = PBXGroup;
+			children = (
+				EE6551D527EE313600BBCF90 /* SignUpRequest.swift */,
+				EE6551D727EE314800BBCF90 /* SignUpResponse.swift */,
+			);
+			path = SignUpEntity;
 			sourceTree = "<group>";
 		};
 		EE8594BE27EAF0C400F274A4 /* Cell */ = {
@@ -437,6 +478,7 @@
 			children = (
 				EEDFFDA427E6507800B572C3 /* Font */,
 				EEDFFD9C27E6450400B572C3 /* Base */,
+				EE6551D227EE2DB700BBCF90 /* Constant.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -462,6 +504,8 @@
 		EEDFFD9827E636D600B572C3 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				EE6551CD27EE2C2900BBCF90 /* API */,
+				EE6551CC27EE2B3A00BBCF90 /* Model */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -736,17 +780,21 @@
 				EEE2B8CE27E82A4900A97E8E /* MyInfoPlusTableViewCell.swift in Sources */,
 				EEDFFDA027E645FF00B572C3 /* LoginMainViewController.swift in Sources */,
 				EEA2965C27ED347000D09ECB /* ArticleInfoTableViewCell.swift in Sources */,
+				EE6551D827EE314800BBCF90 /* SignUpResponse.swift in Sources */,
 				EEA2966F27ED4CFA00D09ECB /* CommentTableViewCell.swift in Sources */,
 				EEE2B8E927E8539800A97E8E /* MyInfoViewController.swift in Sources */,
 				EEDFFDAE27E6523E00B572C3 /* IndicatorView.swift in Sources */,
 				EEBEBEA327EC41C200037059 /* DetailCollectionViewCell.swift in Sources */,
 				EED3AFE927E5AFD100C4DBC7 /* SceneDelegate.swift in Sources */,
 				EE8594C527EAF30A00F274A4 /* NewCollectionViewCell.swift in Sources */,
+				EE6551D327EE2DB700BBCF90 /* Constant.swift in Sources */,
 				EEA2966027ED401B00D09ECB /* TabbarTableViewCell.swift in Sources */,
 				EEDFFDB227E65E2D00B572C3 /* EmailSignUpViewController.swift in Sources */,
 				EEE2B8D227E82A6F00A97E8E /* addBannerTableViewCell.swift in Sources */,
+				EE6551D027EE2CDF00BBCF90 /* SignUpDataManager.swift in Sources */,
 				EEBEBEB527EC45E800037059 /* MiniCell.swift in Sources */,
 				EE3CC32D27EA12EF0075D5AA /* ClassViewController.swift in Sources */,
+				EE6551D627EE313600BBCF90 /* SignUpRequest.swift in Sources */,
 				EEBEBEB127EC45D300037059 /* DetailCell.swift in Sources */,
 				EE3CC33D27EA13BB0075D5AA /* OnlineViewController.swift in Sources */,
 			);

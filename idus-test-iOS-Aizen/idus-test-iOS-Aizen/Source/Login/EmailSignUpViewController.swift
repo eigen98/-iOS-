@@ -39,6 +39,9 @@ class EmailSignUpViewController: UIViewController {
     var ischecked = [false, false, false, false]
     
     
+    //api요청 데이터매니저
+    let dataManager = SignUpDataManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -145,8 +148,22 @@ class EmailSignUpViewController: UIViewController {
         }
         
         //MARK : 회원가입 요청
-        // signupForEmail()
+        //요청 엔티티
+        // todo 수신 동의 여부
+        let parameter = SignUpRequest(email: emailText.text!, name: nameText.text!, password: passwordText.text!, password2: passwordAgain.text!, phone: phoneNumberText.text!, recommendedCode: "asdfb", receivingConsent: 1)
+        dataManager.signUpPost(parameter, delegate: self) //회원가입 요청 api호출
         
+    }
+    
+    //회원가입 상태 알림 메소드
+    func didSuccessSignUP(response : SignUpResponse){
+        self.presentAlert(title: "가입되셨습니다.", message: response.message)
+         
+        self.dismiss(animated: true, completion: nil)
+    }
+    //회원가입 실패 알림 메소드
+    func failedSignUP(message : String){
+        self.presentAlert(title: message)
     }
     
     //이메일 유효성 검사
@@ -178,6 +195,8 @@ class EmailSignUpViewController: UIViewController {
         self.agreeContainerView.layer.cornerRadius = 5
         
     }
+    
+    
     
     
 
