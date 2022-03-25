@@ -39,6 +39,7 @@ class MyInfoViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //테이블 뷰 배경 
         self.myInfotableView.backgroundColor = .systemGray6
         
         
@@ -127,8 +128,10 @@ extension MyInfoViewController :UITableViewDelegate, UITableViewDataSource {
         return 235
     default:
         return 0
+    
     }
-}
+
+   }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         //첫번째 섹션의 헤더 공간 없애기
@@ -188,6 +191,7 @@ extension MyInfoViewController :UITableViewDelegate, UITableViewDataSource {
         return UITableViewCell()
     }
     
+    //헤더 크기 줄이기
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 0.3
     }

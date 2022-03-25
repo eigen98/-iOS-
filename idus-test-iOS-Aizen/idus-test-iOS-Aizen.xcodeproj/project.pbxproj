@@ -25,6 +25,18 @@
 		EE8594C227EAF12F00F274A4 /* OnlyImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE8594C027EAF12F00F274A4 /* OnlyImageCollectionViewCell.xib */; };
 		EE8594C527EAF30A00F274A4 /* NewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8594C327EAF30A00F274A4 /* NewCollectionViewCell.swift */; };
 		EE8594C627EAF30A00F274A4 /* NewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE8594C427EAF30A00F274A4 /* NewCollectionViewCell.xib */; };
+		EEA2965C27ED347000D09ECB /* ArticleInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA2965A27ED347000D09ECB /* ArticleInfoTableViewCell.swift */; };
+		EEA2965D27ED347000D09ECB /* ArticleInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEA2965B27ED347000D09ECB /* ArticleInfoTableViewCell.xib */; };
+		EEA2966027ED401B00D09ECB /* TabbarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA2965E27ED401B00D09ECB /* TabbarTableViewCell.swift */; };
+		EEA2966127ED401B00D09ECB /* TabbarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEA2965F27ED401B00D09ECB /* TabbarTableViewCell.xib */; };
+		EEA2966427ED450500D09ECB /* InfoButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA2966227ED450500D09ECB /* InfoButtonTableViewCell.swift */; };
+		EEA2966527ED450500D09ECB /* InfoButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEA2966327ED450500D09ECB /* InfoButtonTableViewCell.xib */; };
+		EEA2966A27ED470F00D09ECB /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA2966827ED470F00D09ECB /* ReviewTableViewCell.swift */; };
+		EEA2966B27ED470F00D09ECB /* ReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEA2966927ED470F00D09ECB /* ReviewTableViewCell.xib */; };
+		EEA2966F27ED4CFA00D09ECB /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA2966D27ED4CFA00D09ECB /* CommentTableViewCell.swift */; };
+		EEA2967027ED4CFA00D09ECB /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEA2966E27ED4CFA00D09ECB /* CommentTableViewCell.xib */; };
+		EEA2967427ED4F8200D09ECB /* ArtistInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA2967227ED4F8200D09ECB /* ArtistInfoTableViewCell.swift */; };
+		EEA2967527ED4F8200D09ECB /* ArtistInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEA2967327ED4F8200D09ECB /* ArtistInfoTableViewCell.xib */; };
 		EEB9569327ECA37B0085C64C /* PriceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB9569127ECA37B0085C64C /* PriceTableViewCell.swift */; };
 		EEB9569427ECA37B0085C64C /* PriceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEB9569227ECA37B0085C64C /* PriceTableViewCell.xib */; };
 		EEB9569827ECACD40085C64C /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB9569627ECACD40085C64C /* PostTableViewCell.swift */; };
@@ -95,6 +107,18 @@
 		EE8594C027EAF12F00F274A4 /* OnlyImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnlyImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		EE8594C327EAF30A00F274A4 /* NewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCollectionViewCell.swift; sourceTree = "<group>"; };
 		EE8594C427EAF30A00F274A4 /* NewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewCollectionViewCell.xib; sourceTree = "<group>"; };
+		EEA2965A27ED347000D09ECB /* ArticleInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleInfoTableViewCell.swift; sourceTree = "<group>"; };
+		EEA2965B27ED347000D09ECB /* ArticleInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleInfoTableViewCell.xib; sourceTree = "<group>"; };
+		EEA2965E27ED401B00D09ECB /* TabbarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarTableViewCell.swift; sourceTree = "<group>"; };
+		EEA2965F27ED401B00D09ECB /* TabbarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabbarTableViewCell.xib; sourceTree = "<group>"; };
+		EEA2966227ED450500D09ECB /* InfoButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoButtonTableViewCell.swift; sourceTree = "<group>"; };
+		EEA2966327ED450500D09ECB /* InfoButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoButtonTableViewCell.xib; sourceTree = "<group>"; };
+		EEA2966827ED470F00D09ECB /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
+		EEA2966927ED470F00D09ECB /* ReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewTableViewCell.xib; sourceTree = "<group>"; };
+		EEA2966D27ED4CFA00D09ECB /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		EEA2966E27ED4CFA00D09ECB /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		EEA2967227ED4F8200D09ECB /* ArtistInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistInfoTableViewCell.swift; sourceTree = "<group>"; };
+		EEA2967327ED4F8200D09ECB /* ArtistInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtistInfoTableViewCell.xib; sourceTree = "<group>"; };
 		EEB9569127ECA37B0085C64C /* PriceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTableViewCell.swift; sourceTree = "<group>"; };
 		EEB9569227ECA37B0085C64C /* PriceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PriceTableViewCell.xib; sourceTree = "<group>"; };
 		EEB9569627ECACD40085C64C /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
@@ -245,6 +269,57 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		EEA2965527ED2E8400D09ECB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EEA2967127ED4F6100D09ECB /* artistInfo */,
+				EEA2966C27ED4CDA00D09ECB /* comment */,
+				EEA2966727ED46AC00D09ECB /* review */,
+				EEA2966627ED469900D09ECB /* info */,
+				EEA2965E27ED401B00D09ECB /* TabbarTableViewCell.swift */,
+				EEA2965F27ED401B00D09ECB /* TabbarTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EEA2966627ED469900D09ECB /* info */ = {
+			isa = PBXGroup;
+			children = (
+				EEA2965A27ED347000D09ECB /* ArticleInfoTableViewCell.swift */,
+				EEA2965B27ED347000D09ECB /* ArticleInfoTableViewCell.xib */,
+				EEA2966227ED450500D09ECB /* InfoButtonTableViewCell.swift */,
+				EEA2966327ED450500D09ECB /* InfoButtonTableViewCell.xib */,
+			);
+			path = info;
+			sourceTree = "<group>";
+		};
+		EEA2966727ED46AC00D09ECB /* review */ = {
+			isa = PBXGroup;
+			children = (
+				EEA2966827ED470F00D09ECB /* ReviewTableViewCell.swift */,
+				EEA2966927ED470F00D09ECB /* ReviewTableViewCell.xib */,
+			);
+			path = review;
+			sourceTree = "<group>";
+		};
+		EEA2966C27ED4CDA00D09ECB /* comment */ = {
+			isa = PBXGroup;
+			children = (
+				EEA2966D27ED4CFA00D09ECB /* CommentTableViewCell.swift */,
+				EEA2966E27ED4CFA00D09ECB /* CommentTableViewCell.xib */,
+			);
+			path = comment;
+			sourceTree = "<group>";
+		};
+		EEA2967127ED4F6100D09ECB /* artistInfo */ = {
+			isa = PBXGroup;
+			children = (
+				EEA2967227ED4F8200D09ECB /* ArtistInfoTableViewCell.swift */,
+				EEA2967327ED4F8200D09ECB /* ArtistInfoTableViewCell.xib */,
+			);
+			path = artistInfo;
+			sourceTree = "<group>";
+		};
 		EEB9569027EC9C890085C64C /* DetailPriceCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -263,11 +338,12 @@
 			path = PostCell;
 			sourceTree = "<group>";
 		};
-		EEB9569A27ECB29E0085C64C /* New Group */ = {
+		EEB9569A27ECB29E0085C64C /* DetailTabbarCell */ = {
 			isa = PBXGroup;
 			children = (
+				EEA2965527ED2E8400D09ECB /* Cell */,
 			);
-			path = "New Group";
+			path = DetailTabbarCell;
 			sourceTree = "<group>";
 		};
 		EEBEBE9627EC0F8100037059 /* Cell */ = {
@@ -297,7 +373,7 @@
 		EEBEBE9B27EC122000037059 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				EEB9569A27ECB29E0085C64C /* New Group */,
+				EEB9569A27ECB29E0085C64C /* DetailTabbarCell */,
 				EEB9569527ECACA50085C64C /* PostCell */,
 				EEB9569027EC9C890085C64C /* DetailPriceCell */,
 				EEBEBE9E27EC40A300037059 /* DetailImage */,
@@ -545,10 +621,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EED3AFF327E5AFD100C4DBC7 /* LaunchScreen.storyboard in Resources */,
+				EEA2966B27ED470F00D09ECB /* ReviewTableViewCell.xib in Resources */,
 				EE3CC33027EA130A0075D5AA /* SearchStoryboard.storyboard in Resources */,
 				EEE2B8CF27E82A4900A97E8E /* MyInfoPlusTableViewCell.xib in Resources */,
+				EEA2967027ED4CFA00D09ECB /* CommentTableViewCell.xib in Resources */,
 				EEE2B8CB27E8296200A97E8E /* MyInfoProfileTableViewCell.xib in Resources */,
 				EE8594C227EAF12F00F274A4 /* OnlyImageCollectionViewCell.xib in Resources */,
+				EEA2965D27ED347000D09ECB /* ArticleInfoTableViewCell.xib in Resources */,
 				EEE2B8D727E82AD700A97E8E /* RecentTableViewCell.xib in Resources */,
 				EEDFFDAA27E6517300B572C3 /* NotoSansCJKkr-Medium.otf in Resources */,
 				EEE2B8DB27E82AF100A97E8E /* NoticeTableViewCell.xib in Resources */,
@@ -559,6 +638,7 @@
 				EEDFFDA827E6516D00B572C3 /* NotoSansCJKkr-Bold.otf in Resources */,
 				EE3CC32B27EA12DB0075D5AA /* ClassStoryboard.storyboard in Resources */,
 				EE471CF327E9E76200C777C8 /* NewStoryboard.storyboard in Resources */,
+				EEA2967527ED4F8200D09ECB /* ArtistInfoTableViewCell.xib in Resources */,
 				EEBEBE9A27EC11E400037059 /* DetailStoryboard.storyboard in Resources */,
 				EED3AFF027E5AFD100C4DBC7 /* Assets.xcassets in Resources */,
 				EEE2B8E527E82C2200A97E8E /* MyInfoNoLoginTableViewCell.xib in Resources */,
@@ -566,6 +646,7 @@
 				EE3CC33527EA13340075D5AA /* CategoryStoryboard.storyboard in Resources */,
 				EEBEBEA427EC41C200037059 /* DetailCollectionViewCell.xib in Resources */,
 				EEB9569927ECACD40085C64C /* PostTableViewCell.xib in Resources */,
+				EEA2966127ED401B00D09ECB /* TabbarTableViewCell.xib in Resources */,
 				EE8594C627EAF30A00F274A4 /* NewCollectionViewCell.xib in Resources */,
 				EEE2B8C227E81B9700A97E8E /* MyInfoStoryboard.storyboard in Resources */,
 				EEB9569427ECA37B0085C64C /* PriceTableViewCell.xib in Resources */,
@@ -573,6 +654,7 @@
 				EED3AFEE27E5AFD100C4DBC7 /* Main.storyboard in Resources */,
 				EEDFFD9B27E6398500B572C3 /* LoginStoryboard.storyboard in Resources */,
 				EEBEBEAE27EC45B700037059 /* MiniImageCollectionViewCell.xib in Resources */,
+				EEA2966527ED450500D09ECB /* InfoButtonTableViewCell.xib in Resources */,
 				EEBEBEB227EC45D300037059 /* DetailCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -627,6 +709,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EED3AFEB27E5AFD100C4DBC7 /* ViewController.swift in Sources */,
+				EEA2966427ED450500D09ECB /* InfoButtonTableViewCell.swift in Sources */,
 				EEE2B8E027E82B6200A97E8E /* CorInfoTableViewCell.swift in Sources */,
 				EEE2B8D627E82AD700A97E8E /* RecentTableViewCell.swift in Sources */,
 				EEDFFD9E27E645B500B572C3 /* BaseViewController.swift in Sources */,
@@ -641,20 +724,25 @@
 				EEDFFDAC27E6520C00B572C3 /* UIFont.swift in Sources */,
 				EE471CF127E9E6A700C777C8 /* NewViewController.swift in Sources */,
 				EEDFFDB027E6528100B572C3 /* UIColor.swift in Sources */,
+				EEA2967427ED4F8200D09ECB /* ArtistInfoTableViewCell.swift in Sources */,
 				EE3365EF27E772C4006DF058 /* EmailLoginViewController.swift in Sources */,
 				EED3AFE727E5AFD100C4DBC7 /* AppDelegate.swift in Sources */,
 				EEBEBEAD27EC45B700037059 /* MiniImageCollectionViewCell.swift in Sources */,
 				EE3CC34127EA13D30075D5AA /* OfflineViewController.swift in Sources */,
 				EE3CC33227EA13180075D5AA /* SearchViewController.swift in Sources */,
 				EEE2B8DA27E82AF100A97E8E /* NoticeTableViewCell.swift in Sources */,
+				EEA2966A27ED470F00D09ECB /* ReviewTableViewCell.swift in Sources */,
 				EE8594C127EAF12F00F274A4 /* OnlyImageCollectionViewCell.swift in Sources */,
 				EEE2B8CE27E82A4900A97E8E /* MyInfoPlusTableViewCell.swift in Sources */,
 				EEDFFDA027E645FF00B572C3 /* LoginMainViewController.swift in Sources */,
+				EEA2965C27ED347000D09ECB /* ArticleInfoTableViewCell.swift in Sources */,
+				EEA2966F27ED4CFA00D09ECB /* CommentTableViewCell.swift in Sources */,
 				EEE2B8E927E8539800A97E8E /* MyInfoViewController.swift in Sources */,
 				EEDFFDAE27E6523E00B572C3 /* IndicatorView.swift in Sources */,
 				EEBEBEA327EC41C200037059 /* DetailCollectionViewCell.swift in Sources */,
 				EED3AFE927E5AFD100C4DBC7 /* SceneDelegate.swift in Sources */,
 				EE8594C527EAF30A00F274A4 /* NewCollectionViewCell.swift in Sources */,
+				EEA2966027ED401B00D09ECB /* TabbarTableViewCell.swift in Sources */,
 				EEDFFDB227E65E2D00B572C3 /* EmailSignUpViewController.swift in Sources */,
 				EEE2B8D227E82A6F00A97E8E /* addBannerTableViewCell.swift in Sources */,
 				EEBEBEB527EC45E800037059 /* MiniCell.swift in Sources */,

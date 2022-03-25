@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import XLPagerTabStrip
 
 class DetailViewController: UIViewController {
 
@@ -16,11 +17,63 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         //initNavi()
 
+        //네비게이션 바 투명 처리
+//        initNavi()
+//        let bar : UINavigationBar! = self.navigationController?.navigationBar
+//        bar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+//
+//        bar.shadowImage = UIImage()
+//        bar.backgroundColor = UIColor.clear
+        
         // Do any additional setup after loading the view.
+        
+        //테이블 뷰 배경
+        self.detailTableView.backgroundColor = .systemGray6
         
         detailTableView.dataSource  = self
         detailTableView.delegate = self
         
+        //MARK : nib등록
+        //사진 넘겨보기 셀
+        let photoNib = UINib(nibName: "DetailCollectionViewCell", bundle: nil)
+        self.detailTableView.register(photoNib, forCellReuseIdentifier: "DetailCollectionViewCell")
+        
+        //작은 사진 미리보기 뷰 셀
+        let miniPhotoNib = UINib(nibName: "MiniImageCollectionViewCell", bundle: nil)
+        self.detailTableView.register(miniPhotoNib, forCellReuseIdentifier: "MiniImageCollectionViewCell")
+        
+        
+        //배송 정보 셀
+        let postNib = UINib(nibName: "PostTableViewCell", bundle: nil)
+        self.detailTableView.register(postNib, forCellReuseIdentifier: "PostTableViewCell")
+        
+        //상단 탭바 셀
+        let tabbarNib = UINib(nibName: "TabbarTableViewCell", bundle: nil)
+        self.detailTableView.register(tabbarNib, forCellReuseIdentifier: "TabbarTableViewCell")
+        
+        //작품 가격 정보
+        let priceNib = UINib(nibName: "PriceTableViewCell", bundle: nil)
+        self.detailTableView.register(priceNib, forCellReuseIdentifier: "PriceTableViewCell")
+        
+        //작품 정보 셀
+        let articleInfoNib = UINib(nibName: "ArticleInfoTableViewCell", bundle: nil)
+        self.detailTableView.register(articleInfoNib, forCellReuseIdentifier: "ArticleInfoTableViewCell")
+        
+        //버튼 뷰 셀
+        let infoButtonNib = UINib(nibName: "InfoButtonTableViewCell", bundle: nil)
+        self.detailTableView.register(infoButtonNib, forCellReuseIdentifier: "InfoButtonTableViewCell")
+        
+        //구매후기 셀
+        let reviewNib = UINib(nibName: "ReviewTableViewCell", bundle: nil)
+        self.detailTableView.register(reviewNib, forCellReuseIdentifier: "ReviewTableViewCell")
+        
+        //댓글 셀
+        let commentNib = UINib(nibName: "CommentTableViewCell", bundle: nil)
+        self.detailTableView.register(commentNib, forCellReuseIdentifier: "CommentTableViewCell")
+        
+        //작가님 정보 셀
+        let artistInfoNib = UINib(nibName: "ArtistInfoTableViewCell", bundle: nil)
+        self.detailTableView.register(artistInfoNib, forCellReuseIdentifier: "ArtistInfoTableViewCell")
     }
     
     //디테일 네비게이션 바 (뒤로가기, 작품이름, 검색, 작품, 장바구니)
@@ -72,13 +125,118 @@ class DetailViewController: UIViewController {
 
 }
 extension DetailViewController : UITableViewDataSource, UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
+    //섹션 개수
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 9
     }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    //헤더 설정
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        //첫번째 섹션의 헤더 공간 없애기
+        if section == 0 {
+            return nil
+        }else if section == 1 {
+            return nil
+        }else if section == 2{
+            return nil
+        }
+           return " "
+    }
+    
+    //각각의 셀 섹션마다 생성
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        switch indexPath.section {
+        case 0: //사진 앨범 셀
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "DetailCollectionViewCell") as? DetailCollectionViewCell {
+                return cell
+            }
+            
+        case 1 ://미니 앨범
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "MiniImageCollectionViewCell") as? MiniImageCollectionViewCell {
+                return cell
+            }
+            
+        case 2 : //작품 가격 및 정보
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "PriceTableViewCell") as? PriceTableViewCell {
+                return cell
+            }
+            
+        case 3 : // 배송 정보
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "PostTableViewCell") as? PostTableViewCell {
+                return cell
+            }
+        case 4 : // 상단 탭바
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "TabbarTableViewCell") as? TabbarTableViewCell {
+                return cell
+            }
+        case 5 : // 버튼 탭들
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "InfoButtonTableViewCell") as? InfoButtonTableViewCell {
+                return cell
+            }
+            
+        case 6 : //작품 정보x
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "ArticleInfoTableViewCell") as? ArticleInfoTableViewCell {
+                return cell
+            }
+            
+        case 7 : //후기정보
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "ReviewTableViewCell") as? ReviewTableViewCell {
+                return cell
+            }
+        case 8 : //댓글
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "CommentTableViewCell") as? CommentTableViewCell {
+                return cell
+            }
+        case 9 : //작가 님 정보 x
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "ArtistInfoTableViewCell") as? ArtistInfoTableViewCell {
+                return cell
+            }
+            
+        default:
+            return UITableViewCell()
+        }
+            
+
+        
+        return UITableViewCell()
+        
+    }
+    //셀 높이 지정
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+     switch indexPath.section {
+     case 0: // 사진 페이저
+         return 414
+     case 1: //미리보기 mini
+         return 56
+     case 2://
+         return 400
+     case 3:
+         return 240
+     case 4:
+         return 180
+     case 5:
+         return 400
+     case 6:
+         return 400
+     case 7:
+         return 235
+     case 8:
+         return 235
+     case 9:
+         return 235
+     default:
+         return 0
+     
+     }
+
+    }
+    
+    //헤더 크기 줄이기
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 0.3
     }
     
     

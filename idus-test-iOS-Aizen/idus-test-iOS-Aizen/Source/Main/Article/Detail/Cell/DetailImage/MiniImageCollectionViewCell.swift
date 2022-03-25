@@ -10,12 +10,14 @@ import UIKit
 
 
 //작품 상세페이지의 작품 이미지 앨범의 컨트롤러(미리보기, 작은 이미지)
-class MiniImageCollectionViewCell: UITableViewCell, UICollectionViewDelegateFlowLayout {
+class MiniImageCollectionViewCell: UITableViewCell {
 
     
     @IBOutlet weak var miniCollectionView: UICollectionView!
     //임시 데이터
     var tempData = TempPhoto.createData()
+    
+    let sectionInsets = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -34,9 +36,27 @@ class MiniImageCollectionViewCell: UITableViewCell, UICollectionViewDelegateFlow
 }
 extension MiniImageCollectionViewCell : UICollectionViewDelegate, UICollectionViewDataSource {
     
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
     //섹션의 아이템 개수
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return tempData.count
+    }
+    func collectionView(_collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        let width = self.miniCollectionView.frame.width
+//        let height = self.miniCollectionView.frame.height
+//        let itemsPerRow :CGFloat = 1
+//        let widthPadding = sectionInsets.left * (itemsPerRow+1)
+//        let itemsPerColumn : CGFloat = 1
+//        let heightPadding = sectionInsets.top * (itemsPerColumn + 1)
+//        let cellWidth = (width - widthPadding) / itemsPerRow
+//        let cellHeight = (height - heightPadding) / itemsPerColumn
+//
+//        //return CGSize(width: cellWidth, height: cellHeight)
+        
+        return CGSize(width: 48.0  , height:  48.0)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -44,5 +64,13 @@ extension MiniImageCollectionViewCell : UICollectionViewDelegate, UICollectionVi
         return cell
     }
     
+   
+    
+    func collectionView(_ collectionView : UICollectionView, layout collectionViewLayout : UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return sectionInsets
+    }
+    func collectionView(_ collectionView : UICollectionView, layout collectionViewLayout : UICollectionViewLayout, minimumLineSpacingForSectionAt  section: Int) -> CGFloat {
+        return sectionInsets.left
+    }
     
 }

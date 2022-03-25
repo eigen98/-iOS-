@@ -24,8 +24,6 @@ struct Article{
             Article(articleName: "아이오아이", belong: "ABC마트", image: UIImage(named: "img_sample1"), isZzim: false),
             Article(articleName: "아이오아이", belong: "ABC마트", image: UIImage(named: "img_sample1"), isZzim: false),
             Article(articleName: "아이오아이", belong: "ABC마트", image: UIImage(named: "img_sample1"), isZzim: false)
-            
-            
         ]
     }
 }

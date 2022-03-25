@@ -17,26 +17,29 @@
                 <rect key="frame" x="0.0" y="0.0" width="414" height="58"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c8I-XX-iJL">
+                    <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8I-XX-iJL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="58"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="IWI-6g-9Qa">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="58"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="QpI-LQ-6Aj">
+                                <rect key="frame" x="16" y="4" width="382" height="50"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Pmv-as-j90">
-                                    <size key="itemSize" width="128" height="128"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dWH-Kl-b7K">
+                                    <size key="itemSize" width="48" height="48"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                             </collectionView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="xkk-Lc-ltK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="IWI-6g-9Qa" secondAttribute="trailing" id="VJL-T3-qjn"/>
-                            <constraint firstItem="IWI-6g-9Qa" firstAttribute="top" secondItem="c8I-XX-iJL" secondAttribute="top" id="jaE-3e-zxz"/>
-                            <constraint firstItem="IWI-6g-9Qa" firstAttribute="leading" secondItem="c8I-XX-iJL" secondAttribute="leading" id="lfa-PE-Jr2"/>
-                            <constraint firstAttribute="bottom" secondItem="IWI-6g-9Qa" secondAttribute="bottom" id="ype-Q1-rkk"/>
+                            <constraint firstAttribute="bottom" secondItem="QpI-LQ-6Aj" secondAttribute="bottom" constant="4" id="10B-G3-e3w"/>
+                            <constraint firstAttribute="width" constant="414" id="3dd-LM-rwk"/>
+                            <constraint firstAttribute="height" constant="58" id="LNi-Eq-wxe"/>
+                            <constraint firstItem="QpI-LQ-6Aj" firstAttribute="top" secondItem="c8I-XX-iJL" secondAttribute="top" constant="4" id="Lzm-Wd-h8V"/>
+                            <constraint firstItem="QpI-LQ-6Aj" firstAttribute="leading" secondItem="xkk-Lc-ltK" secondAttribute="leading" constant="16" id="r30-40-Tmg"/>
+                            <constraint firstItem="xkk-Lc-ltK" firstAttribute="trailing" secondItem="QpI-LQ-6Aj" secondAttribute="trailing" constant="16" id="s3f-Rn-8Gq"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -50,9 +53,9 @@
             </constraints>
             <size key="customSize" width="414" height="58"/>
             <connections>
-                <outlet property="miniCollectionView" destination="IWI-6g-9Qa" id="yt8-68-yzM"/>
+                <outlet property="miniCollectionView" destination="QpI-LQ-6Aj" id="42e-q6-L2h"/>
             </connections>
-            <point key="canvasLocation" x="46.376811594202906" y="57.589285714285708"/>
+            <point key="canvasLocation" x="21.739130434782609" y="8.0357142857142847"/>
         </collectionViewCell>
     </objects>
     <resources>
