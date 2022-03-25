@@ -487,6 +487,21 @@
                                     <action selector="tapSignUpBtn:" destination="BjB-Uy-WVK" eventType="touchUpInside" id="0SL-xW-fET"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKo-WI-fDE">
+                                <rect key="frame" x="16" y="60" width="18" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="18" id="3eb-um-BVI"/>
+                                    <constraint firstAttribute="height" constant="22" id="ZCL-sP-Fip"/>
+                                    <constraint firstAttribute="width" constant="18" id="cdP-KN-7XX"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="wfJ-IL-CUt"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="xmark" catalog="system"/>
+                                <connections>
+                                    <action selector="tabBack:" destination="BjB-Uy-WVK" eventType="touchUpInside" id="WbH-bC-TNU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LnF-rY-C8F"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -496,6 +511,8 @@
                             <constraint firstItem="LnF-rY-C8F" firstAttribute="trailing" secondItem="n4h-bD-lRs" secondAttribute="trailing" constant="48" id="Ot0-T9-stq"/>
                             <constraint firstItem="n4h-bD-lRs" firstAttribute="leading" secondItem="LnF-rY-C8F" secondAttribute="leading" constant="48" id="UAg-GL-dQ7"/>
                             <constraint firstItem="m3h-M8-8RP" firstAttribute="top" secondItem="yfa-xn-ayl" secondAttribute="bottom" constant="32" id="UZh-F8-gkF"/>
+                            <constraint firstItem="fKo-WI-fDE" firstAttribute="leading" secondItem="LnF-rY-C8F" secondAttribute="leading" constant="16" id="Wvq-Dm-cPg"/>
+                            <constraint firstItem="fKo-WI-fDE" firstAttribute="top" secondItem="LnF-rY-C8F" secondAttribute="top" constant="16" id="ZHh-nG-2Wh"/>
                             <constraint firstItem="n4h-bD-lRs" firstAttribute="top" secondItem="m3h-M8-8RP" secondAttribute="bottom" constant="60" id="bI6-Nd-93R"/>
                             <constraint firstItem="LnF-rY-C8F" firstAttribute="trailing" secondItem="yfa-xn-ayl" secondAttribute="trailing" constant="48" id="hML-fJ-8Xh"/>
                             <constraint firstItem="m3h-M8-8RP" firstAttribute="leading" secondItem="LnF-rY-C8F" secondAttribute="leading" constant="48" id="lgd-7q-fcO"/>
@@ -687,6 +704,9 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button" image="img_login_btn"/>
+                                <connections>
+                                    <action selector="tapLogin:" destination="aZo-EL-fIB" eventType="touchUpInside" id="H6Z-ZW-GvT"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아이디 / 비밀번호를 잊어버리셨나요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJq-CE-EZ2">
                                 <rect key="frame" x="119" y="702" width="176" height="15"/>
@@ -750,6 +770,11 @@
                             <constraint firstItem="KyU-dj-uBl" firstAttribute="top" secondItem="3Lx-j6-TyM" secondAttribute="bottom" constant="32" id="waD-gK-ECA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailText" destination="Kxe-Cs-H9l" id="xiH-9T-qCV"/>
+                        <outlet property="passwordText" destination="qDy-cb-Xb2" id="Odx-3o-4yl"/>
+                        <outlet property="tabLogin" destination="brf-XK-8or" id="Hey-Zg-QQ7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dgk-1a-ZMX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

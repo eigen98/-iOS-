@@ -154,12 +154,20 @@ class EmailSignUpViewController: UIViewController {
         dataManager.signUpPost(parameter, delegate: self) //회원가입 요청 api호출
         
     }
+    //뒤로가기 버튼
+    @IBAction func tabBack(_ sender: UIButton) {
+        dismiss(animated: true)
+    }
     
     //회원가입 상태 알림 메소드
     func didSuccessSignUP(response : SignUpResponse){
-        self.presentAlert(title: "가입되셨습니다.", message: response.message)
+        self.presentAlert(title: "가입되셨습니다.", message: response.message){ action in
+            //회원가입 후 닫힘
+            self.dismiss(animated: true, completion: nil)
+            
+        }
          
-        self.dismiss(animated: true, completion: nil)
+        
     }
     //회원가입 실패 알림 메소드
     func failedSignUP(message : String){

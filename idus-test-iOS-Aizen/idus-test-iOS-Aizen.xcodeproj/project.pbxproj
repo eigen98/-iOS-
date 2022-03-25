@@ -25,6 +25,9 @@
 		EE6551D327EE2DB700BBCF90 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6551D227EE2DB700BBCF90 /* Constant.swift */; };
 		EE6551D627EE313600BBCF90 /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6551D527EE313600BBCF90 /* SignUpRequest.swift */; };
 		EE6551D827EE314800BBCF90 /* SignUpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6551D727EE314800BBCF90 /* SignUpResponse.swift */; };
+		EE6551DD27EE4BFA00BBCF90 /* LoginDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6551DC27EE4BFA00BBCF90 /* LoginDataManager.swift */; };
+		EE6551DF27EE4C4A00BBCF90 /* EmailLoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6551DE27EE4C4A00BBCF90 /* EmailLoginRequest.swift */; };
+		EE6551E127EE4C5800BBCF90 /* EmailLoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6551E027EE4C5800BBCF90 /* EmailLoginResponse.swift */; };
 		EE8594C127EAF12F00F274A4 /* OnlyImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8594BF27EAF12F00F274A4 /* OnlyImageCollectionViewCell.swift */; };
 		EE8594C227EAF12F00F274A4 /* OnlyImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE8594C027EAF12F00F274A4 /* OnlyImageCollectionViewCell.xib */; };
 		EE8594C527EAF30A00F274A4 /* NewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8594C327EAF30A00F274A4 /* NewCollectionViewCell.swift */; };
@@ -111,6 +114,9 @@
 		EE6551D227EE2DB700BBCF90 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		EE6551D527EE313600BBCF90 /* SignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
 		EE6551D727EE314800BBCF90 /* SignUpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpResponse.swift; sourceTree = "<group>"; };
+		EE6551DC27EE4BFA00BBCF90 /* LoginDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataManager.swift; sourceTree = "<group>"; };
+		EE6551DE27EE4C4A00BBCF90 /* EmailLoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginRequest.swift; sourceTree = "<group>"; };
+		EE6551E027EE4C5800BBCF90 /* EmailLoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginResponse.swift; sourceTree = "<group>"; };
 		EE8594BF27EAF12F00F274A4 /* OnlyImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlyImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		EE8594C027EAF12F00F274A4 /* OnlyImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnlyImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		EE8594C327EAF30A00F274A4 /* NewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -269,6 +275,7 @@
 		EE6551CC27EE2B3A00BBCF90 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EE6551DB27EE4B3C00BBCF90 /* LoginEntity */,
 				EE6551D427EE30F500BBCF90 /* SignUpEntity */,
 			);
 			path = Model;
@@ -277,6 +284,7 @@
 		EE6551CD27EE2C2900BBCF90 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				EE6551DA27EE4A4A00BBCF90 /* LoginDataManager */,
 				EE6551CE27EE2CBE00BBCF90 /* SignUpDataManager */,
 			);
 			path = API;
@@ -297,6 +305,23 @@
 				EE6551D727EE314800BBCF90 /* SignUpResponse.swift */,
 			);
 			path = SignUpEntity;
+			sourceTree = "<group>";
+		};
+		EE6551DA27EE4A4A00BBCF90 /* LoginDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				EE6551DC27EE4BFA00BBCF90 /* LoginDataManager.swift */,
+			);
+			path = LoginDataManager;
+			sourceTree = "<group>";
+		};
+		EE6551DB27EE4B3C00BBCF90 /* LoginEntity */ = {
+			isa = PBXGroup;
+			children = (
+				EE6551DE27EE4C4A00BBCF90 /* EmailLoginRequest.swift */,
+				EE6551E027EE4C5800BBCF90 /* EmailLoginResponse.swift */,
+			);
+			path = LoginEntity;
 			sourceTree = "<group>";
 		};
 		EE8594BE27EAF0C400F274A4 /* Cell */ = {
@@ -752,6 +777,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE6551DF27EE4C4A00BBCF90 /* EmailLoginRequest.swift in Sources */,
 				EED3AFEB27E5AFD100C4DBC7 /* ViewController.swift in Sources */,
 				EEA2966427ED450500D09ECB /* InfoButtonTableViewCell.swift in Sources */,
 				EEE2B8E027E82B6200A97E8E /* CorInfoTableViewCell.swift in Sources */,
@@ -765,10 +791,12 @@
 				EE42A93227E9B53100A4002F /* ParentViewController.swift in Sources */,
 				EEE2B8E427E82C2200A97E8E /* MyInfoNoLoginTableViewCell.swift in Sources */,
 				EEBEBE9D27EC1A2E00037059 /* DetailViewController.swift in Sources */,
+				EE6551DD27EE4BFA00BBCF90 /* LoginDataManager.swift in Sources */,
 				EEDFFDAC27E6520C00B572C3 /* UIFont.swift in Sources */,
 				EE471CF127E9E6A700C777C8 /* NewViewController.swift in Sources */,
 				EEDFFDB027E6528100B572C3 /* UIColor.swift in Sources */,
 				EEA2967427ED4F8200D09ECB /* ArtistInfoTableViewCell.swift in Sources */,
+				EE6551E127EE4C5800BBCF90 /* EmailLoginResponse.swift in Sources */,
 				EE3365EF27E772C4006DF058 /* EmailLoginViewController.swift in Sources */,
 				EED3AFE727E5AFD100C4DBC7 /* AppDelegate.swift in Sources */,
 				EEBEBEAD27EC45B700037059 /* MiniImageCollectionViewCell.swift in Sources */,
