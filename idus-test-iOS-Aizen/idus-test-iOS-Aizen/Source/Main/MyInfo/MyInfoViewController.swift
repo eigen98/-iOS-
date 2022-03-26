@@ -55,6 +55,7 @@ class MyInfoViewController: ViewController, SettingProtocol {
         
         let myInfoStoryboard = UIStoryboard(name: "MyInfoStoryboard", bundle: nil)
         guard let settingVC = myInfoStoryboard.instantiateViewController(withIdentifier: "SettingViewController") as? SettingViewController else { return }
+        settingVC.userData = self.userData
         self.navigationController?.pushViewController(settingVC, animated: true)
                 
     }

@@ -56,7 +56,7 @@ class ProfileDataManager{
     }
     
     //Mark : 프로필 수정 메소드
-    func patchUserProfile(_ parameters : ProfilePatchRequest, delegate : MyInfoViewController){
+    func patchUserProfile(_ parameters : ProfilePatchRequest, delegate : MyProfileSetViewController){
         let url = "\(Constant.BASE_URL)/app/users"
         print("jwt is = \(jwt!)")
         
@@ -72,8 +72,8 @@ class ProfileDataManager{
                         //프로필 수정 성공 시
                         print("프로필 수정 response = \(response.code)" )
                         print("프로필 수정 jwt상태는 \(response.message)")
-                        
-                        
+                        // 화면 텍스트 업데이트
+                        delegate.updateMyAccount(userData: response)
                         // 유저 정보 로컬에 저장
                     }else {
                         //프로필 조회 불가

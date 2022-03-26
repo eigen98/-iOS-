@@ -207,6 +207,9 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button" image="img_setting_change_btn"/>
+                                <connections>
+                                    <action selector="changePhoneBtn:" destination="HJk-c3-mb3" eventType="touchUpInside" id="EbD-KL-8xe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wnK-Rs-ZbA">
                                 <rect key="frame" x="296" y="203" width="102" height="38"/>
@@ -218,6 +221,9 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button" image="img_setting_change_btn"/>
+                                <connections>
+                                    <action selector="changeEmailBtn:" destination="HJk-c3-mb3" eventType="touchUpInside" id="T2C-tX-wUO"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ajo-Kg-Or0">
                                 <rect key="frame" x="0.0" y="251" width="414" height="59"/>
@@ -287,6 +293,9 @@
                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="circle" catalog="system" title=""/>
+                                <connections>
+                                    <action selector="tapWomenBtn:" destination="HJk-c3-mb3" eventType="touchUpInside" id="Qxe-Ae-CnR"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="여성" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zrg-kz-blZ">
                                 <rect key="frame" x="114" y="377" width="25" height="17"/>
@@ -307,6 +316,9 @@
                                 <buttonConfiguration key="configuration" style="plain" image="record.circle" catalog="system" title="">
                                     <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tapManBtn:" destination="HJk-c3-mb3" eventType="touchUpInside" id="hDv-8F-0L5"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="남성" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1W-pF-tMf">
                                 <rect key="frame" x="195" y="376" width="25" height="17"/>
@@ -381,6 +393,14 @@
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="birthText" destination="Qom-jF-cMf" id="zAW-QT-Zv8"/>
+                        <outlet property="emailText" destination="EJB-H7-dBZ" id="tH1-9r-qYG"/>
+                        <outlet property="manBtn" destination="nhP-oj-cpf" id="qEO-dA-8yw"/>
+                        <outlet property="nameText" destination="80Q-Fg-Uqh" id="s16-jf-cmG"/>
+                        <outlet property="phoneText" destination="mCM-lb-DWC" id="fj0-IX-t5y"/>
+                        <outlet property="womanBtn" destination="kLh-ub-c5W" id="g9A-Jc-1h0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aWR-ab-ycU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

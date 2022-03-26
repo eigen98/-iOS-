@@ -12,12 +12,13 @@ class SettingViewController: BaseViewController ,MyProfileProtocol {
     func moveMyAccountSetting() {
         let myInfoStoryboard = UIStoryboard(name: "MyInfoStoryboard", bundle: nil)
         guard let myAccountVC = myInfoStoryboard.instantiateViewController(withIdentifier: "MyProfileSetViewController") as? MyProfileSetViewController else { return }
+        myAccountVC.userData = self.userData
         self.navigationController?.pushViewController(myAccountVC, animated: true)
     }
     
 
     //전 화면에서 받을 프로필 정보
-    let userData : ProfileResponse? = nil
+    var userData : ProfileResponse? = nil
     
     //테이블 뷰
     @IBOutlet weak var SettingTableView: UITableView!
