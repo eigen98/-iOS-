@@ -97,6 +97,21 @@
 		EEE2B8E427E82C2200A97E8E /* MyInfoNoLoginTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE2B8E227E82C2200A97E8E /* MyInfoNoLoginTableViewCell.swift */; };
 		EEE2B8E527E82C2200A97E8E /* MyInfoNoLoginTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE2B8E327E82C2200A97E8E /* MyInfoNoLoginTableViewCell.xib */; };
 		EEE2B8E927E8539800A97E8E /* MyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE2B8E827E8539800A97E8E /* MyInfoViewController.swift */; };
+		EEE95D2A27EF563B00860F15 /* ProfilePatchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE95D2927EF563B00860F15 /* ProfilePatchRequest.swift */; };
+		EEE95D2E27EF626200860F15 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE95D2D27EF626200860F15 /* SettingViewController.swift */; };
+		EEE95D3127EF63A400860F15 /* SettingProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE95D2F27EF63A400860F15 /* SettingProfileTableViewCell.swift */; };
+		EEE95D3227EF63A400860F15 /* SettingProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE95D3027EF63A400860F15 /* SettingProfileTableViewCell.xib */; };
+		EEE95D3527EF6EDC00860F15 /* MyAccountTabTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE95D3327EF6EDC00860F15 /* MyAccountTabTableViewCell.swift */; };
+		EEE95D3627EF6EDC00860F15 /* MyAccountTabTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE95D3427EF6EDC00860F15 /* MyAccountTabTableViewCell.xib */; };
+		EEE95D3927EF718100860F15 /* CreditCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE95D3727EF718100860F15 /* CreditCardTableViewCell.swift */; };
+		EEE95D3A27EF718100860F15 /* CreditCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE95D3827EF718100860F15 /* CreditCardTableViewCell.xib */; };
+		EEE95D3D27EF72C900860F15 /* RefundManageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE95D3B27EF72C900860F15 /* RefundManageTableViewCell.swift */; };
+		EEE95D3E27EF72C900860F15 /* RefundManageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE95D3C27EF72C900860F15 /* RefundManageTableViewCell.xib */; };
+		EEE95D4127EF72F000860F15 /* AlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE95D3F27EF72F000860F15 /* AlarmTableViewCell.swift */; };
+		EEE95D4227EF72F000860F15 /* AlarmTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE95D4027EF72F000860F15 /* AlarmTableViewCell.xib */; };
+		EEE95D4527EF730400860F15 /* LogOutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE95D4327EF730400860F15 /* LogOutTableViewCell.swift */; };
+		EEE95D4627EF730400860F15 /* LogOutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE95D4427EF730400860F15 /* LogOutTableViewCell.xib */; };
+		EEE95D4827EF7D3300860F15 /* MyProfileSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE95D4727EF7D3300860F15 /* MyProfileSetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -193,6 +208,21 @@
 		EEE2B8E227E82C2200A97E8E /* MyInfoNoLoginTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoNoLoginTableViewCell.swift; sourceTree = "<group>"; };
 		EEE2B8E327E82C2200A97E8E /* MyInfoNoLoginTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyInfoNoLoginTableViewCell.xib; sourceTree = "<group>"; };
 		EEE2B8E827E8539800A97E8E /* MyInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoViewController.swift; sourceTree = "<group>"; };
+		EEE95D2927EF563B00860F15 /* ProfilePatchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePatchRequest.swift; sourceTree = "<group>"; };
+		EEE95D2D27EF626200860F15 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		EEE95D2F27EF63A400860F15 /* SettingProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingProfileTableViewCell.swift; sourceTree = "<group>"; };
+		EEE95D3027EF63A400860F15 /* SettingProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingProfileTableViewCell.xib; sourceTree = "<group>"; };
+		EEE95D3327EF6EDC00860F15 /* MyAccountTabTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountTabTableViewCell.swift; sourceTree = "<group>"; };
+		EEE95D3427EF6EDC00860F15 /* MyAccountTabTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyAccountTabTableViewCell.xib; sourceTree = "<group>"; };
+		EEE95D3727EF718100860F15 /* CreditCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardTableViewCell.swift; sourceTree = "<group>"; };
+		EEE95D3827EF718100860F15 /* CreditCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditCardTableViewCell.xib; sourceTree = "<group>"; };
+		EEE95D3B27EF72C900860F15 /* RefundManageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefundManageTableViewCell.swift; sourceTree = "<group>"; };
+		EEE95D3C27EF72C900860F15 /* RefundManageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RefundManageTableViewCell.xib; sourceTree = "<group>"; };
+		EEE95D3F27EF72F000860F15 /* AlarmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmTableViewCell.swift; sourceTree = "<group>"; };
+		EEE95D4027EF72F000860F15 /* AlarmTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmTableViewCell.xib; sourceTree = "<group>"; };
+		EEE95D4327EF730400860F15 /* LogOutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutTableViewCell.swift; sourceTree = "<group>"; };
+		EEE95D4427EF730400860F15 /* LogOutTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogOutTableViewCell.xib; sourceTree = "<group>"; };
+		EEE95D4727EF7D3300860F15 /* MyProfileSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileSetViewController.swift; sourceTree = "<group>"; };
 		F2C5FFC6BBB74190F5BCFB71 /* Pods-idus-test-iOS-Aizen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-idus-test-iOS-Aizen.debug.xcconfig"; path = "Target Support Files/Pods-idus-test-iOS-Aizen/Pods-idus-test-iOS-Aizen.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -295,6 +325,7 @@
 		EE6551CD27EE2C2900BBCF90 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				EEE95D2827EF530800860F15 /* New Group */,
 				EE6551E227EE603000BBCF90 /* ProfileDataManager */,
 				EE6551DA27EE4A4A00BBCF90 /* LoginDataManager */,
 				EE6551CE27EE2CBE00BBCF90 /* SignUpDataManager */,
@@ -348,6 +379,7 @@
 			isa = PBXGroup;
 			children = (
 				EE6551E627EE608E00BBCF90 /* ProfileResponse.swift */,
+				EEE95D2927EF563B00860F15 /* ProfilePatchRequest.swift */,
 			);
 			path = ProfileEntity;
 			sourceTree = "<group>";
@@ -621,6 +653,7 @@
 		EEE2B8BB27E819B500A97E8E /* MyInfo */ = {
 			isa = PBXGroup;
 			children = (
+				EEE95D2B27EF5F4500860F15 /* Setting */,
 				EEE2B8C327E828FD00A97E8E /* cell */,
 				EEE2B8C127E81B9700A97E8E /* MyInfoStoryboard.storyboard */,
 				EEE2B8E827E8539800A97E8E /* MyInfoViewController.swift */,
@@ -658,6 +691,42 @@
 				EEE2B8E327E82C2200A97E8E /* MyInfoNoLoginTableViewCell.xib */,
 			);
 			path = cell;
+			sourceTree = "<group>";
+		};
+		EEE95D2827EF530800860F15 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		EEE95D2B27EF5F4500860F15 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				EEE95D2C27EF5F5300860F15 /* Cell */,
+				EEE95D2D27EF626200860F15 /* SettingViewController.swift */,
+				EEE95D4727EF7D3300860F15 /* MyProfileSetViewController.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		EEE95D2C27EF5F5300860F15 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EEE95D2F27EF63A400860F15 /* SettingProfileTableViewCell.swift */,
+				EEE95D3027EF63A400860F15 /* SettingProfileTableViewCell.xib */,
+				EEE95D3327EF6EDC00860F15 /* MyAccountTabTableViewCell.swift */,
+				EEE95D3427EF6EDC00860F15 /* MyAccountTabTableViewCell.xib */,
+				EEE95D3727EF718100860F15 /* CreditCardTableViewCell.swift */,
+				EEE95D3827EF718100860F15 /* CreditCardTableViewCell.xib */,
+				EEE95D3B27EF72C900860F15 /* RefundManageTableViewCell.swift */,
+				EEE95D3C27EF72C900860F15 /* RefundManageTableViewCell.xib */,
+				EEE95D3F27EF72F000860F15 /* AlarmTableViewCell.swift */,
+				EEE95D4027EF72F000860F15 /* AlarmTableViewCell.xib */,
+				EEE95D4327EF730400860F15 /* LogOutTableViewCell.swift */,
+				EEE95D4427EF730400860F15 /* LogOutTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -727,17 +796,21 @@
 				EEA2967027ED4CFA00D09ECB /* CommentTableViewCell.xib in Resources */,
 				EEE2B8CB27E8296200A97E8E /* MyInfoProfileTableViewCell.xib in Resources */,
 				EE8594C227EAF12F00F274A4 /* OnlyImageCollectionViewCell.xib in Resources */,
+				EEE95D3A27EF718100860F15 /* CreditCardTableViewCell.xib in Resources */,
 				EEA2965D27ED347000D09ECB /* ArticleInfoTableViewCell.xib in Resources */,
 				EEE2B8D727E82AD700A97E8E /* RecentTableViewCell.xib in Resources */,
 				EEDFFDAA27E6517300B572C3 /* NotoSansCJKkr-Medium.otf in Resources */,
 				EEE2B8DB27E82AF100A97E8E /* NoticeTableViewCell.xib in Resources */,
 				EEE2B8E127E82B6200A97E8E /* CorInfoTableViewCell.xib in Resources */,
 				EEDFFDA927E6517000B572C3 /* NotoSansCJKkr-Regular.otf in Resources */,
+				EEE95D3E27EF72C900860F15 /* RefundManageTableViewCell.xib in Resources */,
 				EEBEBEB627EC45E800037059 /* MiniCell.xib in Resources */,
+				EEE95D3227EF63A400860F15 /* SettingProfileTableViewCell.xib in Resources */,
 				EE42A92E27E9B23D00A4002F /* ArticleStoryboard.storyboard in Resources */,
 				EEDFFDA827E6516D00B572C3 /* NotoSansCJKkr-Bold.otf in Resources */,
 				EE3CC32B27EA12DB0075D5AA /* ClassStoryboard.storyboard in Resources */,
 				EE471CF327E9E76200C777C8 /* NewStoryboard.storyboard in Resources */,
+				EEE95D4227EF72F000860F15 /* AlarmTableViewCell.xib in Resources */,
 				EEA2967527ED4F8200D09ECB /* ArtistInfoTableViewCell.xib in Resources */,
 				EEBEBE9A27EC11E400037059 /* DetailStoryboard.storyboard in Resources */,
 				EED3AFF027E5AFD100C4DBC7 /* Assets.xcassets in Resources */,
@@ -748,10 +821,12 @@
 				EEB9569927ECACD40085C64C /* PostTableViewCell.xib in Resources */,
 				EEA2966127ED401B00D09ECB /* TabbarTableViewCell.xib in Resources */,
 				EE8594C627EAF30A00F274A4 /* NewCollectionViewCell.xib in Resources */,
+				EEE95D3627EF6EDC00860F15 /* MyAccountTabTableViewCell.xib in Resources */,
 				EEE2B8C227E81B9700A97E8E /* MyInfoStoryboard.storyboard in Resources */,
 				EEB9569427ECA37B0085C64C /* PriceTableViewCell.xib in Resources */,
 				EEE2B8D327E82A6F00A97E8E /* addBannerTableViewCell.xib in Resources */,
 				EED3AFEE27E5AFD100C4DBC7 /* Main.storyboard in Resources */,
+				EEE95D4627EF730400860F15 /* LogOutTableViewCell.xib in Resources */,
 				EEDFFD9B27E6398500B572C3 /* LoginStoryboard.storyboard in Resources */,
 				EEBEBEAE27EC45B700037059 /* MiniImageCollectionViewCell.xib in Resources */,
 				EEA2966527ED450500D09ECB /* InfoButtonTableViewCell.xib in Resources */,
@@ -810,6 +885,7 @@
 			files = (
 				EE6551E527EE605E00BBCF90 /* ProfileDataManager.swift in Sources */,
 				EE6551DF27EE4C4A00BBCF90 /* EmailLoginRequest.swift in Sources */,
+				EEE95D3927EF718100860F15 /* CreditCardTableViewCell.swift in Sources */,
 				EED3AFEB27E5AFD100C4DBC7 /* ViewController.swift in Sources */,
 				EEA2966427ED450500D09ECB /* InfoButtonTableViewCell.swift in Sources */,
 				EEE2B8E027E82B6200A97E8E /* CorInfoTableViewCell.swift in Sources */,
@@ -830,17 +906,21 @@
 				EE471CF127E9E6A700C777C8 /* NewViewController.swift in Sources */,
 				EEDFFDB027E6528100B572C3 /* UIColor.swift in Sources */,
 				EEA2967427ED4F8200D09ECB /* ArtistInfoTableViewCell.swift in Sources */,
+				EEE95D3527EF6EDC00860F15 /* MyAccountTabTableViewCell.swift in Sources */,
 				EE6551E127EE4C5800BBCF90 /* EmailLoginResponse.swift in Sources */,
 				EE3365EF27E772C4006DF058 /* EmailLoginViewController.swift in Sources */,
 				EED3AFE727E5AFD100C4DBC7 /* AppDelegate.swift in Sources */,
 				EEBEBEAD27EC45B700037059 /* MiniImageCollectionViewCell.swift in Sources */,
 				EE3CC34127EA13D30075D5AA /* OfflineViewController.swift in Sources */,
 				EE3CC33227EA13180075D5AA /* SearchViewController.swift in Sources */,
+				EEE95D4827EF7D3300860F15 /* MyProfileSetViewController.swift in Sources */,
+				EEE95D4527EF730400860F15 /* LogOutTableViewCell.swift in Sources */,
 				EEE2B8DA27E82AF100A97E8E /* NoticeTableViewCell.swift in Sources */,
 				EEA2966A27ED470F00D09ECB /* ReviewTableViewCell.swift in Sources */,
 				EE8594C127EAF12F00F274A4 /* OnlyImageCollectionViewCell.swift in Sources */,
 				EEE2B8CE27E82A4900A97E8E /* MyInfoPlusTableViewCell.swift in Sources */,
 				EEDFFDA027E645FF00B572C3 /* LoginMainViewController.swift in Sources */,
+				EEE95D4127EF72F000860F15 /* AlarmTableViewCell.swift in Sources */,
 				EEA2965C27ED347000D09ECB /* ArticleInfoTableViewCell.swift in Sources */,
 				EE6551D827EE314800BBCF90 /* SignUpResponse.swift in Sources */,
 				EEA2966F27ED4CFA00D09ECB /* CommentTableViewCell.swift in Sources */,
@@ -853,9 +933,13 @@
 				EE6551D327EE2DB700BBCF90 /* Constant.swift in Sources */,
 				EEA2966027ED401B00D09ECB /* TabbarTableViewCell.swift in Sources */,
 				EEDFFDB227E65E2D00B572C3 /* EmailSignUpViewController.swift in Sources */,
+				EEE95D2E27EF626200860F15 /* SettingViewController.swift in Sources */,
 				EEE2B8D227E82A6F00A97E8E /* addBannerTableViewCell.swift in Sources */,
+				EEE95D3D27EF72C900860F15 /* RefundManageTableViewCell.swift in Sources */,
 				EE6551D027EE2CDF00BBCF90 /* SignUpDataManager.swift in Sources */,
 				EEBEBEB527EC45E800037059 /* MiniCell.swift in Sources */,
+				EEE95D2A27EF563B00860F15 /* ProfilePatchRequest.swift in Sources */,
+				EEE95D3127EF63A400860F15 /* SettingProfileTableViewCell.swift in Sources */,
 				EE3CC32D27EA12EF0075D5AA /* ClassViewController.swift in Sources */,
 				EE6551D627EE313600BBCF90 /* SignUpRequest.swift in Sources */,
 				EEC9D32327EEDAA900520746 /* User.swift in Sources */,

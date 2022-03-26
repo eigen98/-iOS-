@@ -28,7 +28,16 @@ struct typeOfCell{
     }
 }
 
-class MyInfoViewController: BaseViewController {
+class MyInfoViewController: ViewController, SettingProtocol {
+    //???
+//    required init?(coder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+//    }
+//    //딜리게이트 패턴 사용
+//    init(proto : MyInfoProfileTableViewCell){
+//        proto.delegate = self
+//    }
+   //-> 셀 생성할 때 딜리게이트 적용
     
     //데이터 매니저
     let dataManager : ProfileDataManager = ProfileDataManager()
@@ -39,6 +48,16 @@ class MyInfoViewController: BaseViewController {
     var cellList = typeOfCell.generateData()
     //테이블 뷰
     @IBOutlet weak var myInfotableView: UITableView!
+    
+    
+    //세팅버튼 구현 프로토콜 메소드
+    func clickedSettingBtn() {
+        
+        let myInfoStoryboard = UIStoryboard(name: "MyInfoStoryboard", bundle: nil)
+        guard let settingVC = myInfoStoryboard.instantiateViewController(withIdentifier: "SettingViewController") as? SettingViewController else { return }
+        self.navigationController?.pushViewController(settingVC, animated: true)
+                
+    }
     
     
     override func viewWillAppear(_ animated: Bool) {
@@ -181,6 +200,7 @@ extension MyInfoViewController :UITableViewDelegate, UITableViewDataSource {
             }else {
                 if let cell = tableView.dequeueReusableCell(withIdentifier: "MyInfoProfileTableViewCell") as? MyInfoProfileTableViewCell {
                     
+                    cell.delegate = self //딜리게이트 적용
                     
                     return cell
                 }

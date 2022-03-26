@@ -6,9 +6,14 @@
 //
 
 import UIKit
+//설정 버튼 클릭 구현 프로토콜
+protocol SettingProtocol : AnyObject{
+    func clickedSettingBtn()
+}
 
 class MyInfoProfileTableViewCell: UITableViewCell {
 
+    var delegate : SettingProtocol?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,5 +24,8 @@ class MyInfoProfileTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+    //설정 버튼 클릭 리스너
+    @IBAction func tapSettingBtn(_ sender: UIButton) {
+        self.delegate?.clickedSettingBtn()
+    }
 }
