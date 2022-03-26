@@ -29,13 +29,23 @@ struct typeOfCell{
 }
 
 class MyInfoViewController: BaseViewController {
+    
+    //데이터 매니저
+    let dataManager : ProfileDataManager = ProfileDataManager()
+    
+    //서버에서 받아올 유저 프로필 정보
+    var userData : ProfileResponse?
 
     var cellList = typeOfCell.generateData()
     //테이블 뷰
     @IBOutlet weak var myInfotableView: UITableView!
     
-    // list
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.dataManager.getUserProfile(delegate: self)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -44,6 +54,7 @@ class MyInfoViewController: BaseViewController {
         
         
     
+        
         
 
         myInfotableView.delegate = self
@@ -90,6 +101,17 @@ class MyInfoViewController: BaseViewController {
     }
     
     @objc func moveInfo() {
+    }
+    // 프로필 정보 받아오기 성공시 호출되는 메소드
+    func didSuccessProfileRequest(response : ProfileResponse){
+        print("didSuccessProfileRequest")
+        print("response is = \(response.isSuccess)")
+        self.userData = response
+        //로그인 여부 확인 후 테이블뷰 업데이트
+        self.myInfotableView.reloadData()
+    }
+    func failProfileRequest(message : String){
+        self.presentAlert(title: message)
     }
         
     
@@ -149,11 +171,21 @@ extension MyInfoViewController :UITableViewDelegate, UITableViewDataSource {
             //프로필 섹션
             //enum case로 변경!!!
         case "MyInfoProfileTableViewCell":
-            if let cell = tableView.dequeueReusableCell(withIdentifier: "MyInfoProfileTableViewCell") as? MyInfoProfileTableViewCell {
-                
-                
-                return cell
+            print("로그인 성공 여부 = \(userData?.isSuccess)")
+            if(userData?.isSuccess == nil || userData?.isSuccess == false ){ //로그인 실패 시
+                if let cell = tableView.dequeueReusableCell(withIdentifier: "MyInfoNoLoginTableViewCell") as? MyInfoNoLoginTableViewCell {
+                    
+                    
+                    return cell
+                }
+            }else {
+                if let cell = tableView.dequeueReusableCell(withIdentifier: "MyInfoProfileTableViewCell") as? MyInfoProfileTableViewCell {
+                    
+                    
+                    return cell
+                }
             }
+            
                 
              //구현 안하는 탭 섹션
         case "MyInfoPlusTableViewCell" :

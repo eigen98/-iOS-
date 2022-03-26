@@ -24,8 +24,11 @@ class EmailLoginViewController: BaseViewController {
 
         // Do any additional setup after loading the view.
     }
+    //뒤로 가기 버튼 
+    @IBAction func tabBack(_ sender: UIButton) {
+        dismiss(animated: true)
+    }
     
-
     //로그인 버튼 리스너
     @IBAction func tapLogin(_ sender: UIButton) {
         if emailText.text == "" {
@@ -43,6 +46,7 @@ class EmailLoginViewController: BaseViewController {
     }
     func didSuccessLogin(){
         //로그인 성공시 메인 화면으로 넘어가기
+        
         let mainController = UIStoryboard(name: "MainStoryboard", bundle: nil).instantiateViewController(identifier: "MainTabbarController")
         changeRootViewController(mainController)
         print("로그인 성공")

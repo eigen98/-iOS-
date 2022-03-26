@@ -13,5 +13,5 @@ struct Constant{
     static let BASE_URL = "http://prod.idusb.shop:9000"
     
     //로그인에 필요한 JWT토큰
-    static let jwtToken = ""
+    static var jwtToken = ""
 }

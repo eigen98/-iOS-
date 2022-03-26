@@ -20,8 +20,16 @@ class LoginDataManager {
                 case .success(let response)://서버 연결 성공
                     
                     //로그인 성공
-                    if((response.isSuccess) != nil){
+                    if((response.isSuccess) != false){
                         delegate.didSuccessLogin()
+                        
+                        
+                        //토큰 저장 (키 체인 사용)
+                        let userIdx = response.result.userIdx
+                        let jwtToken = response.result.jwt
+                        KeyChainManager.shared.createUser(User(userIdx: userIdx, jwtToken: jwtToken))
+                        
+                        UserDefaults.standard.set(response.result.jwt, forKey: "jwtToken")
                     }else {//로그인 실패
                         if response.code == 3014{
                             delegate.failedLogin(message: "없는 아이디거나 비밀번호가 틀렸습니다.")
