@@ -35,6 +35,9 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="img_zzim_before"/>
+                                <connections>
+                                    <action selector="tapZzimBtn:" destination="gTV-IL-0wX" eventType="touchUpInside" id="ij3-SM-OGx"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="물품이름 abcalsdkf아러쟁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qpo-Yc-UFF">
                                 <rect key="frame" x="8" y="212" width="131" height="14.5"/>
@@ -53,12 +56,10 @@
                         <constraints>
                             <constraint firstItem="csq-sA-HMd" firstAttribute="leading" secondItem="CJ9-LY-Asr" secondAttribute="leading" id="6ba-T2-wF9"/>
                             <constraint firstAttribute="trailing" secondItem="csq-sA-HMd" secondAttribute="trailing" id="7Rm-69-Leb"/>
-                            <constraint firstAttribute="width" constant="184" id="MMi-Vs-11W"/>
                             <constraint firstItem="zTv-lz-gUs" firstAttribute="top" secondItem="csq-sA-HMd" secondAttribute="bottom" constant="8" id="Rfg-C9-fLa"/>
                             <constraint firstAttribute="trailing" secondItem="9Xa-iT-kKe" secondAttribute="trailing" constant="8" id="c1y-Sw-cwT"/>
                             <constraint firstItem="Qpo-Yc-UFF" firstAttribute="top" secondItem="zTv-lz-gUs" secondAttribute="bottom" constant="8" symbolic="YES" id="f3J-Bn-SFc"/>
                             <constraint firstItem="Qpo-Yc-UFF" firstAttribute="leading" secondItem="CJ9-LY-Asr" secondAttribute="leading" constant="8" id="gzh-0e-8KV"/>
-                            <constraint firstAttribute="height" constant="232" id="nbv-dr-g1Z"/>
                             <constraint firstItem="zTv-lz-gUs" firstAttribute="leading" secondItem="CJ9-LY-Asr" secondAttribute="leading" constant="8" id="ul2-Yr-FHg"/>
                             <constraint firstItem="9Xa-iT-kKe" firstAttribute="top" secondItem="CJ9-LY-Asr" secondAttribute="top" constant="8" id="vPF-h1-xMX"/>
                             <constraint firstItem="csq-sA-HMd" firstAttribute="top" secondItem="CJ9-LY-Asr" secondAttribute="top" id="yKI-4k-LkE"/>
@@ -78,6 +79,7 @@
                 <outlet property="articleName" destination="Qpo-Yc-UFF" id="haw-rH-IyI"/>
                 <outlet property="belong" destination="zTv-lz-gUs" id="Vpg-9u-GaH"/>
                 <outlet property="uiImageView" destination="csq-sA-HMd" id="ZEa-es-GvW"/>
+                <outlet property="zzimBtn" destination="9Xa-iT-kKe" id="K9P-KG-xYx"/>
             </connections>
             <point key="canvasLocation" x="246.37681159420291" y="150.66964285714286"/>
         </collectionViewCell>

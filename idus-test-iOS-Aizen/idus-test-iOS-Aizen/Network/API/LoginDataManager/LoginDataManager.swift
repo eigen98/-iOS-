@@ -30,6 +30,7 @@ class LoginDataManager {
                         KeyChainManager.shared.createUser(User(userIdx: userIdx, jwtToken: jwtToken))
                         
                         UserDefaults.standard.set(response.result.jwt, forKey: "jwtToken")
+                        
                     }else {//로그인 실패
                         if response.code == 3014{
                             delegate.failedLogin(message: "없는 아이디거나 비밀번호가 틀렸습니다.")

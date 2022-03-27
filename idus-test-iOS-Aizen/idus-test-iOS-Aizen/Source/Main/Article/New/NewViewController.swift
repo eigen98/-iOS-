@@ -8,35 +8,71 @@
 import UIKit
 import XLPagerTabStrip
 
-//임시 엔티티
-struct Article{
-    let articleName : String
-    let belong : String
-    let image : UIImage!
-    let isZzim : Bool
-    
-    static func createData() -> [Article] {
-        //임시 데이터
-        return
-        [
-            Article(articleName: "이미지만 볼게요", belong: "이미지만 볼게요", image: UIImage(named: "img_sample1"), isZzim: false),
-            Article(articleName: "아이오아이", belong: "ABC마트", image: UIImage(named: "img_sample1"), isZzim: false),
-            Article(articleName: "아이오아이", belong: "ABC마트", image: UIImage(named: "img_sample1"), isZzim: false),
-            Article(articleName: "아이오아이", belong: "ABC마트", image: UIImage(named: "img_sample1"), isZzim: false),
-            Article(articleName: "아이오아이", belong: "ABC마트", image: UIImage(named: "img_sample1"), isZzim: false)
-        ]
-    }
-}
 
-class NewViewController: UIViewController , IndicatorInfoProvider {
+
+class NewViewController: UIViewController , IndicatorInfoProvider, NewProtocol {
+    func checkOnlyImg() { //이미지만 볼래요 프로토콜 구현 메소드
+        print("이미지만 볼래요 메소드 호출")
+        //체크박스 여부 확인 후 셀 업데이트
+        if isCheckedOnly == false{
+            isCheckedOnly = true
+            
+        }else {
+            isCheckedOnly = false
+        }
+        newCollectionView.reloadData()
+        
+    }
+    
+    
+    func zzimListner(id : Int?) {// 찜 누르기 프로토콜 구현 메소드
+        
+        print("작품 \(id) 찜")
+        
+        if id == nil {
+            return
+        }
+        let articleID = id
+        var index = 0
+        //작품 아이디와 같은 데이터 찾기
+        var nowIndex = 0
+        self.articleData.forEach({it in
+            
+            if it.workId == articleID {
+                index = nowIndex
+            }
+            nowIndex += 1
+        })
+        
+        if self.articleData[index].interestStatus == 0 {
+            self.articleData[index].interestStatus = 1
+            self.newCollectionView.reloadData()
+        }else {
+            self.articleData[index].interestStatus = 0
+            self.newCollectionView.reloadData()
+        }
+        
+    }
+    
     var tabName: String = ""
 
-    //컬렉션 뷰에 나타낼 작품들
-    var cellData : [Article] = Article.createData()
-    
+    var isCheckedOnly : Bool = false
+
+    //받아올 작품 데이터
+    var articleData : [NewResult] = [NewResult]()
  
+    let dataManager = NewDataManager()
     //컬렉션 뷰
     @IBOutlet weak var newCollectionView: UICollectionView!
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        dataManager.getNewArticles(delegate: self)
+        (newCollectionView.collectionViewLayout as? UICollectionViewFlowLayout)?.estimatedItemSize = .zero
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,11 +99,18 @@ class NewViewController: UIViewController , IndicatorInfoProvider {
         return IndicatorInfo(title: "\(tabName)")
     }
     
+    //셀에 보여줄 작품 리스트 초기화
+    func didSuccessGetArticles(response : NewResponse){
+       
+        self.articleData =  response.result ?? [NewResult]()
+        self.newCollectionView.reloadData()
+    }
+    
     
     
 }
 
-extension NewViewController : UICollectionViewDelegate, UICollectionViewDataSource {
+extension NewViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 2
@@ -78,7 +121,7 @@ extension NewViewController : UICollectionViewDelegate, UICollectionViewDataSour
             return 1
         }else {
             
-            return self.cellData.count - 1
+            return self.articleData.count
         }
         
     }
@@ -87,13 +130,47 @@ extension NewViewController : UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         //첫번째 섹션일 때
         if indexPath.section == 0 {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OnlyImageCollectionViewCell", for: indexPath)
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OnlyImageCollectionViewCell", for: indexPath) as? OnlyImageCollectionViewCell else {
+                return UICollectionViewCell()
+            }
+            cell.delegate = self
             return cell
         }else{
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NewCollectionViewCell", for: indexPath)
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NewCollectionViewCell", for: indexPath) as? NewCollectionViewCell else { return UICollectionViewCell() }
+            //셀 정보 초기화
+            cell.delegate = self
+            cell.articleName.text = self.articleData[indexPath.row].title
+            cell.workId = self.articleData[indexPath.row].workId //찜 작품을 식별하기위한 id를 각 셀에 배정
+            let url = URL(string : self.articleData[indexPath.row].workImg)
+            cell.uiImageView.load(url: url!)
+            cell.belong.text = ""
+            if self.articleData[indexPath.row].interestStatus == 0 {
+                cell.zzimBtn.setImage(UIImage(named: "img_zzim"), for: .normal)
+            }else {
+                cell.zzimBtn.setImage(UIImage(named: "img_zzim_after"), for: .normal)
+            }
+            
+            
             return cell
         }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+          
+        if indexPath.section == 1{
+            if self.isCheckedOnly == true{
+                print("이미지만 보기 셀 크기 조절")
+                return CGSize(width: 182.0, height: 184.0)
+            }else{
+                print(" 셀 크기 조절")
+                return CGSize(width: 182.0, height: 232.0)
+            }
+            
+        }else {
+            return CGSize(width: 414.0, height: 72.0)
+        }
+    }
+    
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
