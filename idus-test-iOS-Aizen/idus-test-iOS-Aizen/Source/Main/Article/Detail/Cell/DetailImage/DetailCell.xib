@@ -44,6 +44,9 @@
                 <constraint firstItem="wBo-qm-cKP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="nE5-Dl-ONQ"/>
             </constraints>
             <size key="customSize" width="400" height="400"/>
+            <connections>
+                <outlet property="detailCellImage" destination="aD1-dv-Agd" id="Abb-47-tq7"/>
+            </connections>
             <point key="canvasLocation" x="385.50724637681162" y="78.348214285714278"/>
         </collectionViewCell>
     </objects>

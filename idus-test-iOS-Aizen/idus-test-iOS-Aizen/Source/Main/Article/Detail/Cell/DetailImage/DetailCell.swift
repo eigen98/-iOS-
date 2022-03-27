@@ -9,6 +9,8 @@ import UIKit
 
 class DetailCell: UICollectionViewCell {
 
+    @IBOutlet weak var detailCellImage: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

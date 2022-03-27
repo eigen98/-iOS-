@@ -172,10 +172,11 @@ extension NewViewController : UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     
-    
+    //셀 선택 이벤트
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("작품 상세 화면 호출")
-        let detailController = UIStoryboard(name: "DetailStoryboard", bundle: nil).instantiateViewController(identifier: "DetailViewControllerSB")
+        guard let detailController = UIStoryboard(name: "DetailStoryboard", bundle: nil).instantiateViewController(identifier: "DetailViewControllerSB") as? DetailViewController else { return }
+        detailController.articleIdThis = articleData[indexPath.row].workId //작품 아이디 전달
         changeRootViewController(detailController)
     }
     

@@ -14,8 +14,7 @@ class MiniImageCollectionViewCell: UITableViewCell {
 
     
     @IBOutlet weak var miniCollectionView: UICollectionView!
-    //임시 데이터
-    var tempData = TempPhoto.createData()
+
     
     let sectionInsets = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
     
@@ -42,7 +41,7 @@ extension MiniImageCollectionViewCell : UICollectionViewDelegate, UICollectionVi
     
     //섹션의 아이템 개수
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return tempData.count
+        return 3 // todo
     }
     func collectionView(_collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 //        let width = self.miniCollectionView.frame.width

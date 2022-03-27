@@ -12,6 +12,18 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var detailTableView: UITableView!
     
+    //데이터 매니저
+    let dataManager = DetailDataManager()
+    //서버에서 받을 작품 상세 데이터
+    var detailArticleData : ArticleDetailEntity? = nil
+    //이전 화면에서 받아올 작품 아이디
+    var articleIdThis : Int? = nil
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.dataManager.getDetailArticle(delegate: self, articleId: articleIdThis!)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,6 +86,14 @@ class DetailViewController: UIViewController {
         //작가님 정보 셀
         let artistInfoNib = UINib(nibName: "ArtistInfoTableViewCell", bundle: nil)
         self.detailTableView.register(artistInfoNib, forCellReuseIdentifier: "ArtistInfoTableViewCell")
+    }
+    
+    //작품 상세화면 요청 성공시 화면 업데이트 메소드
+    func didSuccessGetDetail(response : DetailResponse){
+        print("didSuccess")
+        self.detailArticleData = response.result?[0] ?? nil
+        self.detailTableView.reloadData()
+        
     }
     
     //디테일 네비게이션 바 (뒤로가기, 작품이름, 검색, 작품, 장바구니)
@@ -151,6 +171,7 @@ extension DetailViewController : UITableViewDataSource, UITableViewDelegate {
         switch indexPath.section {
         case 0: //사진 앨범 셀
             if let cell = tableView.dequeueReusableCell(withIdentifier: "DetailCollectionViewCell") as? DetailCollectionViewCell {
+                cell.detailImgList = self.detailArticleData?.imgs
                 return cell
             }
             

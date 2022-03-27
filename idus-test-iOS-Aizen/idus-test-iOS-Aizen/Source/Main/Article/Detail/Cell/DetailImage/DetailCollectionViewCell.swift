@@ -7,33 +7,19 @@
 
 import UIKit
 
-struct TempPhoto{
-    var name : String
-    
-    static func createData() -> [TempPhoto]{
-        return
-        [
-            TempPhoto(name: "a"),
-            TempPhoto(name: "b"),
-            TempPhoto(name: "c"),
-            TempPhoto(name: "d"),
-            TempPhoto(name: "d"),
-            TempPhoto(name: "d"),
-            TempPhoto(name: "d"),
-            
-        ]
-    }
-}
+
 
 //작품 상세 화면의 작품 이미지 넘겨보기
 class DetailCollectionViewCell: UITableViewCell{
     
+    //앨범에 들어갈 사진 URL배열
+    var detailImgList : [String]? = nil
 
     @IBOutlet weak var imageCollectionView: UICollectionView!
     
     let sectionInsets = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
-    //임시 데이터
-    var tempData = TempPhoto.createData()
+
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -63,11 +49,14 @@ extension DetailCollectionViewCell : UICollectionViewDataSource, UICollectionVie
     
     //셀 개수
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.tempData.count
+        return self.detailImgList?.count ?? 0
     }
     //셀 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "DetailCell", for: indexPath) as? DetailCell else { return UICollectionViewCell() }
+        
+        var url = URL(string: self.detailImgList?[indexPath.row] ?? "")!
+        cell.detailCellImage.load(url: url)//해당 url의 사진 로드
         return cell
     }
     
