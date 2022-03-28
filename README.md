@@ -176,3 +176,27 @@
 
 <br>
 
+### 2022/03/28 (월)
+|                           내용                           |                             비고                             |  완료 여부 |
+| :-------------------------------------------------------: | :----------------------------------------------------------: | :-------: |
+|          구매하기 레이아웃 구현              |                                          |      80%    |
+|          자동로그인 & 로그아웃 기능 추가                 |          keyChain에 저장된 토큰을 통해 api호출하여 자동 로그인 처리.          |      ✅     |
+
+<br>
+<details>
+  <summary>개발 현황</summary>
+  <div markdown="1">
+   
+<img width="390" alt="스크린샷 2022-03-28 오후 11 00 50" src="https://user-images.githubusercontent.com/68258365/160415075-229ee819-8208-47c1-9b8c-12e041a8ed98.png">
+
+
+<img width="397" alt="스크린샷 2022-03-28 오후 11 00 57" src="https://user-images.githubusercontent.com/68258365/160415027-4a2290ad-2eaf-4ee5-b0d2-ef35a014ee7f.png">
+
+<img width="405" alt="스크린샷 2022-03-28 오후 11 01 03" src="https://user-images.githubusercontent.com/68258365/160415043-0ee73022-e243-4b2e-9fb4-b62a52376472.png">
+
+
+    
+  </div>
+</details>
+
+<hr><br>
