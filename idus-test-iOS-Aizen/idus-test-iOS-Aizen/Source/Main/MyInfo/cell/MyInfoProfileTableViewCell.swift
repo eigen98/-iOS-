@@ -13,6 +13,8 @@ protocol SettingProtocol : AnyObject{
 
 class MyInfoProfileTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var nameText: UILabel!
+    
     var delegate : SettingProtocol?
     override func awakeFromNib() {
         super.awakeFromNib()

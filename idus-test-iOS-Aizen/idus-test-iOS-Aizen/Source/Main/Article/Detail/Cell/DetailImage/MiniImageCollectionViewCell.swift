@@ -12,6 +12,8 @@ import UIKit
 //작품 상세페이지의 작품 이미지 앨범의 컨트롤러(미리보기, 작은 이미지)
 class MiniImageCollectionViewCell: UITableViewCell {
 
+    //앨범에 들어갈 사진 URL배열
+    var detailImgList : [String]? = nil
     
     @IBOutlet weak var miniCollectionView: UICollectionView!
 
@@ -41,7 +43,7 @@ extension MiniImageCollectionViewCell : UICollectionViewDelegate, UICollectionVi
     
     //섹션의 아이템 개수
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3 // todo
+        return self.detailImgList?.count ?? 0
     }
     func collectionView(_collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 //        let width = self.miniCollectionView.frame.width
@@ -60,6 +62,9 @@ extension MiniImageCollectionViewCell : UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MiniCell", for: indexPath) as? MiniCell else { return UICollectionViewCell() }
+        
+        var url = URL(string: self.detailImgList?[indexPath.row] ?? "")!
+        cell.miniImageView.load(url: url)//해당 url의 사진 로드
         return cell
     }
     

@@ -9,6 +9,10 @@ import UIKit
 
 class SettingProfileTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var nameText: UILabel!
+    
+    @IBOutlet weak var emailText: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

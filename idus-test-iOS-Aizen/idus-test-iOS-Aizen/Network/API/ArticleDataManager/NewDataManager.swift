@@ -19,6 +19,7 @@ class NewDataManager{
         let url = "\(Constant.BASE_URL)/app/works/new"
         print("jwt is = \(jwt!)")
         
+        
         //"Content-Type":"application/json",
         let header: HTTPHeaders = ["X-ACCESS-TOKEN" : jwt!  ]
         

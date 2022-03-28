@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AFAEE23C5D1723F457F2D21F /* Pods_idus_test_iOS_Aizen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 063EC1EF1AD05E603772C333 /* Pods_idus_test_iOS_Aizen.framework */; };
+		8235E26C5663DE9951E2CD49 /* Pods_idus_test_iOS_Aizen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDB0FF13BFE3CEE8B16256F /* Pods_idus_test_iOS_Aizen.framework */; };
 		EE3365EF27E772C4006DF058 /* EmailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3365EE27E772C4006DF058 /* EmailLoginViewController.swift */; };
 		EE3CC32B27EA12DB0075D5AA /* ClassStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE3CC32A27EA12DB0075D5AA /* ClassStoryboard.storyboard */; };
 		EE3CC32D27EA12EF0075D5AA /* ClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CC32C27EA12EF0075D5AA /* ClassViewController.swift */; };
@@ -56,6 +56,8 @@
 		EEB9569427ECA37B0085C64C /* PriceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEB9569227ECA37B0085C64C /* PriceTableViewCell.xib */; };
 		EEB9569827ECACD40085C64C /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB9569627ECACD40085C64C /* PostTableViewCell.swift */; };
 		EEB9569927ECACD40085C64C /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEB9569727ECACD40085C64C /* PostTableViewCell.xib */; };
+		EEBAB38D27F16BA300A53A30 /* DirectBuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBAB38C27F16BA300A53A30 /* DirectBuyViewController.swift */; };
+		EEBAB38F27F16BDA00A53A30 /* OrderPayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBAB38E27F16BDA00A53A30 /* OrderPayViewController.swift */; };
 		EEBC6F9F27F0104E006F8072 /* NewDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBC6F9E27F0104E006F8072 /* NewDataManager.swift */; };
 		EEBC6FA327F0120D006F8072 /* NewResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBC6FA227F0120D006F8072 /* NewResponse.swift */; };
 		EEBC6FA527F0440C006F8072 /* NewResponseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBC6FA427F0440C006F8072 /* NewResponseList.swift */; };
@@ -120,11 +122,27 @@
 		EEE95D4527EF730400860F15 /* LogOutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE95D4327EF730400860F15 /* LogOutTableViewCell.swift */; };
 		EEE95D4627EF730400860F15 /* LogOutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE95D4427EF730400860F15 /* LogOutTableViewCell.xib */; };
 		EEE95D4827EF7D3300860F15 /* MyProfileSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE95D4727EF7D3300860F15 /* MyProfileSetViewController.swift */; };
+		EEFC9ABF27F11BAF000704D0 /* DetailBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFC9ABE27F11BAF000704D0 /* DetailBottomSheetViewController.swift */; };
+		EEFC9AC327F1267B000704D0 /* DetailBottomSheetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFC9AC127F1267B000704D0 /* DetailBottomSheetTableViewCell.swift */; };
+		EEFC9AC427F1267B000704D0 /* DetailBottomSheetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEFC9AC227F1267B000704D0 /* DetailBottomSheetTableViewCell.xib */; };
+		EEFC9ACB27F1537D000704D0 /* FirstCustomerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFC9AC927F1537D000704D0 /* FirstCustomerTableViewCell.swift */; };
+		EEFC9ACC27F1537D000704D0 /* FirstCustomerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEFC9ACA27F1537D000704D0 /* FirstCustomerTableViewCell.xib */; };
+		EEFC9ACF27F15513000704D0 /* SecondAddressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFC9ACD27F15513000704D0 /* SecondAddressTableViewCell.swift */; };
+		EEFC9AD027F15513000704D0 /* SecondAddressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEFC9ACE27F15513000704D0 /* SecondAddressTableViewCell.xib */; };
+		EEFC9AD327F15805000704D0 /* ThirdArticleInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFC9AD127F15805000704D0 /* ThirdArticleInfoTableViewCell.swift */; };
+		EEFC9AD427F15805000704D0 /* ThirdArticleInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEFC9AD227F15805000704D0 /* ThirdArticleInfoTableViewCell.xib */; };
+		EEFC9AD727F15884000704D0 /* FourthPayTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFC9AD527F15884000704D0 /* FourthPayTypeTableViewCell.swift */; };
+		EEFC9AD827F15884000704D0 /* FourthPayTypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEFC9AD627F15884000704D0 /* FourthPayTypeTableViewCell.xib */; };
+		EEFC9ADB27F158B5000704D0 /* FifthPayInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFC9AD927F158B5000704D0 /* FifthPayInfoTableViewCell.swift */; };
+		EEFC9ADC27F158B5000704D0 /* FifthPayInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEFC9ADA27F158B5000704D0 /* FifthPayInfoTableViewCell.xib */; };
+		EEFC9ADF27F158DB000704D0 /* SixthAgreeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFC9ADD27F158DB000704D0 /* SixthAgreeTableViewCell.swift */; };
+		EEFC9AE027F158DB000704D0 /* SixthAgreeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEFC9ADE27F158DB000704D0 /* SixthAgreeTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		063EC1EF1AD05E603772C333 /* Pods_idus_test_iOS_Aizen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_idus_test_iOS_Aizen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		27289B969A0813B7F676BD13 /* Pods-idus-test-iOS-Aizen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-idus-test-iOS-Aizen.release.xcconfig"; path = "Target Support Files/Pods-idus-test-iOS-Aizen/Pods-idus-test-iOS-Aizen.release.xcconfig"; sourceTree = "<group>"; };
+		7CDB0FF13BFE3CEE8B16256F /* Pods_idus_test_iOS_Aizen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_idus_test_iOS_Aizen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9891BBBE67D939487AA54A93 /* Pods-idus-test-iOS-Aizen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-idus-test-iOS-Aizen.release.xcconfig"; path = "Target Support Files/Pods-idus-test-iOS-Aizen/Pods-idus-test-iOS-Aizen.release.xcconfig"; sourceTree = "<group>"; };
+		B1CD12B4D5E4A8B60F313535 /* Pods-idus-test-iOS-Aizen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-idus-test-iOS-Aizen.debug.xcconfig"; path = "Target Support Files/Pods-idus-test-iOS-Aizen/Pods-idus-test-iOS-Aizen.debug.xcconfig"; sourceTree = "<group>"; };
 		EE3365EE27E772C4006DF058 /* EmailLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginViewController.swift; sourceTree = "<group>"; };
 		EE3CC32A27EA12DB0075D5AA /* ClassStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ClassStoryboard.storyboard; sourceTree = "<group>"; };
 		EE3CC32C27EA12EF0075D5AA /* ClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassViewController.swift; sourceTree = "<group>"; };
@@ -173,6 +191,8 @@
 		EEB9569227ECA37B0085C64C /* PriceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PriceTableViewCell.xib; sourceTree = "<group>"; };
 		EEB9569627ECACD40085C64C /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		EEB9569727ECACD40085C64C /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		EEBAB38C27F16BA300A53A30 /* DirectBuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectBuyViewController.swift; sourceTree = "<group>"; };
+		EEBAB38E27F16BDA00A53A30 /* OrderPayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderPayViewController.swift; sourceTree = "<group>"; };
 		EEBC6F9E27F0104E006F8072 /* NewDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDataManager.swift; sourceTree = "<group>"; };
 		EEBC6FA227F0120D006F8072 /* NewResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewResponse.swift; sourceTree = "<group>"; };
 		EEBC6FA427F0440C006F8072 /* NewResponseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewResponseList.swift; sourceTree = "<group>"; };
@@ -239,7 +259,21 @@
 		EEE95D4327EF730400860F15 /* LogOutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutTableViewCell.swift; sourceTree = "<group>"; };
 		EEE95D4427EF730400860F15 /* LogOutTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogOutTableViewCell.xib; sourceTree = "<group>"; };
 		EEE95D4727EF7D3300860F15 /* MyProfileSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileSetViewController.swift; sourceTree = "<group>"; };
-		F2C5FFC6BBB74190F5BCFB71 /* Pods-idus-test-iOS-Aizen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-idus-test-iOS-Aizen.debug.xcconfig"; path = "Target Support Files/Pods-idus-test-iOS-Aizen/Pods-idus-test-iOS-Aizen.debug.xcconfig"; sourceTree = "<group>"; };
+		EEFC9ABE27F11BAF000704D0 /* DetailBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBottomSheetViewController.swift; sourceTree = "<group>"; };
+		EEFC9AC127F1267B000704D0 /* DetailBottomSheetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBottomSheetTableViewCell.swift; sourceTree = "<group>"; };
+		EEFC9AC227F1267B000704D0 /* DetailBottomSheetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailBottomSheetTableViewCell.xib; sourceTree = "<group>"; };
+		EEFC9AC927F1537D000704D0 /* FirstCustomerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCustomerTableViewCell.swift; sourceTree = "<group>"; };
+		EEFC9ACA27F1537D000704D0 /* FirstCustomerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstCustomerTableViewCell.xib; sourceTree = "<group>"; };
+		EEFC9ACD27F15513000704D0 /* SecondAddressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondAddressTableViewCell.swift; sourceTree = "<group>"; };
+		EEFC9ACE27F15513000704D0 /* SecondAddressTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondAddressTableViewCell.xib; sourceTree = "<group>"; };
+		EEFC9AD127F15805000704D0 /* ThirdArticleInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdArticleInfoTableViewCell.swift; sourceTree = "<group>"; };
+		EEFC9AD227F15805000704D0 /* ThirdArticleInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdArticleInfoTableViewCell.xib; sourceTree = "<group>"; };
+		EEFC9AD527F15884000704D0 /* FourthPayTypeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthPayTypeTableViewCell.swift; sourceTree = "<group>"; };
+		EEFC9AD627F15884000704D0 /* FourthPayTypeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourthPayTypeTableViewCell.xib; sourceTree = "<group>"; };
+		EEFC9AD927F158B5000704D0 /* FifthPayInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthPayInfoTableViewCell.swift; sourceTree = "<group>"; };
+		EEFC9ADA27F158B5000704D0 /* FifthPayInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FifthPayInfoTableViewCell.xib; sourceTree = "<group>"; };
+		EEFC9ADD27F158DB000704D0 /* SixthAgreeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixthAgreeTableViewCell.swift; sourceTree = "<group>"; };
+		EEFC9ADE27F158DB000704D0 /* SixthAgreeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SixthAgreeTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,26 +281,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFAEE23C5D1723F457F2D21F /* Pods_idus_test_iOS_Aizen.framework in Frameworks */,
+				8235E26C5663DE9951E2CD49 /* Pods_idus_test_iOS_Aizen.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B9CA3B6D746D0CE52B50CB71 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				063EC1EF1AD05E603772C333 /* Pods_idus_test_iOS_Aizen.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		E5FCDB607B925105E13594F6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F2C5FFC6BBB74190F5BCFB71 /* Pods-idus-test-iOS-Aizen.debug.xcconfig */,
-				27289B969A0813B7F676BD13 /* Pods-idus-test-iOS-Aizen.release.xcconfig */,
+				B1CD12B4D5E4A8B60F313535 /* Pods-idus-test-iOS-Aizen.debug.xcconfig */,
+				9891BBBE67D939487AA54A93 /* Pods-idus-test-iOS-Aizen.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -534,6 +560,7 @@
 		EEBEBE9827EC119300037059 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				EEFC9AB927F119E8000704D0 /* Purchase */,
 				EEBEBE9B27EC122000037059 /* Cell */,
 				EEBEBE9927EC11E400037059 /* DetailStoryboard.storyboard */,
 				EEBEBE9C27EC1A2E00037059 /* DetailViewController.swift */,
@@ -573,7 +600,7 @@
 				EED3AFE527E5AFD100C4DBC7 /* idus-test-iOS-Aizen */,
 				EED3AFE427E5AFD100C4DBC7 /* Products */,
 				E5FCDB607B925105E13594F6 /* Pods */,
-				B9CA3B6D746D0CE52B50CB71 /* Frameworks */,
+				FB78CB83D397ACE6B7DFC3B1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -777,6 +804,62 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		EEFC9AB927F119E8000704D0 /* Purchase */ = {
+			isa = PBXGroup;
+			children = (
+				EEFC9AC727F15288000704D0 /* OrderPay */,
+				EEFC9AC027F12647000704D0 /* Cell */,
+				EEFC9ABE27F11BAF000704D0 /* DetailBottomSheetViewController.swift */,
+				EEBAB38C27F16BA300A53A30 /* DirectBuyViewController.swift */,
+			);
+			path = Purchase;
+			sourceTree = "<group>";
+		};
+		EEFC9AC027F12647000704D0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EEFC9AC127F1267B000704D0 /* DetailBottomSheetTableViewCell.swift */,
+				EEFC9AC227F1267B000704D0 /* DetailBottomSheetTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EEFC9AC727F15288000704D0 /* OrderPay */ = {
+			isa = PBXGroup;
+			children = (
+				EEFC9AC827F1529A000704D0 /* Cell */,
+				EEBAB38E27F16BDA00A53A30 /* OrderPayViewController.swift */,
+			);
+			path = OrderPay;
+			sourceTree = "<group>";
+		};
+		EEFC9AC827F1529A000704D0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EEFC9AC927F1537D000704D0 /* FirstCustomerTableViewCell.swift */,
+				EEFC9ACA27F1537D000704D0 /* FirstCustomerTableViewCell.xib */,
+				EEFC9ACD27F15513000704D0 /* SecondAddressTableViewCell.swift */,
+				EEFC9ACE27F15513000704D0 /* SecondAddressTableViewCell.xib */,
+				EEFC9AD127F15805000704D0 /* ThirdArticleInfoTableViewCell.swift */,
+				EEFC9AD227F15805000704D0 /* ThirdArticleInfoTableViewCell.xib */,
+				EEFC9AD527F15884000704D0 /* FourthPayTypeTableViewCell.swift */,
+				EEFC9AD627F15884000704D0 /* FourthPayTypeTableViewCell.xib */,
+				EEFC9AD927F158B5000704D0 /* FifthPayInfoTableViewCell.swift */,
+				EEFC9ADA27F158B5000704D0 /* FifthPayInfoTableViewCell.xib */,
+				EEFC9ADD27F158DB000704D0 /* SixthAgreeTableViewCell.swift */,
+				EEFC9ADE27F158DB000704D0 /* SixthAgreeTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FB78CB83D397ACE6B7DFC3B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CDB0FF13BFE3CEE8B16256F /* Pods_idus_test_iOS_Aizen.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -784,11 +867,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EED3AFF727E5AFD100C4DBC7 /* Build configuration list for PBXNativeTarget "idus-test-iOS-Aizen" */;
 			buildPhases = (
-				A173DB9F7D6E495AFF129D36 /* [CP] Check Pods Manifest.lock */,
+				288D673973673D0662C3CC02 /* [CP] Check Pods Manifest.lock */,
 				EED3AFDF27E5AFD100C4DBC7 /* Sources */,
 				EED3AFE027E5AFD100C4DBC7 /* Frameworks */,
 				EED3AFE127E5AFD100C4DBC7 /* Resources */,
-				C4A537E1F833F369012C9464 /* [CP] Embed Pods Frameworks */,
+				D73111D7E589BDF031A293BB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -845,6 +928,7 @@
 				EEE2B8CB27E8296200A97E8E /* MyInfoProfileTableViewCell.xib in Resources */,
 				EE8594C227EAF12F00F274A4 /* OnlyImageCollectionViewCell.xib in Resources */,
 				EEE95D3A27EF718100860F15 /* CreditCardTableViewCell.xib in Resources */,
+				EEFC9ADC27F158B5000704D0 /* FifthPayInfoTableViewCell.xib in Resources */,
 				EEA2965D27ED347000D09ECB /* ArticleInfoTableViewCell.xib in Resources */,
 				EEE2B8D727E82AD700A97E8E /* RecentTableViewCell.xib in Resources */,
 				EEDFFDAA27E6517300B572C3 /* NotoSansCJKkr-Medium.otf in Resources */,
@@ -862,20 +946,26 @@
 				EEA2967527ED4F8200D09ECB /* ArtistInfoTableViewCell.xib in Resources */,
 				EEBEBE9A27EC11E400037059 /* DetailStoryboard.storyboard in Resources */,
 				EED3AFF027E5AFD100C4DBC7 /* Assets.xcassets in Resources */,
+				EEFC9AC427F1267B000704D0 /* DetailBottomSheetTableViewCell.xib in Resources */,
+				EEFC9AD427F15805000704D0 /* ThirdArticleInfoTableViewCell.xib in Resources */,
 				EEE2B8E527E82C2200A97E8E /* MyInfoNoLoginTableViewCell.xib in Resources */,
 				EEE2B8C027E81A4C00A97E8E /* MainStoryboard.storyboard in Resources */,
 				EE3CC33527EA13340075D5AA /* CategoryStoryboard.storyboard in Resources */,
 				EEBEBEA427EC41C200037059 /* DetailCollectionViewCell.xib in Resources */,
 				EEB9569927ECACD40085C64C /* PostTableViewCell.xib in Resources */,
 				EEA2966127ED401B00D09ECB /* TabbarTableViewCell.xib in Resources */,
+				EEFC9AD027F15513000704D0 /* SecondAddressTableViewCell.xib in Resources */,
 				EE8594C627EAF30A00F274A4 /* NewCollectionViewCell.xib in Resources */,
 				EEE95D3627EF6EDC00860F15 /* MyAccountTabTableViewCell.xib in Resources */,
+				EEFC9AE027F158DB000704D0 /* SixthAgreeTableViewCell.xib in Resources */,
 				EEE2B8C227E81B9700A97E8E /* MyInfoStoryboard.storyboard in Resources */,
+				EEFC9AD827F15884000704D0 /* FourthPayTypeTableViewCell.xib in Resources */,
 				EEB9569427ECA37B0085C64C /* PriceTableViewCell.xib in Resources */,
 				EEE2B8D327E82A6F00A97E8E /* addBannerTableViewCell.xib in Resources */,
 				EED3AFEE27E5AFD100C4DBC7 /* Main.storyboard in Resources */,
 				EEE95D4627EF730400860F15 /* LogOutTableViewCell.xib in Resources */,
 				EEDFFD9B27E6398500B572C3 /* LoginStoryboard.storyboard in Resources */,
+				EEFC9ACC27F1537D000704D0 /* FirstCustomerTableViewCell.xib in Resources */,
 				EEBEBEAE27EC45B700037059 /* MiniImageCollectionViewCell.xib in Resources */,
 				EEA2966527ED450500D09ECB /* InfoButtonTableViewCell.xib in Resources */,
 				EEBEBEB227EC45D300037059 /* DetailCell.xib in Resources */,
@@ -885,7 +975,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A173DB9F7D6E495AFF129D36 /* [CP] Check Pods Manifest.lock */ = {
+		288D673973673D0662C3CC02 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -907,7 +997,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C4A537E1F833F369012C9464 /* [CP] Embed Pods Frameworks */ = {
+		D73111D7E589BDF031A293BB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -943,10 +1033,12 @@
 				EEDFFD9E27E645B500B572C3 /* BaseViewController.swift in Sources */,
 				EE3CC33727EA13420075D5AA /* CategoryViewController.swift in Sources */,
 				EEBC6FA527F0440C006F8072 /* NewResponseList.swift in Sources */,
+				EEFC9AD727F15884000704D0 /* FourthPayTypeTableViewCell.swift in Sources */,
 				EEB9569327ECA37B0085C64C /* PriceTableViewCell.swift in Sources */,
 				EEE2B8CA27E8296200A97E8E /* MyInfoProfileTableViewCell.swift in Sources */,
 				EEB9569827ECACD40085C64C /* PostTableViewCell.swift in Sources */,
 				EEDFFDA327E64E4B00B572C3 /* UIViewController.swift in Sources */,
+				EEFC9ADB27F158B5000704D0 /* FifthPayInfoTableViewCell.swift in Sources */,
 				EEBC6FA327F0120D006F8072 /* NewResponse.swift in Sources */,
 				EE42A93227E9B53100A4002F /* ParentViewController.swift in Sources */,
 				EEE2B8E427E82C2200A97E8E /* MyInfoNoLoginTableViewCell.swift in Sources */,
@@ -954,10 +1046,13 @@
 				EE6551DD27EE4BFA00BBCF90 /* LoginDataManager.swift in Sources */,
 				EEDFFDAC27E6520C00B572C3 /* UIFont.swift in Sources */,
 				EEC9D32127EED6DE00520746 /* KeyChainManager.swift in Sources */,
+				EEFC9ACB27F1537D000704D0 /* FirstCustomerTableViewCell.swift in Sources */,
 				EE471CF127E9E6A700C777C8 /* NewViewController.swift in Sources */,
 				EEDFFDB027E6528100B572C3 /* UIColor.swift in Sources */,
+				EEBAB38F27F16BDA00A53A30 /* OrderPayViewController.swift in Sources */,
 				EEA2967427ED4F8200D09ECB /* ArtistInfoTableViewCell.swift in Sources */,
 				EE643FC827F0875E00935857 /* DetailResponse.swift in Sources */,
+				EEFC9AC327F1267B000704D0 /* DetailBottomSheetTableViewCell.swift in Sources */,
 				EEE95D3527EF6EDC00860F15 /* MyAccountTabTableViewCell.swift in Sources */,
 				EE6551E127EE4C5800BBCF90 /* EmailLoginResponse.swift in Sources */,
 				EE3365EF27E772C4006DF058 /* EmailLoginViewController.swift in Sources */,
@@ -974,8 +1069,11 @@
 				EE8594C127EAF12F00F274A4 /* OnlyImageCollectionViewCell.swift in Sources */,
 				EEE2B8CE27E82A4900A97E8E /* MyInfoPlusTableViewCell.swift in Sources */,
 				EEDFFDA027E645FF00B572C3 /* LoginMainViewController.swift in Sources */,
+				EEFC9ABF27F11BAF000704D0 /* DetailBottomSheetViewController.swift in Sources */,
 				EEE95D4127EF72F000860F15 /* AlarmTableViewCell.swift in Sources */,
+				EEBAB38D27F16BA300A53A30 /* DirectBuyViewController.swift in Sources */,
 				EEA2965C27ED347000D09ECB /* ArticleInfoTableViewCell.swift in Sources */,
+				EEFC9ACF27F15513000704D0 /* SecondAddressTableViewCell.swift in Sources */,
 				EE6551D827EE314800BBCF90 /* SignUpResponse.swift in Sources */,
 				EE643FCC27F08D0500935857 /* ReviewResponse.swift in Sources */,
 				EEA2966F27ED4CFA00D09ECB /* CommentTableViewCell.swift in Sources */,
@@ -989,11 +1087,13 @@
 				EEA2966027ED401B00D09ECB /* TabbarTableViewCell.swift in Sources */,
 				EEDFFDB227E65E2D00B572C3 /* EmailSignUpViewController.swift in Sources */,
 				EEE95D2E27EF626200860F15 /* SettingViewController.swift in Sources */,
+				EEFC9ADF27F158DB000704D0 /* SixthAgreeTableViewCell.swift in Sources */,
 				EEE2B8D227E82A6F00A97E8E /* addBannerTableViewCell.swift in Sources */,
 				EEE95D3D27EF72C900860F15 /* RefundManageTableViewCell.swift in Sources */,
 				EE6551D027EE2CDF00BBCF90 /* SignUpDataManager.swift in Sources */,
 				EEBEBEB527EC45E800037059 /* MiniCell.swift in Sources */,
 				EEE95D2A27EF563B00860F15 /* ProfilePatchRequest.swift in Sources */,
+				EEFC9AD327F15805000704D0 /* ThirdArticleInfoTableViewCell.swift in Sources */,
 				EEE95D3127EF63A400860F15 /* SettingProfileTableViewCell.swift in Sources */,
 				EE643FCE27F08F9E00935857 /* DetailDataManager.swift in Sources */,
 				EE3CC32D27EA12EF0075D5AA /* ClassViewController.swift in Sources */,
@@ -1144,7 +1244,7 @@
 		};
 		EED3AFF827E5AFD100C4DBC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2C5FFC6BBB74190F5BCFB71 /* Pods-idus-test-iOS-Aizen.debug.xcconfig */;
+			baseConfigurationReference = B1CD12B4D5E4A8B60F313535 /* Pods-idus-test-iOS-Aizen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1175,7 +1275,7 @@
 		};
 		EED3AFF927E5AFD100C4DBC7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27289B969A0813B7F676BD13 /* Pods-idus-test-iOS-Aizen.release.xcconfig */;
+			baseConfigurationReference = 9891BBBE67D939487AA54A93 /* Pods-idus-test-iOS-Aizen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

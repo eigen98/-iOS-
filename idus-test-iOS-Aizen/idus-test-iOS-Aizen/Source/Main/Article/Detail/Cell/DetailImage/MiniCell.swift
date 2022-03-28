@@ -9,6 +9,8 @@ import UIKit
 
 class MiniCell: UICollectionViewCell {
 
+    @IBOutlet weak var miniImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

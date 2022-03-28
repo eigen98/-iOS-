@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="259" id="KGk-i7-Jjw" customClass="ThirdArticleInfoTableViewCell" customModule="idus_test_iOS_Aizen" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="259"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="259"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cp9-YZ-TGX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="259"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Seo-CS-1Aj">
+                                <rect key="frame" x="386" y="13" width="12" height="8"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="8" id="hTP-3q-U6e"/>
+                                    <constraint firstAttribute="width" constant="12" id="lk0-m3-gKG"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="" image="chevron.up" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9SU-BT-Krr">
+                                <rect key="frame" x="152" y="8" width="235" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="0Oh-Vu-HnI"/>
+                                    <constraint firstAttribute="width" constant="235" id="nBe-aJ-eZK"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="(특가) 하트빛 데일리 올써지컬스틸 목걸이">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="0.0"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9SU-BT-Krr" secondAttribute="trailing" constant="27" id="8pf-2h-QGf"/>
+                            <constraint firstItem="Seo-CS-1Aj" firstAttribute="top" secondItem="cp9-YZ-TGX" secondAttribute="top" constant="13" id="BRa-Fd-R67"/>
+                            <constraint firstAttribute="trailing" secondItem="Seo-CS-1Aj" secondAttribute="trailing" constant="16" id="S2J-au-D6e"/>
+                            <constraint firstItem="9SU-BT-Krr" firstAttribute="top" secondItem="cp9-YZ-TGX" secondAttribute="top" constant="8" id="XI8-tF-lyI"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주문 작품 정보" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Dk-Oc-3U4">
+                        <rect key="frame" x="8" y="8" width="80" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="cp9-YZ-TGX" secondAttribute="bottom" id="1nT-Lr-pco"/>
+                    <constraint firstItem="9Dk-Oc-3U4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="5kj-Oh-OHg"/>
+                    <constraint firstAttribute="trailing" secondItem="cp9-YZ-TGX" secondAttribute="trailing" id="AB0-R2-GxI"/>
+                    <constraint firstItem="cp9-YZ-TGX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="HA2-lR-bI9"/>
+                    <constraint firstItem="9Dk-Oc-3U4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="gjH-64-hlt"/>
+                    <constraint firstItem="cp9-YZ-TGX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="h6A-Ff-6tG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="200.00000000000003" y="150.33482142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chevron.up" catalog="system" width="128" height="72"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

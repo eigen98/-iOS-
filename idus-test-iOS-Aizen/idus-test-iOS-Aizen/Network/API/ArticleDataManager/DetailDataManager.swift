@@ -31,7 +31,7 @@ class DetailDataManager{
                 case .success(let response): //서버 정상
                     if(response.isSuccess != false){
                         //
-                        print("New탭 조회 response = \(response.code)" )
+                        print("Detail 조회 response = \(response.code)" )
                         print(" = \(response.isSuccess)")
                         
                         delegate.didSuccessGetDetail(response: response)

@@ -10,6 +10,7 @@ import Alamofire
 
 class LoginDataManager {
     
+    let keyChainManager = KeyChainManager.shared
     //이메일 로그인
     //로그인 api -> Post 방식 (/app/users/login)
     func loginPost(_ parameters : EmailLoginRequest, delegate: EmailLoginViewController){
@@ -27,9 +28,13 @@ class LoginDataManager {
                         //토큰 저장 (키 체인 사용)
                         let userIdx = response.result.userIdx
                         let jwtToken = response.result.jwt
-                        KeyChainManager.shared.createUser(User(userIdx: userIdx, jwtToken: jwtToken))
+                        //키체인에 유저의 jwt토큰과 정보 저장
+                        //??? 새롭게 생성되는건가? 있다면 그대로 있는걸까?
+                        print("로그인 정보 저장 중")
+                        self.keyChainManager.createUser(User(userIdx: userIdx, jwtToken: jwtToken))
                         
-                        UserDefaults.standard.set(response.result.jwt, forKey: "jwtToken")
+                        
+                       // UserDefaults.standard.set(response.result.jwt, forKey: "jwtToken")
                         
                     }else {//로그인 실패
                         if response.code == 3014{
@@ -50,5 +55,7 @@ class LoginDataManager {
                 
             }
     }
+    
+    
     
 }

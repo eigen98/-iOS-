@@ -48,6 +48,9 @@
                 <constraint firstItem="bH3-9N-LG4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="udI-fO-udy"/>
             </constraints>
             <size key="customSize" width="48" height="48"/>
+            <connections>
+                <outlet property="miniImageView" destination="lUz-HH-t6Q" id="Th5-hD-5RB"/>
+            </connections>
             <point key="canvasLocation" x="130.43478260869566" y="60.9375"/>
         </collectionViewCell>
     </objects>

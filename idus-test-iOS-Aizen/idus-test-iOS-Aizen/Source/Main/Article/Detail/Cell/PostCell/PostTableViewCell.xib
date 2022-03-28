@@ -163,12 +163,14 @@
                             <constraint firstItem="kDi-eK-Kfg" firstAttribute="top" secondItem="AhG-W0-5Xr" secondAttribute="top" constant="16" id="iJo-YD-KjM"/>
                             <constraint firstItem="v6c-7W-1Th" firstAttribute="top" secondItem="AhG-W0-5Xr" secondAttribute="top" constant="20" id="mxO-vO-tHq"/>
                             <constraint firstItem="P9C-oe-sAK" firstAttribute="leading" secondItem="AhG-W0-5Xr" secondAttribute="leading" constant="16" id="pWA-xN-tJg"/>
+                            <constraint firstAttribute="width" constant="414" id="rzy-NQ-wge"/>
                             <constraint firstAttribute="trailing" secondItem="16U-WO-eiQ" secondAttribute="trailing" constant="16" id="tZ7-tO-omo"/>
                             <constraint firstItem="xzb-o0-hxi" firstAttribute="top" secondItem="AhG-W0-5Xr" secondAttribute="top" constant="16" id="tek-EC-X3b"/>
                             <constraint firstItem="bz2-LH-Bhy" firstAttribute="leading" secondItem="AhG-W0-5Xr" secondAttribute="leading" constant="16" id="tfa-KR-t9A"/>
                             <constraint firstItem="i5R-7s-UG6" firstAttribute="top" secondItem="bz2-LH-Bhy" secondAttribute="bottom" constant="14" id="uDI-4X-DxZ"/>
                             <constraint firstItem="Yia-MW-b9i" firstAttribute="top" secondItem="AhG-W0-5Xr" secondAttribute="top" constant="16" id="uP0-vt-B2C"/>
                             <constraint firstItem="i5R-7s-UG6" firstAttribute="leading" secondItem="AhG-W0-5Xr" secondAttribute="leading" constant="16" id="vCP-f1-zbj"/>
+                            <constraint firstAttribute="height" constant="265" id="xqw-28-66x"/>
                         </constraints>
                     </view>
                 </subviews>

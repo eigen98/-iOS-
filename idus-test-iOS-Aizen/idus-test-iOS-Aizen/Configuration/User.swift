@@ -10,4 +10,5 @@ import Foundation
 struct User : Codable{
     let userIdx : Int
     let jwtToken : String
+
 }

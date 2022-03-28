@@ -9,10 +9,12 @@ import Foundation
 
 //상세화면 엔티티
 struct DetailResponse : Codable{
+    
     var result : [ArticleDetailEntity]?
     var isSuccess : Bool
     var code : Int
     var message : String
+    
 }
 
 struct ArticleDetailEntity : Codable {

@@ -7,8 +7,13 @@
 
 import UIKit
 
+protocol LogoutProtocol{
+    func logOutNow()
+}
 class LogOutTableViewCell: UITableViewCell {
 
+    var delegate : LogoutProtocol? = nil
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,5 +24,10 @@ class LogOutTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+    //로그아웃
+    @IBAction func tapLogoutBtn(_ sender: UIButton) {
+        print("로그아웃 버튼 탭")
+        delegate?.logOutNow()
+        
+    }
 }

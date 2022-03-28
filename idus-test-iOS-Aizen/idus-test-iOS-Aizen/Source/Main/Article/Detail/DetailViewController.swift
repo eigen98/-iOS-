@@ -7,8 +7,25 @@
 
 import UIKit
 import XLPagerTabStrip
+import MaterialComponents
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, StartBuyProtocol {
+    
+    
+    
+    var isBuying : Bool = false
+    
+    func isClickedBtnBuy() {
+        self.isBuying = true
+        print("isBuying 변경 \(isBuying)")
+        
+        DispatchQueue.main.async( execute: {
+            self.moveDirectBuy()
+        })
+        }
+        
+    
+    
 
     @IBOutlet weak var detailTableView: UITableView!
     
@@ -22,7 +39,29 @@ class DetailViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.dataManager.getDetailArticle(delegate: self, articleId: articleIdThis!)
+        if isBuying == false{
+            self.dataManager.getDetailArticle(delegate: self, articleId: articleIdThis!)
+        }
+        
+    }
+    func moveDirectBuy(){
+        if isBuying == true{
+            print("구입중인가? \(isBuying)")
+            definesPresentationContext = true
+//            let detailStoryboard = UIStoryboard(name: "DetailStoryboard", bundle: nil)
+            guard let directBuyVC = storyboard?.instantiateViewController(withIdentifier: "DirectBuyViewController") as? DirectBuyViewController else { return
+                print("DirectBuy 생성 실패")
+            }
+            
+            //self.navigationController?.pushViewController(directBuyVC, animated: true)
+            directBuyVC.modalPresentationStyle = .fullScreen
+            self.present(directBuyVC, animated: true, completion: nil)
+        }
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        
     }
     
     override func viewDidLoad() {
@@ -91,10 +130,38 @@ class DetailViewController: UIViewController {
     //작품 상세화면 요청 성공시 화면 업데이트 메소드
     func didSuccessGetDetail(response : DetailResponse){
         print("didSuccess")
-        self.detailArticleData = response.result?[0] ?? nil
+        if response.result != nil {
+            let index = response.result?.count ?? 1 - 1
+            self.detailArticleData = response.result?.last
+        }
+        
         self.detailTableView.reloadData()
         
     }
+    //Mark : 구입하기
+    //구입하기 버튼 클릭 리스너
+    @IBAction func tapPurchaseBtn(_ sender: UIButton) {
+        print("구입하기 버튼 클릭")
+        //바텀 시트로 쓰일 뷰 컨트롤러
+        let bottomSheetVC = storyboard?.instantiateViewController(withIdentifier: "DetailBottomSheetVC") as! DetailBottomSheetViewController
+        bottomSheetVC.buyDelegate = self //구매하기 누른 뒤 데이터 전달을 위한 딜리게이트
+        
+        //MDC 바텀 시트로 설정
+        let bottomSheet : MDCBottomSheetController = MDCBottomSheetController(contentViewController: bottomSheetVC)
+        bottomSheet.delegate = self
+        present(bottomSheet,animated: true, completion: nil)
+        
+        //보여지는 정도를 조절
+        bottomSheet.mdc_bottomSheetPresentationController?.preferredSheetHeight = 550
+    }
+    @IBAction func tapBackBtn(_ sender: UIBarButtonItem) {
+       
+        let mainController = UIStoryboard(name: "MainStoryboard", bundle: nil).instantiateViewController(identifier: "MainTabbarController")
+        changeRootViewController(mainController)
+        print("back to the main")
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     
     //디테일 네비게이션 바 (뒤로가기, 작품이름, 검색, 작품, 장바구니)
     func initNavi(){
@@ -158,9 +225,7 @@ extension DetailViewController : UITableViewDataSource, UITableViewDelegate {
         //첫번째 섹션의 헤더 공간 없애기
         if section == 0 {
             return nil
-        }else if section == 1 {
-            return nil
-        }else if section == 2{
+        }else if section == 1 || section == 2 || section == 4 || section == 5 {
             return nil
         }
            return " "
@@ -235,13 +300,13 @@ extension DetailViewController : UITableViewDataSource, UITableViewDelegate {
      case 2://
          return 400
      case 3:
-         return 240
+         return 265
      case 4:
-         return 180
+         return 50
      case 5:
-         return 400
+         return 251
      case 6:
-         return 400
+         return 235
      case 7:
          return 235
      case 8:
@@ -262,3 +327,15 @@ extension DetailViewController : UITableViewDataSource, UITableViewDelegate {
     
     
 }
+
+extension DetailViewController : MDCBottomSheetControllerDelegate{
+    func bottomSheetControllerDidDismissBottomSheet(_ controller: MDCBottomSheetController) {
+        print("바텀 시트 닫힘")
+        self.moveDirectBuy()
+    }
+    func bottomSheetControllerStateChanged(_ controller: MDCBottomSheetController, state: MDCSheetState) {
+        
+    
+    }
+}
+

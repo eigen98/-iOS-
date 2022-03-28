@@ -77,9 +77,14 @@ class MyProfileSetViewController: BaseViewController {
         initCheckboxGender(gender: userData.result?.gender ?? 0 )
     }
     @IBAction func changePhoneBtn(_ sender: UIButton) {
-        self.presentAlert(title: "전화번호 인증", message: "아이디어스 계정 연동 전화번호를 입력해주세요", isCancelActionIncluded: true, preferredStyle: .alert, handler: {_ in
+        presentEmailAlert(title: "변경하기", message: "아이디어스 계정 연동 전화번호를 입력해주세요", holder: nil, isCancelActionIncluded: true, preferredStyle: .alert, handler: {_ in
             
         })
+        
+        
+//        self.presentAlert(title: "전화번호 인증", message: "아이디어스 계정 연동 전화번호를 입력해주세요", isCancelActionIncluded: true, preferredStyle: .alert, handler: {_ in
+//
+//        })
     }
     
     // MARK: 취소와 확인, 입력창이 뜨는 UIAlertController
@@ -111,7 +116,7 @@ class MyProfileSetViewController: BaseViewController {
     
     //이메일 변경하기
     @IBAction func changeEmailBtn(_ sender: UIButton) {
-        presentEmailAlert(title: "변경하기", message: "\(self.userData?.result?.email)", holder: nil, isCancelActionIncluded: true, preferredStyle: .alert, handler: {_ in
+        presentEmailAlert(title: "변경하기", message: "\(self.userData?.result!.email)에서 변경할 이메일을 입력해주세요", holder: nil, isCancelActionIncluded: true, preferredStyle: .alert, handler: {_ in
             
         })
         

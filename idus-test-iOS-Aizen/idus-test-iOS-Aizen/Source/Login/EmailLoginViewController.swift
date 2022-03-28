@@ -44,6 +44,7 @@ class EmailLoginViewController: BaseViewController {
         dataManager.loginPost(parameter, delegate: self)
         
     }
+    
     func didSuccessLogin(){
         //로그인 성공시 메인 화면으로 넘어가기
         

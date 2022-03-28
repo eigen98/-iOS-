@@ -392,7 +392,6 @@
                             <constraint firstItem="ajo-Kg-Or0" firstAttribute="top" secondItem="dpi-ta-zKn" secondAttribute="bottom" id="ywO-Rg-guK"/>
                         </constraints>
                     </view>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="birthText" destination="Qom-jF-cMf" id="zAW-QT-Zv8"/>
                         <outlet property="emailText" destination="EJB-H7-dBZ" id="tH1-9r-qYG"/>

@@ -20,7 +20,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CJ9-LY-Asr">
                         <rect key="frame" x="0.0" y="0.0" width="184" height="232"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_sample1" translatesAutoresizingMaskIntoConstraints="NO" id="csq-sA-HMd">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="csq-sA-HMd">
                                 <rect key="frame" x="0.0" y="0.0" width="184" height="184"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="184" id="AF1-qk-MPg"/>
@@ -85,7 +85,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="img_sample1" width="312" height="314"/>
         <image name="img_zzim_before" width="47" height="44"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

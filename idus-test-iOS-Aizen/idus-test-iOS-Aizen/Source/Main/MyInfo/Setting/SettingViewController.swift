@@ -7,7 +7,7 @@
 
 import UIKit
 //내 정보 -> 설정(톱니) 버튼
-class SettingViewController: BaseViewController ,MyProfileProtocol {
+class SettingViewController: BaseViewController ,MyProfileProtocol{
     //프로토콜 메소드
     func moveMyAccountSetting() {
         let myInfoStoryboard = UIStoryboard(name: "MyInfoStoryboard", bundle: nil)
@@ -104,7 +104,12 @@ extension SettingViewController : UITableViewDelegate, UITableViewDataSource{
         switch indexPath.section {
         case 0 :
             if let cell = tableView.dequeueReusableCell(withIdentifier: "SettingProfileTableViewCell") as? SettingProfileTableViewCell {
+               
+                cell.nameText.text = userData?.result?.name
+                cell.emailText.text = userData?.result?.email
+                
                 return cell
+                
             }
         case 1:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "MyAccountTabTableViewCell") as? MyAccountTabTableViewCell {
@@ -126,6 +131,7 @@ extension SettingViewController : UITableViewDelegate, UITableViewDataSource{
             }
         case 5:
             if let cell = tableView.dequeueReusableCell(withIdentifier: "LogOutTableViewCell") as? LogOutTableViewCell {
+                cell.delegate = self //딜리게이트 설정
                 return cell
             }
             
@@ -140,6 +146,25 @@ extension SettingViewController : UITableViewDelegate, UITableViewDataSource{
         return 0.3
     }
     
+    
+    
+}
+extension SettingViewController : LogoutProtocol {
+    
+    
+    func logOutNow() {
+        
+        
+        //데이터 삭제
+        
+        KeyChainManager.shared.deleteUser()
+        
+        //로그인화면으로  전환
+        let loginController = UIStoryboard(name: "LoginStoryboard", bundle: nil).instantiateViewController(identifier: "LoginMainViewController")
+        changeRootViewController(loginController)
+        
+        //self.dismiss(animated: false, completion: nil)
+    }
     
     
 }

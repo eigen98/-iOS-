@@ -11,10 +11,20 @@ class LoginMainViewController: BaseViewController {
 
     @IBOutlet weak var anotherLoginBtn: UIButton!
     
+    let dataManager = ProfileDataManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the vie
+        //자동 로그인 시도
+        dataManager.isAleadyLogin(delegate: self)
+    }
+    func didLogin(response : ProfileResponse){
+        print("자동로그인 실행")
+        let mainController = UIStoryboard(name: "MainStoryboard", bundle: nil).instantiateViewController(identifier: "MainTabbarController")
+        changeRootViewController(mainController)
+        print("로그인 성공")
         
     }
     

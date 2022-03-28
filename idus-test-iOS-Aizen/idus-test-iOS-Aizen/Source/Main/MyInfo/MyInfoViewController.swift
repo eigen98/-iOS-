@@ -202,6 +202,8 @@ extension MyInfoViewController :UITableViewDelegate, UITableViewDataSource {
                 if let cell = tableView.dequeueReusableCell(withIdentifier: "MyInfoProfileTableViewCell") as? MyInfoProfileTableViewCell {
                     
                     cell.delegate = self //딜리게이트 적용
+                    cell.nameText.text = userData?.result?.name
+                    
                     
                     return cell
                 }

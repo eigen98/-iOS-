@@ -19,22 +19,33 @@
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MEV-lg-hHH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKJ-V9-X0O">
+                                <rect key="frame" x="16" y="20" width="288" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="73I-CP-TZg"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="로그아웃                                                                                     ">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tapLogoutBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="UAp-1M-oRB"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="71" id="Ila-KJ-uBE"/>
+                            <constraint firstAttribute="trailing" secondItem="EKJ-V9-X0O" secondAttribute="trailing" constant="16" id="RzJ-dq-2E3"/>
+                            <constraint firstItem="EKJ-V9-X0O" firstAttribute="centerY" secondItem="MEV-lg-hHH" secondAttribute="centerY" id="qav-aW-pJo"/>
+                            <constraint firstItem="EKJ-V9-X0O" firstAttribute="leading" secondItem="MEV-lg-hHH" secondAttribute="leading" constant="16" id="vTN-1K-Nne"/>
                             <constraint firstAttribute="width" constant="320" id="w0K-Fd-EOJ"/>
                         </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="로그아웃" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Wf-r1-LiG">
-                        <rect key="frame" x="16" y="24" width="59" height="21"/>
-                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                        <color key="textColor" systemColor="systemOrangeColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="5Wf-r1-LiG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="CqP-Cj-olX"/>
-                    <constraint firstItem="5Wf-r1-LiG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="QXY-5a-Gzl"/>
                     <constraint firstAttribute="bottom" secondItem="MEV-lg-hHH" secondAttribute="bottom" id="UEh-ee-izT"/>
                     <constraint firstAttribute="trailing" secondItem="MEV-lg-hHH" secondAttribute="trailing" id="YCg-bK-X1r"/>
                     <constraint firstItem="MEV-lg-hHH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="f9G-wh-d7B"/>
