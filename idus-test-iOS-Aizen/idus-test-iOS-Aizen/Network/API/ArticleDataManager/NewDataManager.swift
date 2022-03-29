@@ -10,12 +10,13 @@ import Alamofire
 
 class NewDataManager{
     
-    //로컬에 저장된 jwt토큰
-    var jwt = KeyChainManager.shared.readUser()?.jwtToken
     
     
     //New탭 작품 조회
     func getNewArticles(delegate: NewViewController) {
+        //로컬에 저장된 jwt토큰
+        var jwt = KeyChainManager.shared.readUser()?.jwtToken
+        
         let url = "\(Constant.BASE_URL)/app/works/new"
         print("jwt is = \(jwt!)")
         

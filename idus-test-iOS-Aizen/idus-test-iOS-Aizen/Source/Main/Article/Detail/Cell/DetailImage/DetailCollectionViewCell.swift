@@ -30,10 +30,12 @@ class DetailCollectionViewCell: UITableViewCell{
         
         imageCollectionView.dataSource = self
         imageCollectionView.delegate = self
+        
+        print(" album count is \(detailImgList?.count)")
         let imgNIB = UINib(nibName: "DetailCell", bundle: nil)
         self.imageCollectionView.register(imgNIB, forCellWithReuseIdentifier: "DetailCell")
         
-        
+        imageCollectionView.reloadData()
         //스크롤 바 안 보이기
         //한장씩 넘어가게 만들기
         
@@ -55,7 +57,8 @@ extension DetailCollectionViewCell : UICollectionViewDataSource, UICollectionVie
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "DetailCell", for: indexPath) as? DetailCell else { return UICollectionViewCell() }
         
-        var url = URL(string: self.detailImgList?[indexPath.row] ?? "")!
+        let url = URL(string: self.detailImgList?[indexPath.row] ?? "")!
+        print("album url is = \(self.detailImgList?[indexPath.row])")
         cell.detailCellImage.load(url: url)//해당 url의 사진 로드
         return cell
     }

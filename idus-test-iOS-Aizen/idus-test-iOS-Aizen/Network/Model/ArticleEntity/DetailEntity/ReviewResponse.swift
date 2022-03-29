@@ -13,5 +13,5 @@ struct ReviewResponse : Codable {
     var star : Float
     var createdAt : String
     var content : String
-    var reviewImg : String
+    var reviewImg : String?
 }

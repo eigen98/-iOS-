@@ -40,9 +40,9 @@ class DetailViewController: UIViewController, StartBuyProtocol {
         super.viewWillAppear(animated)
         
         if isBuying == false{
-            self.dataManager.getDetailArticle(delegate: self, articleId: articleIdThis!)
+            
         }
-        
+        self.dataManager.getDetailArticle(delegate: self, articleId: articleIdThis!)
     }
     func moveDirectBuy(){
         if isBuying == true{
@@ -131,8 +131,9 @@ class DetailViewController: UIViewController, StartBuyProtocol {
     func didSuccessGetDetail(response : DetailResponse){
         print("didSuccess")
         if response.result != nil {
-            let index = response.result?.count ?? 1 - 1
-            self.detailArticleData = response.result?.last
+            let index = response.result
+            self.detailArticleData = response.result
+            print("detailArticleData is \(detailArticleData?.workId)")
         }
         
         self.detailTableView.reloadData()
@@ -237,11 +238,15 @@ extension DetailViewController : UITableViewDataSource, UITableViewDelegate {
         case 0: //사진 앨범 셀
             if let cell = tableView.dequeueReusableCell(withIdentifier: "DetailCollectionViewCell") as? DetailCollectionViewCell {
                 cell.detailImgList = self.detailArticleData?.imgs
+                print("detail controller's \(self.detailArticleData?.workId)")
+                print("detail controller's \(self.detailArticleData?.imgs.count)")
                 return cell
             }
             
         case 1 ://미니 앨범
             if let cell = tableView.dequeueReusableCell(withIdentifier: "MiniImageCollectionViewCell") as? MiniImageCollectionViewCell {
+                print("detail controller's \(self.detailArticleData?.imgs.count)")
+                cell.detailImgList = self.detailArticleData!.imgs
                 return cell
             }
             

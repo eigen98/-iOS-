@@ -52,6 +52,8 @@
 		EEA2967027ED4CFA00D09ECB /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEA2966E27ED4CFA00D09ECB /* CommentTableViewCell.xib */; };
 		EEA2967427ED4F8200D09ECB /* ArtistInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA2967227ED4F8200D09ECB /* ArtistInfoTableViewCell.swift */; };
 		EEA2967527ED4F8200D09ECB /* ArtistInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEA2967327ED4F8200D09ECB /* ArtistInfoTableViewCell.xib */; };
+		EEB8494327F1FCA900C7F085 /* ZzimDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB8494227F1FCA900C7F085 /* ZzimDataManager.swift */; };
+		EEB8494627F1FD2400C7F085 /* ZzimResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB8494527F1FD2400C7F085 /* ZzimResponse.swift */; };
 		EEB9569327ECA37B0085C64C /* PriceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB9569127ECA37B0085C64C /* PriceTableViewCell.swift */; };
 		EEB9569427ECA37B0085C64C /* PriceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEB9569227ECA37B0085C64C /* PriceTableViewCell.xib */; };
 		EEB9569827ECACD40085C64C /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB9569627ECACD40085C64C /* PostTableViewCell.swift */; };
@@ -187,6 +189,8 @@
 		EEA2966E27ED4CFA00D09ECB /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
 		EEA2967227ED4F8200D09ECB /* ArtistInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistInfoTableViewCell.swift; sourceTree = "<group>"; };
 		EEA2967327ED4F8200D09ECB /* ArtistInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtistInfoTableViewCell.xib; sourceTree = "<group>"; };
+		EEB8494227F1FCA900C7F085 /* ZzimDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZzimDataManager.swift; sourceTree = "<group>"; };
+		EEB8494527F1FD2400C7F085 /* ZzimResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZzimResponse.swift; sourceTree = "<group>"; };
 		EEB9569127ECA37B0085C64C /* PriceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTableViewCell.swift; sourceTree = "<group>"; };
 		EEB9569227ECA37B0085C64C /* PriceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PriceTableViewCell.xib; sourceTree = "<group>"; };
 		EEB9569627ECACD40085C64C /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
@@ -367,6 +371,7 @@
 		EE6551CC27EE2B3A00BBCF90 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EEB8494427F1FCBF00C7F085 /* ZzimEntity */,
 				EEBC6FA027F01055006F8072 /* ArticleEntity */,
 				EE6551E327EE604900BBCF90 /* ProfileEntity */,
 				EE6551DB27EE4B3C00BBCF90 /* LoginEntity */,
@@ -378,6 +383,7 @@
 		EE6551CD27EE2C2900BBCF90 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				EEB8494127F1FC5400C7F085 /* ZzimDataManager */,
 				EEE95D2827EF530800860F15 /* ArticleDataManager */,
 				EE6551E227EE603000BBCF90 /* ProfileDataManager */,
 				EE6551DA27EE4A4A00BBCF90 /* LoginDataManager */,
@@ -497,6 +503,22 @@
 				EEA2967327ED4F8200D09ECB /* ArtistInfoTableViewCell.xib */,
 			);
 			path = artistInfo;
+			sourceTree = "<group>";
+		};
+		EEB8494127F1FC5400C7F085 /* ZzimDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				EEB8494227F1FCA900C7F085 /* ZzimDataManager.swift */,
+			);
+			path = ZzimDataManager;
+			sourceTree = "<group>";
+		};
+		EEB8494427F1FCBF00C7F085 /* ZzimEntity */ = {
+			isa = PBXGroup;
+			children = (
+				EEB8494527F1FD2400C7F085 /* ZzimResponse.swift */,
+			);
+			path = ZzimEntity;
 			sourceTree = "<group>";
 		};
 		EEB9569027EC9C890085C64C /* DetailPriceCell */ = {
@@ -1049,6 +1071,7 @@
 				EEFC9ACB27F1537D000704D0 /* FirstCustomerTableViewCell.swift in Sources */,
 				EE471CF127E9E6A700C777C8 /* NewViewController.swift in Sources */,
 				EEDFFDB027E6528100B572C3 /* UIColor.swift in Sources */,
+				EEB8494327F1FCA900C7F085 /* ZzimDataManager.swift in Sources */,
 				EEBAB38F27F16BDA00A53A30 /* OrderPayViewController.swift in Sources */,
 				EEA2967427ED4F8200D09ECB /* ArtistInfoTableViewCell.swift in Sources */,
 				EE643FC827F0875E00935857 /* DetailResponse.swift in Sources */,
@@ -1094,6 +1117,7 @@
 				EEBEBEB527EC45E800037059 /* MiniCell.swift in Sources */,
 				EEE95D2A27EF563B00860F15 /* ProfilePatchRequest.swift in Sources */,
 				EEFC9AD327F15805000704D0 /* ThirdArticleInfoTableViewCell.swift in Sources */,
+				EEB8494627F1FD2400C7F085 /* ZzimResponse.swift in Sources */,
 				EEE95D3127EF63A400860F15 /* SettingProfileTableViewCell.swift in Sources */,
 				EE643FCE27F08F9E00935857 /* DetailDataManager.swift in Sources */,
 				EE3CC32D27EA12EF0075D5AA /* ClassViewController.swift in Sources */,

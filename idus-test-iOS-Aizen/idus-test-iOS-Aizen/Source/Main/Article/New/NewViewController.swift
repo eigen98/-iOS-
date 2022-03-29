@@ -11,8 +11,12 @@ import XLPagerTabStrip
 
 
 class NewViewController: UIViewController , IndicatorInfoProvider, NewProtocol {
+    
+    let zzimDataManager = ZzimDataManager() //찜 관련 데이터 매니저
+    
     func checkOnlyImg() { //이미지만 볼래요 프로토콜 구현 메소드
         print("이미지만 볼래요 메소드 호출")
+        
         //체크박스 여부 확인 후 셀 업데이트
         if isCheckedOnly == false{
             isCheckedOnly = true
@@ -32,6 +36,7 @@ class NewViewController: UIViewController , IndicatorInfoProvider, NewProtocol {
         if id == nil {
             return
         }
+        
         let articleID = id
         var index = 0
         //작품 아이디와 같은 데이터 찾기
@@ -43,6 +48,8 @@ class NewViewController: UIViewController , IndicatorInfoProvider, NewProtocol {
             }
             nowIndex += 1
         })
+        //Mark : Zzim DataManager
+        zzimDataManager.zzimStart(delegate: self, articleId: articleID!)
         
         if self.articleData[index].interestStatus == 0 {
             self.articleData[index].interestStatus = 1
@@ -53,6 +60,8 @@ class NewViewController: UIViewController , IndicatorInfoProvider, NewProtocol {
         }
         
     }
+    
+    
     
     var tabName: String = ""
 
@@ -84,7 +93,9 @@ class NewViewController: UIViewController , IndicatorInfoProvider, NewProtocol {
         
         //xib 셀 등록
         let onlyImageXib = UINib(nibName: "OnlyImageCollectionViewCell", bundle: nil)
+        
         self.newCollectionView.register(onlyImageXib, forCellWithReuseIdentifier: "OnlyImageCollectionViewCell")
+        
         let newXib = UINib(nibName: "NewCollectionViewCell", bundle: nil)
         self.newCollectionView.register(newXib, forCellWithReuseIdentifier: "NewCollectionViewCell")
     
