@@ -10,6 +10,10 @@ import UIKit
 class OrderPayViewController: UIViewController {
 
     @IBOutlet weak var payTableView: UITableView!
+    //데이터 매니저
+    let dataManager = PurchaseDataManager()
+    //구매할 작품 정보
+    var articleData : ArticleDetailEntity? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +51,14 @@ class OrderPayViewController: UIViewController {
         
     }
     
+
+    //결제하기 버튼
+    @IBAction func tapPayBtn(_ sender: UIButton) {
+        self.presentAlert(title: "결제되었습니다.")
+        self.dataManager.purchaseGet(delegate: self, articleId: self.articleData!.workId)
+        
+        
+    }
 }
 
 extension OrderPayViewController : UITableViewDelegate, UITableViewDataSource {

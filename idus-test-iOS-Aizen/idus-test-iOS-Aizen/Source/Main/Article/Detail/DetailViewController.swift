@@ -91,6 +91,7 @@ class DetailViewController: UIViewController, StartBuyProtocol, AlbumPageObserve
             guard let directBuyVC = storyboard?.instantiateViewController(withIdentifier: "DirectBuyViewController") as? DirectBuyViewController else { return
                 print("DirectBuy 생성 실패")
             }
+            directBuyVC.articleData = self.detailArticleData //작품 정보를 다음 바로결제 화면으로 넘겨줌
             
             //self.navigationController?.pushViewController(directBuyVC, animated: true)
             directBuyVC.modalPresentationStyle = .fullScreen
@@ -404,6 +405,7 @@ extension DetailViewController : MDCBottomSheetControllerDelegate{
         print("바텀 시트 닫힘")
         self.moveDirectBuy()
     }
+    
     func bottomSheetControllerStateChanged(_ controller: MDCBottomSheetController, state: MDCSheetState) {
         
     

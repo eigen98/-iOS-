@@ -8,6 +8,9 @@
 import UIKit
 
 class DirectBuyViewController: UIViewController {
+    
+    //상세화면에서 받아올 작품 정보
+    var articleData : ArticleDetailEntity? = nil
 
     @IBOutlet weak var contentText: UITextView!
     
@@ -23,6 +26,7 @@ class DirectBuyViewController: UIViewController {
     @IBAction func tapOrderArticleBtn(_ sender: UIButton) {
         //let detailStoryboard = UIStoryboard(name: "DetailStoryboard", bundle: nil)
         guard let orderPayBuyVC = self.storyboard?.instantiateViewController(withIdentifier: "OrderPayViewController") as? OrderPayViewController else { return }
+        orderPayBuyVC.articleData = self.articleData //넘겨받은 작품 정보를 다음 결제 화면에 넘겨줌
         orderPayBuyVC.modalPresentationStyle = .fullScreen
         present(orderPayBuyVC, animated: true, completion: nil)
         

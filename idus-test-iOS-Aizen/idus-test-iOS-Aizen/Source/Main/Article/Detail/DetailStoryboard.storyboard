@@ -1151,6 +1151,9 @@
                                 <color key="tintColor" systemColor="systemOrangeColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="tapPayBtn:" destination="mc9-BP-qp4" eventType="touchUpInside" id="OJK-xm-sLr"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Sob-Tu-8NW">
                                 <rect key="frame" x="73" y="751" width="268.5" height="26.5"/>

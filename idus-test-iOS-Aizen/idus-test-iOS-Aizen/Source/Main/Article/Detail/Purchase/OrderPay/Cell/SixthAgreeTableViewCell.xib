@@ -19,7 +19,36 @@
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PQO-Hi-TTc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="190"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lQ4-pn-w69">
+                                <rect key="frame" x="379" y="13" width="19" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="19" id="32c-X9-6fm"/>
+                                    <constraint firstAttribute="height" constant="22" id="7hw-GW-c0j"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="chevron.down" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSN-Qa-7sb">
+                                <rect key="frame" x="330" y="8" width="49" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="닫기"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e35-8u-gzv">
+                                <rect key="frame" x="8" y="38" width="398" height="144"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lQ4-pn-w69" secondAttribute="trailing" constant="16" id="G4m-vg-oua"/>
+                            <constraint firstItem="e35-8u-gzv" firstAttribute="top" secondItem="lQ4-pn-w69" secondAttribute="bottom" constant="3" id="HPA-g6-TK9"/>
+                            <constraint firstItem="YSN-Qa-7sb" firstAttribute="top" secondItem="PQO-Hi-TTc" secondAttribute="top" constant="8" id="Se0-7i-Cwt"/>
+                            <constraint firstAttribute="bottom" secondItem="e35-8u-gzv" secondAttribute="bottom" constant="8" id="VdR-gQ-ajo"/>
+                            <constraint firstItem="lQ4-pn-w69" firstAttribute="leading" secondItem="YSN-Qa-7sb" secondAttribute="trailing" id="XbD-iY-IJm"/>
+                            <constraint firstAttribute="trailing" secondItem="e35-8u-gzv" secondAttribute="trailing" constant="8" id="cVS-Ds-6g7"/>
+                            <constraint firstItem="lQ4-pn-w69" firstAttribute="top" secondItem="PQO-Hi-TTc" secondAttribute="top" constant="13" id="qJw-Fx-qOE"/>
+                            <constraint firstItem="e35-8u-gzv" firstAttribute="leading" secondItem="PQO-Hi-TTc" secondAttribute="leading" constant="8" id="uWe-qo-anx"/>
+                        </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="결제 시 개인정보 제공에 동의합니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pS8-hV-2bP">
                         <rect key="frame" x="10" y="10" width="201" height="17"/>
@@ -41,6 +70,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="chevron.down" catalog="system" width="128" height="72"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
