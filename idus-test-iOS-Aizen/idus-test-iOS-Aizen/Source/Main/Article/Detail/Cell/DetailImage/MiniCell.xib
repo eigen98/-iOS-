@@ -21,21 +21,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_sample2" translatesAutoresizingMaskIntoConstraints="NO" id="lUz-HH-t6Q">
-                                <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="EKo-Yp-UDe"/>
-                                    <constraint firstAttribute="width" constant="48" id="HPd-2h-Aer"/>
-                                </constraints>
+                                <rect key="frame" x="2" y="2" width="44" height="44"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="48" id="3Ap-cy-ZIM"/>
                             <constraint firstAttribute="height" constant="48" id="5bC-to-rvJ"/>
-                            <constraint firstItem="lUz-HH-t6Q" firstAttribute="leading" secondItem="bH3-9N-LG4" secondAttribute="leading" id="B8L-AG-GeG"/>
-                            <constraint firstAttribute="bottom" secondItem="lUz-HH-t6Q" secondAttribute="bottom" id="Efv-WU-tzH"/>
-                            <constraint firstItem="lUz-HH-t6Q" firstAttribute="top" secondItem="bH3-9N-LG4" secondAttribute="top" id="S1K-XJ-THx"/>
-                            <constraint firstAttribute="trailing" secondItem="lUz-HH-t6Q" secondAttribute="trailing" id="dRb-tm-Z34"/>
+                            <constraint firstItem="lUz-HH-t6Q" firstAttribute="leading" secondItem="bH3-9N-LG4" secondAttribute="leading" constant="2" id="B8L-AG-GeG"/>
+                            <constraint firstAttribute="bottom" secondItem="lUz-HH-t6Q" secondAttribute="bottom" constant="2" id="Efv-WU-tzH"/>
+                            <constraint firstItem="lUz-HH-t6Q" firstAttribute="top" secondItem="bH3-9N-LG4" secondAttribute="top" constant="2" id="S1K-XJ-THx"/>
+                            <constraint firstAttribute="trailing" secondItem="lUz-HH-t6Q" secondAttribute="trailing" constant="2" id="dRb-tm-Z34"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -49,6 +45,7 @@
             </constraints>
             <size key="customSize" width="48" height="48"/>
             <connections>
+                <outlet property="cellBackGround" destination="bH3-9N-LG4" id="98a-ye-pTg"/>
                 <outlet property="miniImageView" destination="lUz-HH-t6Q" id="Th5-hD-5RB"/>
             </connections>
             <point key="canvasLocation" x="130.43478260869566" y="60.9375"/>

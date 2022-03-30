@@ -10,8 +10,50 @@ import UIKit
 
 
 //작품 상세페이지의 작품 이미지 앨범의 컨트롤러(미리보기, 작은 이미지)
-class MiniImageCollectionViewCell: UITableViewCell {
+class MiniImageCollectionViewCell: UITableViewCell, CollectionInTableProtocol, AlbumPageObserver, AlbumPageDelegate{
+    
+    
+    //옵저버 패턴 구현
+    var observers: [AlbumPageObserver] = [AlbumPageObserver]()
+    
+    func pagingFromDetail(nowPage: Int) {
+        print("미니앨범에서 확인한 앨범의 페이지는 \(nowPage)")
+        self.currentCellIndexPath = [0,nowPage]
+        self.miniCollectionView.scrollToItem(at: [0,nowPage] , at: .left ,  animated: true)
+        self.miniCollectionView.reloadData()
+        
+    }
+    
+    var currentCellIndexPath : IndexPath = [0,0]
+    
+    
+    func pagingFromMiniToAlbum(selectedPage : Int){
+        notify(pageIndex: selectedPage)
+    }
+    
+    
+   
+    
+    //옵저버 패턴 -> 현재 미니앨범의 페이지 업데이트 정보 전달
+    var who: String = "miniAlbum"
+    func updateAlbum(pageIndex: Int) -> Int {
+        print("\(who)의 페이지는 \(pageIndex)")
+        return pageIndex
+    }
+    
+    
+    
+    //딜리게이트 함수 구현
+    func transferDataInCollection(data: [String]) {
+        self.detailImgList = data
+        self.miniCollectionView.reloadData()
+    }
+    
 
+   
+    
+    
+    
     //앨범에 들어갈 사진 URL배열
     var detailImgList : [String]? = nil
     
@@ -65,6 +107,12 @@ extension MiniImageCollectionViewCell : UICollectionViewDelegate, UICollectionVi
         
         var url = URL(string: self.detailImgList?[indexPath.row] ?? "")!
         cell.miniImageView.load(url: url)//해당 url의 사진 로드
+        if indexPath == self.currentCellIndexPath {
+            cell.cellBackGround.backgroundColor = UIColor.red
+        }else{
+            cell.cellBackGround.backgroundColor = UIColor.white
+        }
+        
         return cell
     }
     
@@ -76,5 +124,33 @@ extension MiniImageCollectionViewCell : UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView : UICollectionView, layout collectionViewLayout : UICollectionViewLayout, minimumLineSpacingForSectionAt  section: Int) -> CGFloat {
         return sectionInsets.left
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        notify(pageIndex: indexPath.row)
+    }
+    
     
 }
+extension MiniImageCollectionViewCell : AlbumListener{
+    //옵저버 패턴 구현
+    
+    
+    func addObserver(observer: AlbumPageObserver) {
+        self.observers.append(observer)
+    }
+    func deleteObserver(observer: AlbumPageObserver) {
+    
+        if let index = self.observers.firstIndex(where: { $0.who == observer.who}){
+            self.observers.remove(at: index)
+        }
+    }
+    func notify(pageIndex: Int) {
+        
+        for observer in observers {
+        
+            observer.updateAlbum(pageIndex: pageIndex)
+
+        }
+        
+    }
+}
+

@@ -9,9 +9,46 @@ import UIKit
 import XLPagerTabStrip
 import MaterialComponents
 
-class DetailViewController: UIViewController, StartBuyProtocol {
+
+class DetailViewController: UIViewController, StartBuyProtocol, AlbumPageObserver, MiniPageObserver {
     
     
+   
+    
+    
+    //옵저버 패턴구현
+    var who: String = "DetailView"
+    func updateMini(pageIndex: Int) -> Int {
+        print("현재 상세화면에서 관찰한 미니앨범의 페이지는 \(pageIndex)")
+        //옵저버로 관찰한 앨범 페이지를 딜리게이트로 미니 앨범으로 전달
+        updatePageToMini(nowPage: pageIndex)
+        
+        return pageIndex
+    }
+    func updateAlbum(pageIndex: Int) -> Int {
+        print("현재 상세화면에서 관찰한 앨범의 페이지는 \(pageIndex)")
+        //옵저버로 관찰한 미니앨범 페이지를 딜리게이트로 앨범으로 전달
+        updatePageToAlbum(nowPage: pageIndex)
+        
+        return pageIndex
+    }
+    
+    //페이지 업데이트 딜리게이트
+    var albumPagingDelegate : AlbumPageDelegate? = nil
+    var miniPagingDelegate : MiniPageDelegate? = nil
+    
+    func updatePageToMini(nowPage : Int){ //앨범에서 보고있는 페이지를 Mini로 전달
+        self.albumPagingDelegate?.pagingFromDetail(nowPage: nowPage)
+        
+    }
+    func updatePageToAlbum(nowPage : Int){ //미니에서 누른 페이지를 앨범으로 전달
+        self.miniPagingDelegate?.pagingFromDetail(nowPage : nowPage)
+    }
+
+    
+    
+    //딜리게이트 패턴 (네트워크 통신 데이터 전달을 위한 딜리게이트)
+    var delegate : CollectionInTableProtocol? = nil
     
     var isBuying : Bool = false
     
@@ -130,11 +167,14 @@ class DetailViewController: UIViewController, StartBuyProtocol {
     //작품 상세화면 요청 성공시 화면 업데이트 메소드
     func didSuccessGetDetail(response : DetailResponse){
         print("didSuccess")
-        if response.result != nil {
-            let index = response.result
-            self.detailArticleData = response.result
-            print("detailArticleData is \(detailArticleData?.workId)")
-        }
+        
+            
+        
+           
+        self.detailArticleData = response.result
+          
+        print("detailArticleData is \(detailArticleData?.workId)")
+       
         
         self.detailTableView.reloadData()
         
@@ -240,13 +280,31 @@ extension DetailViewController : UITableViewDataSource, UITableViewDelegate {
                 cell.detailImgList = self.detailArticleData?.imgs
                 print("detail controller's \(self.detailArticleData?.workId)")
                 print("detail controller's \(self.detailArticleData?.imgs.count)")
+                //업데이트된 데이터를 셀에 업데이트해주기 위한 딜리게이트
+                self.delegate = cell
+                //페이지 동기화를 위한 옵저버 추가(앨범을 관찰)
+                cell.addObserver(observer: self)
+                //옵저버가 관찰한 미니앨범의 페이지를 앨범으로 전달하기위한 딜리게이트
+                //self.miniPagingDelegate = cell
+                
+                self.delegate?.transferDataInCollection(data: self.detailArticleData?.imgs ?? [])
+                
+                
                 return cell
             }
             
         case 1 ://미니 앨범
             if let cell = tableView.dequeueReusableCell(withIdentifier: "MiniImageCollectionViewCell") as? MiniImageCollectionViewCell {
                 print("detail controller's \(self.detailArticleData?.imgs.count)")
-                cell.detailImgList = self.detailArticleData!.imgs
+                cell.detailImgList = self.detailArticleData?.imgs
+                self.delegate = cell
+                self.delegate?.transferDataInCollection(data: self.detailArticleData?.imgs ?? [])
+                //옵저버가 관찰한 앨범의 페이지를 미니앨범으로 전달하기위한 딜리게이트
+                self.albumPagingDelegate = cell
+                //페이지 동기화를 위한 옵저버 추가(미니앨범을 관찰)
+                cell.addObserver(observer: self)
+                
+                
                 return cell
             }
             

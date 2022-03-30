@@ -11,6 +11,8 @@ class MiniCell: UICollectionViewCell {
 
     @IBOutlet weak var miniImageView: UIImageView!
     
+    @IBOutlet weak var cellBackGround: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
