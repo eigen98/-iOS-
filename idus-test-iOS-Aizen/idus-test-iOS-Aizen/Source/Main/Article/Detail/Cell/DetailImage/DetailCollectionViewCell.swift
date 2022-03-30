@@ -56,6 +56,7 @@ protocol MiniPageDelegate{//미니 앨범으로 전달
 }
 
 
+
 //작품 상세 화면의 작품 이미지 넘겨보기
 class DetailCollectionViewCell: UITableViewCell, CollectionInTableProtocol, MiniPageDelegate{
     func pagingFromDetail(nowPage: Int) {

@@ -10,6 +10,7 @@ import XLPagerTabStrip
 import MaterialComponents
 
 
+
 class DetailViewController: UIViewController, StartBuyProtocol, AlbumPageObserver, MiniPageObserver {
     
     
@@ -49,6 +50,7 @@ class DetailViewController: UIViewController, StartBuyProtocol, AlbumPageObserve
     
     //딜리게이트 패턴 (네트워크 통신 데이터 전달을 위한 딜리게이트)
     var delegate : CollectionInTableProtocol? = nil
+    var delegateComment : CommentInTableProtocol? = nil
     
     var isBuying : Bool = false
     
@@ -337,6 +339,9 @@ extension DetailViewController : UITableViewDataSource, UITableViewDelegate {
             }
         case 8 : //댓글
             if let cell = tableView.dequeueReusableCell(withIdentifier: "CommentTableViewCell") as? CommentTableViewCell {
+                self.delegateComment = cell
+                self.delegateComment?.transferCommentData(commentData: detailArticleData?.workComment ?? [], workId: detailArticleData?.workId ?? 0 )
+                
                 return cell
             }
         case 9 : //작가 님 정보 x
@@ -372,8 +377,11 @@ extension DetailViewController : UITableViewDataSource, UITableViewDelegate {
          return 235
      case 7:
          return 235
-     case 8:
-         return 235
+     case 8: //댓글
+         if detailArticleData?.workComment.count ?? 0 < 4{
+             return CGFloat((detailArticleData?.workComment.count)! * 190)
+         }
+         return 600
      case 9:
          return 235
      default:
