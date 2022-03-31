@@ -11,17 +11,17 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="275" id="KGk-i7-Jjw" customClass="ThirdArticleInfoTableViewCell" customModule="idus_test_iOS_Aizen" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="275"/>
+            <rect key="frame" x="0.0" y="0.0" width="413" height="275"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="414" height="275"/>
+                <rect key="frame" x="0.0" y="0.0" width="413" height="275"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cp9-YZ-TGX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="273"/>
+                        <rect key="frame" x="0.0" y="0.0" width="413" height="273"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Seo-CS-1Aj">
-                                <rect key="frame" x="386" y="20" width="12" height="8"/>
+                                <rect key="frame" x="385" y="20" width="12" height="8"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="8" id="hTP-3q-U6e"/>
                                     <constraint firstAttribute="width" constant="12" id="lk0-m3-gKG"/>
@@ -31,7 +31,7 @@
                                 <state key="normal" title="" image="chevron.up" catalog="system"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9SU-BT-Krr">
-                                <rect key="frame" x="163" y="16" width="235" height="19"/>
+                                <rect key="frame" x="162" y="16" width="235" height="19"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="19" id="0Oh-Vu-HnI"/>
                                     <constraint firstAttribute="width" constant="235" id="nBe-aJ-eZK"/>
@@ -43,13 +43,13 @@
                                 </buttonConfiguration>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mby-IS-iOL">
-                                <rect key="frame" x="0.0" y="51" width="414" height="222"/>
+                                <rect key="frame" x="0.0" y="51" width="413" height="222"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ovE-eU-pKX">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="413" height="56"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="니도 스페이스 (nido space) 작가님" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYP-UQ-hHl">
-                                                <rect key="frame" x="16" y="26.5" width="204" height="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="데일리 쥬얼리 작가님" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYP-UQ-hHl">
+                                                <rect key="frame" x="16" y="19.5" width="117" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -95,13 +95,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15,200원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTO-4H-q5Z">
-                                        <rect key="frame" x="347" y="142" width="51" height="15"/>
+                                        <rect key="frame" x="342" y="142" width="51" height="15"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wVG-iy-ziG">
-                                        <rect key="frame" x="8" y="173" width="398" height="2"/>
+                                        <rect key="frame" x="8" y="173" width="397" height="2"/>
                                         <color key="backgroundColor" systemColor="separatorColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="2" id="abM-Xu-NyX"/>
@@ -114,7 +114,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3,000원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BS6-nI-ntm">
-                                        <rect key="frame" x="352" y="191" width="46" height="15"/>
+                                        <rect key="frame" x="347" y="191" width="46" height="15"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -128,8 +128,8 @@
                                     <constraint firstItem="u7n-ff-Xgf" firstAttribute="top" secondItem="DG8-rB-D5w" secondAttribute="bottom" constant="30" id="8YM-4J-6Id"/>
                                     <constraint firstAttribute="bottom" secondItem="BS6-nI-ntm" secondAttribute="bottom" constant="16" id="Awo-vK-Knh"/>
                                     <constraint firstItem="DG8-rB-D5w" firstAttribute="leading" secondItem="Mby-IS-iOL" secondAttribute="leading" constant="16" id="B4A-51-dOJ"/>
-                                    <constraint firstAttribute="trailing" secondItem="BS6-nI-ntm" secondAttribute="trailing" constant="16" id="G4L-LZ-LbK"/>
-                                    <constraint firstAttribute="trailing" secondItem="DTO-4H-q5Z" secondAttribute="trailing" constant="16" id="GtG-FR-Hvh"/>
+                                    <constraint firstAttribute="trailing" secondItem="BS6-nI-ntm" secondAttribute="trailing" constant="20" id="G4L-LZ-LbK"/>
+                                    <constraint firstAttribute="trailing" secondItem="DTO-4H-q5Z" secondAttribute="trailing" constant="20" id="GtG-FR-Hvh"/>
                                     <constraint firstItem="uYP-UQ-hHl" firstAttribute="centerY" secondItem="Mby-IS-iOL" secondAttribute="centerY" constant="-76" id="KUn-hg-9ye"/>
                                     <constraint firstItem="uYP-UQ-hHl" firstAttribute="leading" secondItem="Mby-IS-iOL" secondAttribute="leading" constant="16" id="LUI-nI-UmO"/>
                                     <constraint firstItem="wBh-EK-IcF" firstAttribute="leading" secondItem="DG8-rB-D5w" secondAttribute="trailing" constant="8" id="OCc-E2-1WS"/>
@@ -180,7 +180,13 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="200.00000000000003" y="155.02232142857142"/>
+            <connections>
+                <outlet property="articleImage" destination="DG8-rB-D5w" id="x2A-li-wfw"/>
+                <outlet property="articlePriceText" destination="DTO-4H-q5Z" id="YeX-Uc-6mq"/>
+                <outlet property="titleText" destination="9SU-BT-Krr" id="eN8-AX-UWn"/>
+                <outlet property="underTitleText" destination="wBh-EK-IcF" id="cgC-QO-dS5"/>
+            </connections>
+            <point key="canvasLocation" x="199.27536231884059" y="155.02232142857142"/>
         </tableViewCell>
     </objects>
     <resources>

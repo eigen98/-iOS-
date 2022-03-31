@@ -38,33 +38,8 @@
                                     <constraint firstAttribute="height" constant="2" id="rxe-I1-VPl"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="291" translatesAutoresizingMaskIntoConstraints="NO" id="Qcb-KX-de0">
-                                <rect key="frame" x="16" y="96" width="382" height="20"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="배송지 관리" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYK-g4-nqo">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="20"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="SU2-Vr-1IM"/>
-                                            <constraint firstAttribute="height" constant="20" id="eRT-OZ-nGc"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mlh-Q6-0UD">
-                                        <rect key="frame" x="369" y="1" width="13" height="19"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="19" id="7g9-SN-cCs"/>
-                                            <constraint firstAttribute="width" constant="13" id="hW8-bh-xeo"/>
-                                        </constraints>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" image="chevron.right" catalog="system"/>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ybu-Jy-b6A">
-                                <rect key="frame" x="16" y="140" width="382" height="2"/>
+                                <rect key="frame" x="16" y="140.5" width="382" height="2"/>
                                 <color key="backgroundColor" systemColor="separatorColor"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -72,39 +47,6 @@
                                     <constraint firstAttribute="height" constant="2" id="IIO-Z1-Acu"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="287" translatesAutoresizingMaskIntoConstraints="NO" id="WZX-6v-cI2">
-                                <rect key="frame" x="16" y="166" width="382" height="20"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pN0-s4-LoZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="120" height="20"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="120" id="WVY-uA-H5H"/>
-                                            <constraint firstAttribute="height" constant="20" id="vNE-jx-sAj"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="내 계정 정보            ">
-                                            <color key="titleColor" red="0.05882352591" green="0.05882352591" blue="0.05882352591" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="tapMyAccountBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="74l-lG-v41"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4xN-hb-qVM">
-                                        <rect key="frame" x="369" y="-2" width="13" height="22"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="19" id="PH8-VR-sal"/>
-                                            <constraint firstAttribute="width" constant="13" id="YuD-Mw-oC9"/>
-                                        </constraints>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" image="chevron.right" catalog="system"/>
-                                        <connections>
-                                            <action selector="tapMyAccountBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="71y-6T-Fp7"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0R-7L-eZB">
                                 <rect key="frame" x="385" y="22" width="13" height="19"/>
                                 <constraints>
@@ -115,27 +57,78 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="chevron.right" catalog="system"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pN0-s4-LoZ">
+                                <rect key="frame" x="16" y="166" width="120" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="WVY-uA-H5H"/>
+                                    <constraint firstAttribute="height" constant="20" id="vNE-jx-sAj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="내 계정 정보            ">
+                                    <color key="titleColor" red="0.05882352591" green="0.05882352591" blue="0.05882352591" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapMyAccountBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="74l-lG-v41"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4xN-hb-qVM">
+                                <rect key="frame" x="384.5" y="167" width="13" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="PH8-VR-sal"/>
+                                    <constraint firstAttribute="width" constant="13" id="YuD-Mw-oC9"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="chevron.right" catalog="system"/>
+                                <connections>
+                                    <action selector="tapMyAccountBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="71y-6T-Fp7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="배송지 관리" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYK-g4-nqo">
+                                <rect key="frame" x="16" y="94.5" width="100" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="SU2-Vr-1IM"/>
+                                    <constraint firstAttribute="height" constant="20" id="eRT-OZ-nGc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mlh-Q6-0UD">
+                                <rect key="frame" x="385" y="96" width="13" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="7g9-SN-cCs"/>
+                                    <constraint firstAttribute="width" constant="13" id="hW8-bh-xeo"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="chevron.right" catalog="system"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="WZX-6v-cI2" firstAttribute="leading" secondItem="1q7-Bh-Nzs" secondAttribute="leading" constant="16" id="8B8-MT-IU6"/>
+                            <constraint firstItem="dYK-g4-nqo" firstAttribute="top" secondItem="lp3-IG-9Aa" secondAttribute="bottom" constant="24" id="1Qi-bu-ZWj"/>
+                            <constraint firstAttribute="bottom" secondItem="4xN-hb-qVM" secondAttribute="bottom" constant="26" id="3Hg-Yq-Rnl"/>
+                            <constraint firstAttribute="bottom" secondItem="pN0-s4-LoZ" secondAttribute="bottom" constant="26" id="82q-xE-ED3"/>
+                            <constraint firstItem="pN0-s4-LoZ" firstAttribute="top" secondItem="Ybu-Jy-b6A" secondAttribute="bottom" constant="23.5" id="Bw4-AO-MJ5"/>
                             <constraint firstItem="Ybu-Jy-b6A" firstAttribute="leading" secondItem="1q7-Bh-Nzs" secondAttribute="leading" constant="16" id="Gix-aK-ObD"/>
                             <constraint firstAttribute="trailing" secondItem="Ybu-Jy-b6A" secondAttribute="trailing" constant="16" id="IUr-aI-Urj"/>
                             <constraint firstItem="8BD-kJ-7ac" firstAttribute="top" secondItem="1q7-Bh-Nzs" secondAttribute="top" constant="24" id="K8I-LT-HmR"/>
                             <constraint firstAttribute="trailing" secondItem="e0R-7L-eZB" secondAttribute="trailing" constant="16" id="SYC-I3-Zaj"/>
                             <constraint firstItem="e0R-7L-eZB" firstAttribute="top" secondItem="1q7-Bh-Nzs" secondAttribute="top" constant="22" id="TFn-U6-wp2"/>
-                            <constraint firstAttribute="trailing" secondItem="Qcb-KX-de0" secondAttribute="trailing" constant="16" id="V46-1e-kbW"/>
-                            <constraint firstItem="WZX-6v-cI2" firstAttribute="top" secondItem="Ybu-Jy-b6A" secondAttribute="bottom" constant="24" id="VEh-8m-Mj9"/>
+                            <constraint firstItem="4xN-hb-qVM" firstAttribute="top" secondItem="Ybu-Jy-b6A" secondAttribute="bottom" constant="24.5" id="XI1-jY-Lvu"/>
                             <constraint firstAttribute="trailing" secondItem="lp3-IG-9Aa" secondAttribute="trailing" constant="16" id="aW2-Xs-x0I"/>
-                            <constraint firstItem="Qcb-KX-de0" firstAttribute="top" secondItem="lp3-IG-9Aa" secondAttribute="bottom" constant="25.5" id="im3-JM-vYN"/>
+                            <constraint firstAttribute="trailing" secondItem="4xN-hb-qVM" secondAttribute="trailing" constant="16.5" id="bYV-oq-IIG"/>
+                            <constraint firstAttribute="trailing" secondItem="Mlh-Q6-0UD" secondAttribute="trailing" constant="16" id="caZ-0A-rsh"/>
+                            <constraint firstItem="dYK-g4-nqo" firstAttribute="leading" secondItem="1q7-Bh-Nzs" secondAttribute="leading" constant="16" id="lRf-Ec-pNG"/>
                             <constraint firstItem="lp3-IG-9Aa" firstAttribute="leading" secondItem="1q7-Bh-Nzs" secondAttribute="leading" constant="16" id="m56-cF-leG"/>
                             <constraint firstItem="8BD-kJ-7ac" firstAttribute="leading" secondItem="1q7-Bh-Nzs" secondAttribute="leading" constant="16" id="mZE-hF-XrW"/>
-                            <constraint firstItem="Ybu-Jy-b6A" firstAttribute="top" secondItem="Qcb-KX-de0" secondAttribute="bottom" constant="24" id="re0-tf-jKd"/>
+                            <constraint firstItem="pN0-s4-LoZ" firstAttribute="leading" secondItem="1q7-Bh-Nzs" secondAttribute="leading" constant="16" id="nVX-jp-Soa"/>
                             <constraint firstItem="lp3-IG-9Aa" firstAttribute="top" secondItem="8BD-kJ-7ac" secondAttribute="bottom" constant="24" id="tHx-cO-4sP"/>
                             <constraint firstAttribute="width" constant="414" id="uaC-Yr-AqN"/>
-                            <constraint firstItem="Qcb-KX-de0" firstAttribute="leading" secondItem="1q7-Bh-Nzs" secondAttribute="leading" constant="16" id="wfH-pw-RYb"/>
+                            <constraint firstItem="Mlh-Q6-0UD" firstAttribute="top" secondItem="lp3-IG-9Aa" secondAttribute="bottom" constant="25.5" id="xE8-cR-BIi"/>
                             <constraint firstAttribute="height" constant="212" id="xWc-Nu-01D"/>
-                            <constraint firstAttribute="trailing" secondItem="WZX-6v-cI2" secondAttribute="trailing" constant="16" id="xtf-Yg-v2S"/>
                         </constraints>
                     </view>
                 </subviews>

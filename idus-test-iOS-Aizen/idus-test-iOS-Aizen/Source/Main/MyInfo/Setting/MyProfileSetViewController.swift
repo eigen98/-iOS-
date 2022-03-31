@@ -38,7 +38,7 @@ class MyProfileSetViewController: BaseViewController {
         nameText.text = userData?.result?.name
         emailText.text = userData?.result?.email
         phoneText.text = userData?.result?.phone
-        birthText.text = "\(String(describing: userData?.result?.birthday))"
+        birthText.text = ""
         initCheckboxGender(gender: userData?.result?.gender ?? 0 )
     }
     //성별 체크 메소드
@@ -56,11 +56,15 @@ class MyProfileSetViewController: BaseViewController {
     
     @IBAction func tapWomenBtn(_ sender: UIButton) {
         initCheckboxGender(gender: 0)
+        var request = ProfilePatchRequest(email: nil, name: nil, birthday: nil, gender: 0, phone: nil, recipient: nil, recipientPhone: nil, address: nil, profileImg: nil)
+        self.dataManager.patchUserProfile(request, delegate: self)
         
     }
     
     @IBAction func tapManBtn(_ sender: UIButton) {
         initCheckboxGender(gender: 1)
+        var request = ProfilePatchRequest(email: nil, name: nil, birthday: nil, gender: 1, phone: nil, recipient: nil, recipientPhone: nil, address: nil, profileImg: nil)
+        self.dataManager.patchUserProfile(request, delegate: self)
         
     }
     
@@ -74,10 +78,10 @@ class MyProfileSetViewController: BaseViewController {
         emailText.text = userData.result?.email
         phoneText.text = userData.result?.phone
         birthText.text = "\(String(describing: userData.result?.birthday))"
-        initCheckboxGender(gender: userData.result?.gender ?? 0 )
+        //initCheckboxGender(gender: userData.result?.gender ?? 0 )
     }
     @IBAction func changePhoneBtn(_ sender: UIButton) {
-        presentEmailAlert(title: "변경하기", message: "아이디어스 계정 연동 전화번호를 입력해주세요", holder: nil, isCancelActionIncluded: true, preferredStyle: .alert, handler: {_ in
+        presentEmailAlert(type: "전화번호 변경" ,title: "변경하기", message: "아이디어스 계정 연동 전화번호를 입력해주세요", holder: nil, isCancelActionIncluded: true, preferredStyle: .alert, handler: {_ in
             
         })
         
@@ -88,7 +92,7 @@ class MyProfileSetViewController: BaseViewController {
     }
     
     // MARK: 취소와 확인, 입력창이 뜨는 UIAlertController
-    func presentEmailAlert(title: String, message: String? = nil, holder : String?,
+    func presentEmailAlert(type : String, title: String, message: String? = nil, holder : String?,
                       isCancelActionIncluded: Bool = false,
                       preferredStyle style: UIAlertController.Style = .alert,
                       handler: ((UIAlertAction) -> Void)? = nil) {
@@ -97,11 +101,20 @@ class MyProfileSetViewController: BaseViewController {
         let alert = UIAlertController(title: title, message: message, preferredStyle: style)
         
         alert.addTextField()
-        let inputText = alert.textFields![0].text
+        
+        
         
         let actionDone = UIAlertAction(title: "확인", style: .default, handler: {result in
-            let request = ProfilePatchRequest(email: inputText, name: nil, birthday: nil, gender: nil, phone: nil, recipient: nil, recipientPhone: nil, address: nil, profileImg: nil)
+            let inputText = alert.textFields?.first?.text
+            print("변경할 이메일은 \(inputText)")
+            
+            var request = ProfilePatchRequest(email: inputText, name: nil, birthday: nil, gender: nil, phone: nil, recipient: nil, recipientPhone: nil, address: nil, profileImg: nil)
+            
+            if type == "전화번호 변경"{
+                request = ProfilePatchRequest(email: nil, name: nil, birthday: nil, gender: nil, phone: inputText, recipient: nil, recipientPhone: nil, address: nil, profileImg: nil)
+            }
             self.dataManager.patchUserProfile(request, delegate: self)
+           
         })
         
         alert.addAction(actionDone)
@@ -116,11 +129,17 @@ class MyProfileSetViewController: BaseViewController {
     
     //이메일 변경하기
     @IBAction func changeEmailBtn(_ sender: UIButton) {
-        presentEmailAlert(title: "변경하기", message: "\(self.userData?.result!.email)에서 변경할 이메일을 입력해주세요", holder: nil, isCancelActionIncluded: true, preferredStyle: .alert, handler: {_ in
+        presentEmailAlert(type: "이메일 변경", title: "변경하기", message: "\(self.userData?.result?.email ?? "")에서 변경할 이메일을 입력해주세요", holder: nil, isCancelActionIncluded: true, preferredStyle: .alert, handler: {_ in
             
         })
         
     }
    
 
+}
+
+
+struct EmailChangeRequest : Codable{
+    var email : String
+    
 }

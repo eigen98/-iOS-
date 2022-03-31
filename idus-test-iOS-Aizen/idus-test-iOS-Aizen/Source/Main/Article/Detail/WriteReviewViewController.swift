@@ -6,9 +6,14 @@
 //
 
 import UIKit
+//리뷰를 올리고 올린 데이터를 전달하여 최신화 해주기 위한 프로토콜
+protocol ReviewCompleteProtocol{
+    func updateReview()
+}
 
 class WriteReviewViewController: UIViewController {
 
+    var reviewDelegate : ReviewCompleteProtocol? = nil
     @IBOutlet weak var firstStar: UIButton!
     
     @IBOutlet weak var secondStar: UIButton!

@@ -34,7 +34,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qcu-yl-LVl">
-                                <rect key="frame" x="245" y="16" width="152" height="19"/>
+                                <rect key="frame" x="220" y="16" width="152" height="19"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="19" id="Dwt-DR-QUo"/>
                                     <constraint firstAttribute="width" constant="152" id="GhQ-5f-L8a"/>
@@ -44,9 +44,12 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="0.0"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="myNameAndPhone:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Pgz-or-GPs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VvA-YX-P6u">
-                                <rect key="frame" x="386" y="21" width="12" height="8"/>
+                                <rect key="frame" x="376" y="21" width="12" height="8"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="12" id="nJD-Xe-Xem"/>
                                     <constraint firstAttribute="height" constant="8" id="nci-xI-BNj"/>
@@ -98,7 +101,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6M-Ro-I4V">
-                                        <rect key="frame" x="340" y="39" width="66" height="26"/>
+                                        <rect key="frame" x="332" y="39" width="66" height="26"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="26" id="iv5-rD-HAW"/>
                                             <constraint firstAttribute="width" constant="66" id="mo7-gt-yZu"/>
@@ -120,7 +123,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="0LH-6b-z75" firstAttribute="top" secondItem="mND-sl-Ks5" secondAttribute="bottom" constant="8" id="1In-KE-Ig5"/>
-                                    <constraint firstAttribute="trailing" secondItem="s6M-Ro-I4V" secondAttribute="trailing" constant="8" id="5ui-vn-wmf"/>
+                                    <constraint firstAttribute="trailing" secondItem="s6M-Ro-I4V" secondAttribute="trailing" constant="16" id="5ui-vn-wmf"/>
                                     <constraint firstItem="0LH-6b-z75" firstAttribute="leading" secondItem="9zv-WP-0M9" secondAttribute="leading" constant="8" id="8hC-ON-F2c"/>
                                     <constraint firstItem="fMw-yx-Coh" firstAttribute="leading" secondItem="9zv-WP-0M9" secondAttribute="leading" constant="8" id="HHZ-mZ-SGV"/>
                                     <constraint firstItem="Ora-mu-WzH" firstAttribute="top" secondItem="0LH-6b-z75" secondAttribute="bottom" constant="8" id="Kmk-2n-Ylm"/>
@@ -142,12 +145,12 @@
                         <constraints>
                             <constraint firstAttribute="height" constant="190" id="2ph-Wv-FuH"/>
                             <constraint firstItem="U98-jy-qGy" firstAttribute="leading" secondItem="gCf-ZP-woo" secondAttribute="leading" constant="8" id="5G7-VQ-2py"/>
-                            <constraint firstAttribute="trailing" secondItem="VvA-YX-P6u" secondAttribute="trailing" constant="16" id="7Bk-H5-geZ"/>
+                            <constraint firstAttribute="trailing" secondItem="VvA-YX-P6u" secondAttribute="trailing" constant="26" id="7Bk-H5-geZ"/>
                             <constraint firstItem="VvA-YX-P6u" firstAttribute="top" secondItem="gCf-ZP-woo" secondAttribute="top" constant="21" id="HPa-bB-brz"/>
                             <constraint firstAttribute="trailing" secondItem="9zv-WP-0M9" secondAttribute="trailing" id="LUS-pG-aw2"/>
                             <constraint firstItem="Qcu-yl-LVl" firstAttribute="top" secondItem="gCf-ZP-woo" secondAttribute="top" constant="16" id="O2R-aZ-K3x"/>
                             <constraint firstItem="0cU-V1-YDV" firstAttribute="top" secondItem="Qcu-yl-LVl" secondAttribute="bottom" constant="16" id="Sc0-z4-BPO"/>
-                            <constraint firstItem="VvA-YX-P6u" firstAttribute="trailing" secondItem="Qcu-yl-LVl" secondAttribute="trailing" constant="1" id="WXa-eL-N9V"/>
+                            <constraint firstItem="VvA-YX-P6u" firstAttribute="trailing" secondItem="Qcu-yl-LVl" secondAttribute="trailing" constant="16" id="WXa-eL-N9V"/>
                             <constraint firstAttribute="trailing" secondItem="0cU-V1-YDV" secondAttribute="trailing" constant="8" id="bfb-EX-gQf"/>
                             <constraint firstAttribute="bottom" secondItem="9zv-WP-0M9" secondAttribute="bottom" constant="26" id="cSq-54-6Ga"/>
                             <constraint firstItem="U98-jy-qGy" firstAttribute="top" secondItem="gCf-ZP-woo" secondAttribute="top" constant="16" id="eqE-ON-esY"/>
@@ -165,6 +168,10 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="myNameText" destination="fFv-K0-vl8" id="LcD-xe-eS9"/>
+                <outlet property="myPhoneText" destination="Ora-mu-WzH" id="iQh-92-eEG"/>
+            </connections>
             <point key="canvasLocation" x="114.49275362318842" y="59.263392857142854"/>
         </tableViewCell>
     </objects>

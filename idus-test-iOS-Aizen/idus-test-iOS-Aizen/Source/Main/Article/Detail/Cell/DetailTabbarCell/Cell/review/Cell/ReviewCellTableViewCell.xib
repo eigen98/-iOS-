@@ -104,6 +104,17 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="contentText" destination="7CG-Uu-Alf" id="d7X-hT-Vt6"/>
+                <outlet property="createdAtText" destination="1P4-le-aqg" id="YGs-9j-Onx"/>
+                <outlet property="fifthStar" destination="BsH-Vr-k8N" id="4Lm-MA-Ycy"/>
+                <outlet property="firstStar" destination="qW3-Fc-rar" id="BYg-Bw-n53"/>
+                <outlet property="fourthStar" destination="ZZc-4Z-lUr" id="Eld-2x-Lmr"/>
+                <outlet property="imageView" destination="Tx8-pr-HWh" id="rde-qP-hqT"/>
+                <outlet property="nameText" destination="SdC-eX-Vxr" id="4VC-IY-lPo"/>
+                <outlet property="secondStar" destination="4dk-4W-Vfl" id="ppt-3O-nSB"/>
+                <outlet property="thirdStar" destination="zrJ-2H-upl" id="Gmh-AS-PdH"/>
+            </connections>
             <point key="canvasLocation" x="200.00000000000003" y="111.83035714285714"/>
         </tableViewCell>
     </objects>

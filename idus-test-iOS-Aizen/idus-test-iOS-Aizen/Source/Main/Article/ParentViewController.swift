@@ -41,11 +41,27 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
     
     // 내비게이션 바 디자인
     func initNavigationBar() {
+        
+        
+        
+        
+        
+        
         //가운데 타이틀 설정
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
-        imageView.contentMode = .scaleToFill
+       let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 56, height: 28))
+        
+        
+       // imageView.contentMode = .scaleAspectFit
+         
         let image = UIImage(named: "img_logo_idus")
-        imageView.image = image
+        let newImageRect = CGRect(x: 0, y: 0, width: 56, height: 28)
+        UIGraphicsBeginImageContext(CGSize(width: 56, height: 28))
+        image?.draw(in: newImageRect)
+       // imageView.image = image
+        
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()?.withRenderingMode(.alwaysOriginal)
+        UIGraphicsEndImageContext()
+        imageView.image = newImage
         navigationItem.titleView = imageView
         
         //오른쪽 상단 네비게이션 바 버튼 설정
@@ -59,13 +75,13 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
         let searchController = UISearchController(searchResultsController: nil)
         searchController.searchBar.placeholder = "봄맞이를 검색해보세요."
         searchController.searchBar.backgroundColor = UIColor.white
+
         searchController.searchBar.tintColor = UIColor.white
         searchController.searchBar.barTintColor = UIColor.white
-
-        
-        self.navigationItem.searchController = searchController
         searchController.hidesNavigationBarDuringPresentation = true
         searchController.automaticallyShowsCancelButton = false
+        self.navigationItem.searchController = searchController
+        
         
        
     }

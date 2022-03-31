@@ -50,18 +50,33 @@ class EmailSignUpViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    var allTrue = false
+    
     //체크 박스 클릭 메소드
     @IBAction func checkAll(_ sender: UIButton) {
         
-        
-        for i in 0...3 {
-            ischecked[i] = true
+        if allTrue == false{
+            allTrue = true
+            for i in 0...3 {
+                ischecked[i] = true
+            }
+            self.allCheckbox.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
+            self.oldCheckbox.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
+            self.guidCheckbox.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
+            self.infoCheckbox.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
+            self.couponCheckbox.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
+        }else {
+            for i in 0...3 {
+                allTrue = false
+                ischecked[i] = false
+                self.allCheckbox.setImage(UIImage(systemName: "square"), for: .normal)
+                self.oldCheckbox.setImage(UIImage(systemName: "square"), for: .normal)
+                self.guidCheckbox.setImage(UIImage(systemName: "square"), for: .normal)
+                self.infoCheckbox.setImage(UIImage(systemName: "square"), for: .normal)
+                self.couponCheckbox.setImage(UIImage(systemName: "square"), for: .normal)
+            }
         }
-        self.allCheckbox.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
-        self.oldCheckbox.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
-        self.guidCheckbox.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
-        self.infoCheckbox.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
-        self.couponCheckbox.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
+        
         
     }
     @IBAction func checkfirst(_ sender: UIButton) {
@@ -70,7 +85,7 @@ class EmailSignUpViewController: UIViewController {
             self.oldCheckbox.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
         }else{
             self.ischecked[0] = false
-            self.oldCheckbox.setImage(UIImage(systemName: "square"), for: .normal)
+            self.oldCheckbox.setImage(UIImage(systemName: "ç"), for: .normal)
             //모두 체크 해제
             self.allCheckbox.setImage(UIImage(systemName: "square"), for: .normal)
         }

@@ -99,6 +99,12 @@ class DetailViewController: UIViewController, StartBuyProtocol, AlbumPageObserve
             
         }
         self.dataManager.getDetailArticle(delegate: self, articleId: articleIdThis!)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now()+2, execute: {
+            self.detailTableView.reloadData()
+        })
+            
+       
     }
     func moveDirectBuy(){
         if isBuying == true{
@@ -205,6 +211,7 @@ class DetailViewController: UIViewController, StartBuyProtocol, AlbumPageObserve
         print("구입하기 버튼 클릭")
         //바텀 시트로 쓰일 뷰 컨트롤러
         let bottomSheetVC = storyboard?.instantiateViewController(withIdentifier: "DetailBottomSheetVC") as! DetailBottomSheetViewController
+        bottomSheetVC.articleData = self.detailArticleData
         bottomSheetVC.buyDelegate = self //구매하기 누른 뒤 데이터 전달을 위한 딜리게이트
         
         //MDC 바텀 시트로 설정
@@ -275,7 +282,7 @@ class DetailViewController: UIViewController, StartBuyProtocol, AlbumPageObserve
 extension DetailViewController : UITableViewDataSource, UITableViewDelegate {
     //섹션 개수
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 9
+        return 10
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -330,6 +337,9 @@ extension DetailViewController : UITableViewDataSource, UITableViewDelegate {
             
         case 2 : //작품 가격 및 정보
             if let cell = tableView.dequeueReusableCell(withIdentifier: "PriceTableViewCell") as? PriceTableViewCell {
+                cell.articleData = self.detailArticleData
+                cell.initStar()
+                cell.processing()
                 return cell
             }
             
@@ -348,19 +358,30 @@ extension DetailViewController : UITableViewDataSource, UITableViewDelegate {
             
         case 6 : //작품 정보x
             if let cell = tableView.dequeueReusableCell(withIdentifier: "ArticleInfoTableViewCell") as? ArticleInfoTableViewCell {
+                cell.contentText.text = self.detailArticleData?.content
                 return cell
             }
             
         case 7 : //후기정보
             if let cell = tableView.dequeueReusableCell(withIdentifier: "ReviewTableViewCell") as? ReviewTableViewCell {
-                cell.reviewData = self.detailArticleData?.workReview
+                cell.reviewData = self.detailArticleData?.workReview.reversed()
                 cell.reviewCellDelegate = self //셀에서 리뷰작성 버튼 누를 시 필요한 프로토콜
+                if self.detailArticleData != nil {
+                    cell.reviewCountText.text = "(\(self.detailArticleData!.workReview.count))"
+                }
+                
                 return cell
             }
         case 8 : //댓글
             if let cell = tableView.dequeueReusableCell(withIdentifier: "CommentTableViewCell") as? CommentTableViewCell {
                 self.delegateComment = cell
                 self.delegateComment?.transferCommentData(commentData: detailArticleData?.workComment ?? [], workId: detailArticleData?.workId ?? 0 )
+                
+                if self.detailArticleData?.workComment.count != 0{
+                    cell.firstMessageImg1.isHidden = true
+                    cell.firstMessageText.isHidden = true
+                }
+               
                 
                 return cell
             }
@@ -386,7 +407,7 @@ extension DetailViewController : UITableViewDataSource, UITableViewDelegate {
      case 1: //미리보기 mini
          return 56
      case 2://
-         return 400
+         return 360
      case 3:
          return 265
      case 4:
@@ -404,7 +425,7 @@ extension DetailViewController : UITableViewDataSource, UITableViewDelegate {
          if detailArticleData?.workComment.count ?? 0 < 4{
              return CGFloat((detailArticleData?.workComment.count)! * 190)
          }
-         return 600
+         return 520
      case 9:
          return 235
      default:

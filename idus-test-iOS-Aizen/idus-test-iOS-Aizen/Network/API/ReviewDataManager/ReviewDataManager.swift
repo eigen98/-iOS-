@@ -32,7 +32,11 @@ class ReviewDataManager{
                 
                     print("\(temp.content)")
                  
-                    delegate.dismiss(animated: true, completion: nil)
+                    delegate.dismiss(animated: true, completion: {
+                        delegate.reviewDelegate?.updateReview()
+                       
+                        
+                    })
                     
                 case .failure(let error):
                     print(error.localizedDescription)

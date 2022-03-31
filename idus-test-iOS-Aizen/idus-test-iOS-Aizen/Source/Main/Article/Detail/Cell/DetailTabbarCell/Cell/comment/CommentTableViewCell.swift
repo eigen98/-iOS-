@@ -14,6 +14,8 @@ protocol CommentInTableProtocol{
 
 class CommentTableViewCell: UITableViewCell, CommentInTableProtocol {
     
+    @IBOutlet weak var firstMessageText: UILabel!
+    @IBOutlet weak var firstMessageImg1: UIImageView!
     //댓글쓰기 데이터매니저
     let commentDataManager : CommentDataManager = CommentDataManager()
     var isCommentUploaded : Bool = false

@@ -11,12 +11,17 @@ protocol MoveReviewProtocol{
     func moveWriteReview()
 }
 
-class ReviewTableViewCell: UITableViewCell {
+class ReviewTableViewCell: UITableViewCell, ReviewCompleteProtocol {
+    func updateReview() {
+        self.reviewTableView.reloadData()
+    }
+    
 
     
     //리뷰
     @IBOutlet weak var reviewTableView: UITableView!
-    
+    //리뷰 개수 텍스트
+    @IBOutlet weak var reviewCountText: UILabel!
     var reviewData : [ReviewEntity]? = nil
     
     var reviewCellDelegate : MoveReviewProtocol? = nil
@@ -52,12 +57,21 @@ class ReviewTableViewCell: UITableViewCell {
 extension ReviewTableViewCell : UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return reviewData?.count ?? 0
+        if reviewData?.count ?? 0 < 3{
+            return reviewData?.count ?? 0
+        }
+        
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "ReviewCellTableViewCell") as? ReviewCellTableViewCell else { return UITableViewCell() }
         
+        cell.star = (self.reviewData?[indexPath.row].star) ?? 0
+        cell.initStar()
+        cell.processing()
+        cell.nameText.text = self.reviewData?[indexPath.row].name
+        cell.contentText.text = self.reviewData?[indexPath.row].content
         return cell
     }
     

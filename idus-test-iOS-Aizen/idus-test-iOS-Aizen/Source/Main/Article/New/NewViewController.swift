@@ -151,10 +151,10 @@ extension NewViewController : UICollectionViewDelegate, UICollectionViewDataSour
             //셀 정보 초기화
             cell.delegate = self
             cell.articleName.text = self.articleData[indexPath.row].title
+            cell.belong.text = "데이쥬얼리"
             cell.workId = self.articleData[indexPath.row].workId //찜 작품을 식별하기위한 id를 각 셀에 배정
             let url = URL(string : self.articleData[indexPath.row].workImg)
             cell.uiImageView.load(url: url!)
-            cell.belong.text = ""
             if self.articleData[indexPath.row].interestStatus == 0 {
                 cell.zzimBtn.setImage(UIImage(named: "img_zzim"), for: .normal)
             }else {
@@ -188,6 +188,7 @@ extension NewViewController : UICollectionViewDelegate, UICollectionViewDataSour
         print("작품 상세 화면 호출")
         guard let detailController = UIStoryboard(name: "DetailStoryboard", bundle: nil).instantiateViewController(identifier: "DetailViewControllerSB") as? DetailViewController else { return }
         detailController.articleIdThis = articleData[indexPath.row].workId //작품 아이디 전달
+        
         changeRootViewController(detailController)
     }
     

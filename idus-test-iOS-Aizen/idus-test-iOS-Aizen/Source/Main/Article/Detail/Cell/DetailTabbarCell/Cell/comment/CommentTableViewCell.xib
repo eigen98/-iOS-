@@ -133,6 +133,8 @@
             <connections>
                 <outlet property="commentListTableView" destination="3wV-69-vXG" id="GkU-G6-EbE"/>
                 <outlet property="commentTextField" destination="cMK-bW-NeM" id="M0v-EF-PS1"/>
+                <outlet property="firstMessageImg1" destination="5mQ-VN-ipg" id="bBv-Vr-Qt9"/>
+                <outlet property="firstMessageText" destination="BtM-ch-fGp" id="X1f-Qq-3Gf"/>
                 <outlet property="transferBtn" destination="QB6-tL-5b8" id="A1G-Pp-Q5c"/>
             </connections>
             <point key="canvasLocation" x="173.91304347826087" y="36.495535714285715"/>

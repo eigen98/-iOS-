@@ -109,18 +109,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5RP-8L-rU4">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_temp_offline_class" translatesAutoresizingMaskIntoConstraints="NO" id="u8d-dS-rFm">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kmc-JH-fGU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="5RP-8L-rU4" firstAttribute="leading" secondItem="kmc-JH-fGU" secondAttribute="leading" id="7vC-5H-qlE"/>
-                            <constraint firstItem="5RP-8L-rU4" firstAttribute="trailing" secondItem="kmc-JH-fGU" secondAttribute="trailing" id="Fjo-6U-L3B"/>
-                            <constraint firstItem="5RP-8L-rU4" firstAttribute="bottom" secondItem="kmc-JH-fGU" secondAttribute="bottom" id="TSW-eF-py3"/>
-                            <constraint firstItem="5RP-8L-rU4" firstAttribute="top" secondItem="kmc-JH-fGU" secondAttribute="top" id="xsO-vI-Jin"/>
+                            <constraint firstItem="kmc-JH-fGU" firstAttribute="trailing" secondItem="u8d-dS-rFm" secondAttribute="trailing" id="VDY-zG-yt4"/>
+                            <constraint firstItem="u8d-dS-rFm" firstAttribute="leading" secondItem="kmc-JH-fGU" secondAttribute="leading" id="dSm-hM-0Pr"/>
+                            <constraint firstItem="kmc-JH-fGU" firstAttribute="bottom" secondItem="u8d-dS-rFm" secondAttribute="bottom" id="p1p-bg-sYl"/>
+                            <constraint firstItem="u8d-dS-rFm" firstAttribute="top" secondItem="kmc-JH-fGU" secondAttribute="top" id="r81-79-eOR"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -136,18 +135,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="drW-kV-rIK">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_temp_online_class" translatesAutoresizingMaskIntoConstraints="NO" id="7kW-1n-7Sg">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HrW-7P-pSi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="drW-kV-rIK" firstAttribute="bottom" secondItem="HrW-7P-pSi" secondAttribute="bottom" id="JWc-nF-sON"/>
-                            <constraint firstItem="drW-kV-rIK" firstAttribute="leading" secondItem="HrW-7P-pSi" secondAttribute="leading" id="Kah-vP-NQx"/>
-                            <constraint firstItem="drW-kV-rIK" firstAttribute="trailing" secondItem="HrW-7P-pSi" secondAttribute="trailing" id="Wwu-ou-Scs"/>
-                            <constraint firstItem="drW-kV-rIK" firstAttribute="top" secondItem="HrW-7P-pSi" secondAttribute="top" id="gbC-5h-2om"/>
+                            <constraint firstItem="7kW-1n-7Sg" firstAttribute="top" secondItem="HrW-7P-pSi" secondAttribute="top" id="372-iX-uzG"/>
+                            <constraint firstItem="7kW-1n-7Sg" firstAttribute="leading" secondItem="HrW-7P-pSi" secondAttribute="leading" id="QQH-bf-djZ"/>
+                            <constraint firstItem="HrW-7P-pSi" firstAttribute="bottom" secondItem="7kW-1n-7Sg" secondAttribute="bottom" id="ldM-Q0-tZC"/>
+                            <constraint firstItem="HrW-7P-pSi" firstAttribute="trailing" secondItem="7kW-1n-7Sg" secondAttribute="trailing" id="tKc-oK-7mF"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -159,6 +157,8 @@
     <resources>
         <image name="img_bottom_class" width="44" height="42"/>
         <image name="img_bottom_class_selected" width="44" height="40"/>
+        <image name="img_temp_offline_class" width="628" height="938"/>
+        <image name="img_temp_online_class" width="630" height="944"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

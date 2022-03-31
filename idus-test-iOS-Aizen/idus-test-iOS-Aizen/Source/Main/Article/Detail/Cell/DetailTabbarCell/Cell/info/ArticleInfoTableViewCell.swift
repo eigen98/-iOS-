@@ -10,6 +10,8 @@ import XLPagerTabStrip
 
 class ArticleInfoTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var contentText: UITextView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

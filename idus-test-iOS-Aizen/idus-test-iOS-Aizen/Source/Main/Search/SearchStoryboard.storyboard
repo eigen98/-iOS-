@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -31,22 +32,72 @@
                     <view key="view" contentMode="scaleToFill" id="ha9-dY-PWd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_temp_search_screen" translatesAutoresizingMaskIntoConstraints="NO" id="IND-ch-PFv">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="shl-bJ-am8">
+                                <rect key="frame" x="0.0" y="588" width="414" height="225"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="225" id="4Ex-RP-Oky"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cyg-qA-8Mt">
+                                <rect key="frame" x="16" y="54" width="32" height="32"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Zov-Sn-OcZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="arrow.backward" catalog="system"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="backToPrevious:" destination="jbv-3r-rUc" eventType="touchUpInside" id="X4m-Ru-gHI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="Fad-aw-CKa"/>
+                                    <constraint firstAttribute="height" constant="32" id="m7W-e7-ChQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="EBr-aT-a87"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="shl-bJ-am8" firstAttribute="leading" secondItem="EBr-aT-a87" secondAttribute="leading" id="Csc-uX-o6n"/>
+                            <constraint firstItem="IND-ch-PFv" firstAttribute="leading" secondItem="EBr-aT-a87" secondAttribute="leading" id="GES-I2-JGv"/>
+                            <constraint firstAttribute="bottom" secondItem="IND-ch-PFv" secondAttribute="bottom" id="N5G-2P-4Xv"/>
+                            <constraint firstAttribute="bottom" secondItem="shl-bJ-am8" secondAttribute="bottom" constant="83" id="RmA-Sr-Ujf"/>
+                            <constraint firstItem="IND-ch-PFv" firstAttribute="top" secondItem="ha9-dY-PWd" secondAttribute="top" id="bq9-XQ-BoC"/>
+                            <constraint firstItem="cyg-qA-8Mt" firstAttribute="top" secondItem="ha9-dY-PWd" secondAttribute="top" constant="54" id="djt-JB-nsC"/>
+                            <constraint firstItem="cyg-qA-8Mt" firstAttribute="leading" secondItem="EBr-aT-a87" secondAttribute="leading" constant="16" id="fnE-j6-0Ce"/>
+                            <constraint firstItem="EBr-aT-a87" firstAttribute="trailing" secondItem="IND-ch-PFv" secondAttribute="trailing" id="lLL-Lj-W1S"/>
+                            <constraint firstItem="shl-bJ-am8" firstAttribute="trailing" secondItem="EBr-aT-a87" secondAttribute="trailing" id="we2-44-g0T"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="검색" image="img_bottom_search" selectedImage="img_bottom_search" id="dmD-Gs-TVX">
+                    <tabBarItem key="tabBarItem" title="검색" id="dmD-Gs-TVX">
+                        <imageReference key="image" image="magnifyingglass" catalog="system" symbolScale="large"/>
                         <color key="badgeColor" systemColor="systemOrangeColor"/>
+                        <imageReference key="selectedImage" image="magnifyingglass" catalog="system" symbolScale="large"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="svl-Lp-e9r"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bcS-Wv-5gg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1282" y="-178"/>
+            <point key="canvasLocation" x="-1282.608695652174" y="-178.125"/>
         </scene>
     </scenes>
     <resources>
-        <image name="img_bottom_search" width="42" height="42"/>
+        <image name="arrow.backward" catalog="system" width="128" height="98"/>
+        <image name="img_temp_search_screen" width="634" height="1360"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

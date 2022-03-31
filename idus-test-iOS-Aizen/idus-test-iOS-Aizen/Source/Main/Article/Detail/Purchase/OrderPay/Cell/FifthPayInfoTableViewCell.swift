@@ -13,7 +13,9 @@ class FifthPayInfoTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    @IBOutlet weak var articlePriceText: UILabel!
+    @IBOutlet weak var totalPrice: UILabel!
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

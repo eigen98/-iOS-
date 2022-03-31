@@ -18,6 +18,9 @@ class DetailBottomSheetTableViewCell: UITableViewCell {
     
     @IBOutlet weak var numberingText: UILabel!
     
+    @IBOutlet weak var priceText: UILabel!
+    
+    var numberingInt = 1
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -39,4 +42,16 @@ class DetailBottomSheetTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    @IBAction func tapMinus(_ sender: UIButton) {
+        if numberingInt == 0 {
+            return
+        }
+        numberingInt -= 1
+        numberingText.text = "\(numberingInt)"
+    }
+    
+    @IBAction func tapPlus(_ sender: UIButton) {
+        numberingInt += 1
+        numberingText.text = "\(numberingInt)"
+    }
 }

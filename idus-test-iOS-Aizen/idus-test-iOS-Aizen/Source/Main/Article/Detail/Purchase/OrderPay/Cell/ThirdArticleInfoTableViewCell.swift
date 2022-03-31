@@ -13,7 +13,12 @@ class ThirdArticleInfoTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    @IBOutlet weak var articleImage: UIImageView!
+    
+    @IBOutlet weak var underTitleText: UILabel!
+    @IBOutlet weak var titleText: UIButton!
+    
+    @IBOutlet weak var articlePriceText: UILabel!
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

@@ -14,6 +14,10 @@ class FirstCustomerTableViewCell: UITableViewCell {
         // Initialization code
     }
 
+    @IBAction func myNameAndPhone(_ sender: UIButton) {
+    }
+    @IBOutlet weak var myPhoneText: UILabel!
+    @IBOutlet weak var myNameText: UILabel!
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

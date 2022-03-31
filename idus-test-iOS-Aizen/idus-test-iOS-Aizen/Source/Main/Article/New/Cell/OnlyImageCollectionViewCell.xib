@@ -20,11 +20,15 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KuC-L6-0MV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="72"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="-8" translatesAutoresizingMaskIntoConstraints="NO" id="gj9-hj-RKi">
-                                <rect key="frame" x="0.0" y="8" width="114" height="31"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gj9-hj-RKi">
+                                <rect key="frame" x="12" y="8" width="100.5" height="24"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lu7-co-44A">
-                                        <rect key="frame" x="0.0" y="0.0" width="45.5" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="qJQ-Oc-Kgf"/>
+                                            <constraint firstAttribute="height" constant="24" id="qLb-Iw-vg3"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="square" catalog="system">
                                             <color key="baseForegroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -34,22 +38,21 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이미지만 볼래요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Kj-tt-j8m">
-                                        <rect key="frame" x="37.5" y="0.0" width="76.5" height="31"/>
+                                        <rect key="frame" x="24" y="0.0" width="76.5" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="지금 새로 등록된 작품" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTL-VG-h7l">
-                                <rect key="frame" x="9" y="47" width="96" height="14"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지금 새로 등록된 작품" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTL-VG-h7l">
+                                <rect key="frame" x="16" y="40" width="95.5" height="13.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" white="0.4889721514" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3월 23일 15:08 기준" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQ1-Xt-EvX">
-                                <rect key="frame" x="300" y="45.5" width="106" height="14.5"/>
+                                <rect key="frame" x="292" y="45.5" width="106" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" white="0.43157419219999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -57,10 +60,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="hTL-VG-h7l" firstAttribute="top" secondItem="gj9-hj-RKi" secondAttribute="bottom" constant="8" id="4tz-EY-kui"/>
                             <constraint firstItem="gj9-hj-RKi" firstAttribute="top" secondItem="KuC-L6-0MV" secondAttribute="top" constant="8" id="7N6-zK-0nV"/>
                             <constraint firstAttribute="bottom" secondItem="MQ1-Xt-EvX" secondAttribute="bottom" constant="12" id="BpV-ix-7bj"/>
-                            <constraint firstItem="gj9-hj-RKi" firstAttribute="leading" secondItem="KuC-L6-0MV" secondAttribute="leading" id="g5z-wP-JRl"/>
-                            <constraint firstAttribute="trailing" secondItem="MQ1-Xt-EvX" secondAttribute="trailing" constant="8" id="ysh-Lf-nH1"/>
+                            <constraint firstItem="hTL-VG-h7l" firstAttribute="leading" secondItem="KuC-L6-0MV" secondAttribute="leading" constant="16" id="H3E-Fe-wgy"/>
+                            <constraint firstItem="gj9-hj-RKi" firstAttribute="leading" secondItem="KuC-L6-0MV" secondAttribute="leading" constant="12" id="g5z-wP-JRl"/>
+                            <constraint firstAttribute="trailing" secondItem="MQ1-Xt-EvX" secondAttribute="trailing" constant="16" id="ysh-Lf-nH1"/>
                         </constraints>
                     </view>
                 </subviews>
