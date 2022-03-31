@@ -36,7 +36,6 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LwB-Dg-9Po" customClass="ButtonBarView" customModule="XLPagerTabStrip">
                                 <rect key="frame" x="0.0" y="88" width="414" height="50"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ICR-t7-JP0"/>
                                 </constraints>
@@ -93,6 +92,7 @@
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="buttonBar" destination="LwB-Dg-9Po" id="UYk-ec-Ejs"/>
                         <outlet property="buttonBarView" destination="LwB-Dg-9Po" id="YMF-Ju-5kb"/>
                         <outlet property="containerView" destination="GOZ-Ga-Qc6" id="PxF-gw-snX"/>
                     </connections>

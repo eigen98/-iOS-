@@ -11,7 +11,22 @@ import MaterialComponents
 
 
 
-class DetailViewController: UIViewController, StartBuyProtocol, AlbumPageObserver, MiniPageObserver {
+class DetailViewController: UIViewController, StartBuyProtocol, AlbumPageObserver, MiniPageObserver ,MoveReviewProtocol {
+    func moveWriteReview() {
+        
+        guard let reviewVC = self.storyboard?.instantiateViewController(withIdentifier: "WriteReviewViewController") as? WriteReviewViewController else {
+            
+            print("nothing vc")
+                    return
+                }
+        print("후기 작성 화면 이동 \(reviewVC)")
+        reviewVC.modalPresentationStyle = .fullScreen
+        present(reviewVC, animated: true, completion: nil)
+        
+       // self.navigationController?.pushViewController(reviewVC, animated: true)
+        
+    }
+    
     
     
    
@@ -336,6 +351,8 @@ extension DetailViewController : UITableViewDataSource, UITableViewDelegate {
             
         case 7 : //후기정보
             if let cell = tableView.dequeueReusableCell(withIdentifier: "ReviewTableViewCell") as? ReviewTableViewCell {
+                cell.reviewData = self.detailArticleData?.workReview
+                cell.reviewCellDelegate = self //셀에서 리뷰작성 버튼 누를 시 필요한 프로토콜
                 return cell
             }
         case 8 : //댓글
@@ -376,8 +393,11 @@ extension DetailViewController : UITableViewDataSource, UITableViewDelegate {
          return 251
      case 6:
          return 235
-     case 7:
-         return 235
+     case 7: //후기
+         if detailArticleData?.workReview.count ?? 0 < 4{
+             return CGFloat((detailArticleData?.workReview.count)! * 200 + 200)
+         }
+         return 800
      case 8: //댓글
          if detailArticleData?.workComment.count ?? 0 < 4{
              return CGFloat((detailArticleData?.workComment.count)! * 190)

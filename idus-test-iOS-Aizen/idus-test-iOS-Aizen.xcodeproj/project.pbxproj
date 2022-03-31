@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8235E26C5663DE9951E2CD49 /* Pods_idus_test_iOS_Aizen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDB0FF13BFE3CEE8B16256F /* Pods_idus_test_iOS_Aizen.framework */; };
+		EE1A56F427F5F536000CFA4E /* ReviewDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1A56F327F5F536000CFA4E /* ReviewDataManager.swift */; };
+		EE1A56F627F5F5C0000CFA4E /* ReviewRepuest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1A56F527F5F5C0000CFA4E /* ReviewRepuest.swift */; };
+		EE1A56F827F5F6E8000CFA4E /* ReviewResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1A56F727F5F6E8000CFA4E /* ReviewResponse.swift */; };
 		EE3365EF27E772C4006DF058 /* EmailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3365EE27E772C4006DF058 /* EmailLoginViewController.swift */; };
 		EE3CC32B27EA12DB0075D5AA /* ClassStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE3CC32A27EA12DB0075D5AA /* ClassStoryboard.storyboard */; };
 		EE3CC32D27EA12EF0075D5AA /* ClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3CC32C27EA12EF0075D5AA /* ClassViewController.swift */; };
@@ -27,7 +30,7 @@
 		EE643FBF27F06F4C00935857 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE643FBE27F06F4C00935857 /* UIImageView.swift */; };
 		EE643FC827F0875E00935857 /* DetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE643FC727F0875E00935857 /* DetailResponse.swift */; };
 		EE643FCA27F08C5600935857 /* CommentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE643FC927F08C5600935857 /* CommentResponse.swift */; };
-		EE643FCC27F08D0500935857 /* ReviewResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE643FCB27F08D0500935857 /* ReviewResponse.swift */; };
+		EE643FCC27F08D0500935857 /* ReviewEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE643FCB27F08D0500935857 /* ReviewEntity.swift */; };
 		EE643FCE27F08F9E00935857 /* DetailDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE643FCD27F08F9E00935857 /* DetailDataManager.swift */; };
 		EE6551D027EE2CDF00BBCF90 /* SignUpDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6551CF27EE2CDF00BBCF90 /* SignUpDataManager.swift */; };
 		EE6551D327EE2DB700BBCF90 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6551D227EE2DB700BBCF90 /* Constant.swift */; };
@@ -131,6 +134,9 @@
 		EEE95D4827EF7D3300860F15 /* MyProfileSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE95D4727EF7D3300860F15 /* MyProfileSetViewController.swift */; };
 		EEEA526D27F4E36A00981813 /* PurchaseDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA526C27F4E36A00981813 /* PurchaseDataManager.swift */; };
 		EEEA527027F4E48F00981813 /* PurchaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA526F27F4E48F00981813 /* PurchaseResponse.swift */; };
+		EEEA527327F4EC8800981813 /* ReviewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA527127F4EC8800981813 /* ReviewCellTableViewCell.swift */; };
+		EEEA527427F4EC8800981813 /* ReviewCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEEA527227F4EC8800981813 /* ReviewCellTableViewCell.xib */; };
+		EEEA527627F5022F00981813 /* WriteReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA527527F5022F00981813 /* WriteReviewViewController.swift */; };
 		EEFC9ABF27F11BAF000704D0 /* DetailBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFC9ABE27F11BAF000704D0 /* DetailBottomSheetViewController.swift */; };
 		EEFC9AC327F1267B000704D0 /* DetailBottomSheetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFC9AC127F1267B000704D0 /* DetailBottomSheetTableViewCell.swift */; };
 		EEFC9AC427F1267B000704D0 /* DetailBottomSheetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEFC9AC227F1267B000704D0 /* DetailBottomSheetTableViewCell.xib */; };
@@ -152,6 +158,9 @@
 		7CDB0FF13BFE3CEE8B16256F /* Pods_idus_test_iOS_Aizen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_idus_test_iOS_Aizen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9891BBBE67D939487AA54A93 /* Pods-idus-test-iOS-Aizen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-idus-test-iOS-Aizen.release.xcconfig"; path = "Target Support Files/Pods-idus-test-iOS-Aizen/Pods-idus-test-iOS-Aizen.release.xcconfig"; sourceTree = "<group>"; };
 		B1CD12B4D5E4A8B60F313535 /* Pods-idus-test-iOS-Aizen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-idus-test-iOS-Aizen.debug.xcconfig"; path = "Target Support Files/Pods-idus-test-iOS-Aizen/Pods-idus-test-iOS-Aizen.debug.xcconfig"; sourceTree = "<group>"; };
+		EE1A56F327F5F536000CFA4E /* ReviewDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDataManager.swift; sourceTree = "<group>"; };
+		EE1A56F527F5F5C0000CFA4E /* ReviewRepuest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRepuest.swift; sourceTree = "<group>"; };
+		EE1A56F727F5F6E8000CFA4E /* ReviewResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewResponse.swift; sourceTree = "<group>"; };
 		EE3365EE27E772C4006DF058 /* EmailLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginViewController.swift; sourceTree = "<group>"; };
 		EE3CC32A27EA12DB0075D5AA /* ClassStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ClassStoryboard.storyboard; sourceTree = "<group>"; };
 		EE3CC32C27EA12EF0075D5AA /* ClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassViewController.swift; sourceTree = "<group>"; };
@@ -171,7 +180,7 @@
 		EE643FBE27F06F4C00935857 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		EE643FC727F0875E00935857 /* DetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailResponse.swift; sourceTree = "<group>"; };
 		EE643FC927F08C5600935857 /* CommentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentResponse.swift; sourceTree = "<group>"; };
-		EE643FCB27F08D0500935857 /* ReviewResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewResponse.swift; sourceTree = "<group>"; };
+		EE643FCB27F08D0500935857 /* ReviewEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewEntity.swift; sourceTree = "<group>"; };
 		EE643FCD27F08F9E00935857 /* DetailDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDataManager.swift; sourceTree = "<group>"; };
 		EE6551CF27EE2CDF00BBCF90 /* SignUpDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpDataManager.swift; sourceTree = "<group>"; };
 		EE6551D227EE2DB700BBCF90 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -277,6 +286,9 @@
 		EEE95D4727EF7D3300860F15 /* MyProfileSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileSetViewController.swift; sourceTree = "<group>"; };
 		EEEA526C27F4E36A00981813 /* PurchaseDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseDataManager.swift; sourceTree = "<group>"; };
 		EEEA526F27F4E48F00981813 /* PurchaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseResponse.swift; sourceTree = "<group>"; };
+		EEEA527127F4EC8800981813 /* ReviewCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCellTableViewCell.swift; sourceTree = "<group>"; };
+		EEEA527227F4EC8800981813 /* ReviewCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewCellTableViewCell.xib; sourceTree = "<group>"; };
+		EEEA527527F5022F00981813 /* WriteReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteReviewViewController.swift; sourceTree = "<group>"; };
 		EEFC9ABE27F11BAF000704D0 /* DetailBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBottomSheetViewController.swift; sourceTree = "<group>"; };
 		EEFC9AC127F1267B000704D0 /* DetailBottomSheetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBottomSheetTableViewCell.swift; sourceTree = "<group>"; };
 		EEFC9AC227F1267B000704D0 /* DetailBottomSheetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailBottomSheetTableViewCell.xib; sourceTree = "<group>"; };
@@ -313,6 +325,14 @@
 				9891BBBE67D939487AA54A93 /* Pods-idus-test-iOS-Aizen.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EE1A56F227F5F512000CFA4E /* ReviewDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				EE1A56F327F5F536000CFA4E /* ReviewDataManager.swift */,
+			);
+			path = ReviewDataManager;
 			sourceTree = "<group>";
 		};
 		EE3CC32927EA12BE0075D5AA /* Class */ = {
@@ -385,9 +405,11 @@
 			children = (
 				EE643FC727F0875E00935857 /* DetailResponse.swift */,
 				EE643FC927F08C5600935857 /* CommentResponse.swift */,
-				EE643FCB27F08D0500935857 /* ReviewResponse.swift */,
+				EE643FCB27F08D0500935857 /* ReviewEntity.swift */,
 				EE4C309F27F423A900E07BB1 /* CommentRequest.swift */,
 				EE4C30A127F424E200E07BB1 /* CommentWriteResponse.swift */,
+				EE1A56F527F5F5C0000CFA4E /* ReviewRepuest.swift */,
+				EE1A56F727F5F6E8000CFA4E /* ReviewResponse.swift */,
 			);
 			path = DetailEntity;
 			sourceTree = "<group>";
@@ -408,6 +430,7 @@
 		EE6551CD27EE2C2900BBCF90 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				EE1A56F227F5F512000CFA4E /* ReviewDataManager */,
 				EEEA526B27F4E33400981813 /* PurchaseDataManager */,
 				EE4C309C27F422AD00E07BB1 /* CommentDataManager */,
 				EEB8494127F1FC5400C7F085 /* ZzimDataManager */,
@@ -473,6 +496,8 @@
 		EE6C543527F4606A00192BFA /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				EEEA527127F4EC8800981813 /* ReviewCellTableViewCell.swift */,
+				EEEA527227F4EC8800981813 /* ReviewCellTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -622,6 +647,7 @@
 				EEBEBE9B27EC122000037059 /* Cell */,
 				EEBEBE9927EC11E400037059 /* DetailStoryboard.storyboard */,
 				EEBEBE9C27EC1A2E00037059 /* DetailViewController.swift */,
+				EEEA527527F5022F00981813 /* WriteReviewViewController.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -1035,6 +1061,7 @@
 				EEE2B8E527E82C2200A97E8E /* MyInfoNoLoginTableViewCell.xib in Resources */,
 				EEE2B8C027E81A4C00A97E8E /* MainStoryboard.storyboard in Resources */,
 				EE3CC33527EA13340075D5AA /* CategoryStoryboard.storyboard in Resources */,
+				EEEA527427F4EC8800981813 /* ReviewCellTableViewCell.xib in Resources */,
 				EEBEBEA427EC41C200037059 /* DetailCollectionViewCell.xib in Resources */,
 				EEB9569927ECACD40085C64C /* PostTableViewCell.xib in Resources */,
 				EEA2966127ED401B00D09ECB /* TabbarTableViewCell.xib in Resources */,
@@ -1120,6 +1147,7 @@
 				EEDFFD9E27E645B500B572C3 /* BaseViewController.swift in Sources */,
 				EE3CC33727EA13420075D5AA /* CategoryViewController.swift in Sources */,
 				EEBC6FA527F0440C006F8072 /* NewResponseList.swift in Sources */,
+				EE1A56F827F5F6E8000CFA4E /* ReviewResponse.swift in Sources */,
 				EEFC9AD727F15884000704D0 /* FourthPayTypeTableViewCell.swift in Sources */,
 				EEB9569327ECA37B0085C64C /* PriceTableViewCell.swift in Sources */,
 				EEE2B8CA27E8296200A97E8E /* MyInfoProfileTableViewCell.swift in Sources */,
@@ -1137,6 +1165,7 @@
 				EEFC9ACB27F1537D000704D0 /* FirstCustomerTableViewCell.swift in Sources */,
 				EE471CF127E9E6A700C777C8 /* NewViewController.swift in Sources */,
 				EEDFFDB027E6528100B572C3 /* UIColor.swift in Sources */,
+				EE1A56F427F5F536000CFA4E /* ReviewDataManager.swift in Sources */,
 				EEB8494327F1FCA900C7F085 /* ZzimDataManager.swift in Sources */,
 				EEBAB38F27F16BDA00A53A30 /* OrderPayViewController.swift in Sources */,
 				EEA2967427ED4F8200D09ECB /* ArtistInfoTableViewCell.swift in Sources */,
@@ -1149,11 +1178,13 @@
 				EED3AFE727E5AFD100C4DBC7 /* AppDelegate.swift in Sources */,
 				EEBEBEAD27EC45B700037059 /* MiniImageCollectionViewCell.swift in Sources */,
 				EE3CC34127EA13D30075D5AA /* OfflineViewController.swift in Sources */,
+				EEEA527327F4EC8800981813 /* ReviewCellTableViewCell.swift in Sources */,
 				EE3CC33227EA13180075D5AA /* SearchViewController.swift in Sources */,
 				EEE95D4827EF7D3300860F15 /* MyProfileSetViewController.swift in Sources */,
 				EEE95D4527EF730400860F15 /* LogOutTableViewCell.swift in Sources */,
 				EEBC6F9F27F0104E006F8072 /* NewDataManager.swift in Sources */,
 				EEE2B8DA27E82AF100A97E8E /* NoticeTableViewCell.swift in Sources */,
+				EEEA527627F5022F00981813 /* WriteReviewViewController.swift in Sources */,
 				EEA2966A27ED470F00D09ECB /* ReviewTableViewCell.swift in Sources */,
 				EE8594C127EAF12F00F274A4 /* OnlyImageCollectionViewCell.swift in Sources */,
 				EEE2B8CE27E82A4900A97E8E /* MyInfoPlusTableViewCell.swift in Sources */,
@@ -1164,7 +1195,7 @@
 				EEA2965C27ED347000D09ECB /* ArticleInfoTableViewCell.swift in Sources */,
 				EEFC9ACF27F15513000704D0 /* SecondAddressTableViewCell.swift in Sources */,
 				EE6551D827EE314800BBCF90 /* SignUpResponse.swift in Sources */,
-				EE643FCC27F08D0500935857 /* ReviewResponse.swift in Sources */,
+				EE643FCC27F08D0500935857 /* ReviewEntity.swift in Sources */,
 				EEA2966F27ED4CFA00D09ECB /* CommentTableViewCell.swift in Sources */,
 				EEE2B8E927E8539800A97E8E /* MyInfoViewController.swift in Sources */,
 				EEDFFDAE27E6523E00B572C3 /* IndicatorView.swift in Sources */,
@@ -1178,6 +1209,7 @@
 				EEDFFDB227E65E2D00B572C3 /* EmailSignUpViewController.swift in Sources */,
 				EEE95D2E27EF626200860F15 /* SettingViewController.swift in Sources */,
 				EEFC9ADF27F158DB000704D0 /* SixthAgreeTableViewCell.swift in Sources */,
+				EE1A56F627F5F5C0000CFA4E /* ReviewRepuest.swift in Sources */,
 				EEE2B8D227E82A6F00A97E8E /* addBannerTableViewCell.swift in Sources */,
 				EEE95D3D27EF72C900860F15 /* RefundManageTableViewCell.swift in Sources */,
 				EE6551D027EE2CDF00BBCF90 /* SignUpDataManager.swift in Sources */,

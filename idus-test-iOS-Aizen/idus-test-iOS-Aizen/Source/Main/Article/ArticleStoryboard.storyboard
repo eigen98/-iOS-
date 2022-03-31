@@ -121,6 +121,7 @@
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="buttonBar" destination="kGX-nN-2is" id="04D-3k-7lg"/>
                         <outlet property="buttonBarView" destination="kGX-nN-2is" id="ha6-bi-gI4"/>
                         <outlet property="containerView" destination="7Si-5I-8HN" id="e7t-nf-Z5P"/>
                     </connections>

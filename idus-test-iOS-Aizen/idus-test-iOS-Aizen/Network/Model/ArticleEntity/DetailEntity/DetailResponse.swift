@@ -41,7 +41,7 @@ struct ArticleDetailEntity : Codable {
     
     var workComment : [CommentResponse]
     
-    var workReview : [ReviewResponse]
+    var workReview : [ReviewEntity]
     
     enum CodingKeys : String, CodingKey{
         case workId = "workId"

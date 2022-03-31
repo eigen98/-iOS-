@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "img_basket.png",
+      "filename" : "img_write_review_title.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -17,8 +17,5 @@
   "info" : {
     "author" : "xcode",
     "version" : 1
-  },
-  "properties" : {
-    "template-rendering-intent" : "original"
   }
 }
