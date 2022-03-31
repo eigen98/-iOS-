@@ -19,6 +19,8 @@ class DetailViewController: UIViewController, StartBuyProtocol, AlbumPageObserve
             print("nothing vc")
                     return
                 }
+        
+        reviewVC.articleData = self.detailArticleData
         print("후기 작성 화면 이동 \(reviewVC)")
         reviewVC.modalPresentationStyle = .fullScreen
         present(reviewVC, animated: true, completion: nil)

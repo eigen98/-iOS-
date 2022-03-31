@@ -19,11 +19,18 @@ class WriteReviewViewController: UIViewController {
     
     @IBOutlet weak var fifthStar: UIButton!
 
+    //데이터 매니저
+    var dataManger : ReviewDataManager = ReviewDataManager()
+    
+    //내용 텍스트
+    @IBOutlet weak var contentText: UITextField!
+    
     //상세페이지에서 넘겨받을 작품 정보
     var articleData : ArticleDetailEntity? = nil
     //각 별을 담을 배열
     var starArray : [UIButton] = [UIButton]()
     
+    var starNumbering : Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -47,11 +54,14 @@ class WriteReviewViewController: UIViewController {
     
     //리뷰 등록 버튼 리스너
     @IBAction func uploadMyReview(_ sender: UIButton) {
+        var parameterEntity = ReviewRequest(workId: articleData!.workId, content: contentText.text! , star: Float(self.starNumbering) , reviewImg: [""])
         
         //데이터매니저를 통해 업로드
-        
+        dataManger.commentPost(parameterEntity, delegate: self)
         
     }
+    
+    
     
 //    // 내비게이션 바 디자인
 //    func initNavigationBar() {
@@ -122,12 +132,14 @@ class WriteReviewViewController: UIViewController {
     
     @IBAction func tapOneStar(_ sender: UIButton) {
         starCommander(howMany : 1)
+        starNumbering = 1
         
     }
     @IBAction func tapTwoStar(_ sender: UIButton) {
         
         //secondStar.imageView?.image = UIImage(named: "img_half_star")
         starCommander(howMany : 2)
+        starNumbering = 2
     }
     
     @IBAction func tapThreeStar(_ sender: UIButton) {
@@ -135,6 +147,7 @@ class WriteReviewViewController: UIViewController {
 //        secondStar.imageView?.image = UIImage(named: "img_full_star")
 //        thirdStar.imageView?.image = UIImage(named: "img_half_star")
         starCommander(howMany : 3)
+        starNumbering = 3
         
     }
     @IBAction func tapFourStar(_ sender: UIButton) {
@@ -143,6 +156,7 @@ class WriteReviewViewController: UIViewController {
 //        thirdStar.imageView?.image = UIImage(named: "img_full_star")
 //        forthStar.imageView?.image = UIImage(named: "img_half_star")
         starCommander(howMany : 4)
+        starNumbering = 4
         
     }
     @IBAction func tapFiveStar(_ sender: UIButton) {
@@ -153,6 +167,7 @@ class WriteReviewViewController: UIViewController {
 //        forthStar.imageView?.image = UIImage(named: "img_full_star")
         
         starCommander(howMany : 5)
+        starNumbering = 5
     }
     
     

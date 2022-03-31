@@ -628,6 +628,7 @@
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="contentText" destination="psh-JV-vit" id="H6E-Sb-Ths"/>
                         <outlet property="fifthStar" destination="O2d-MC-vcm" id="m0Q-vJ-Ox8"/>
                         <outlet property="firstStar" destination="RoJ-yi-Gqv" id="abm-Oe-cCh"/>
                         <outlet property="forthStar" destination="Q0m-lt-BCe" id="vrF-Jq-xZ7"/>
