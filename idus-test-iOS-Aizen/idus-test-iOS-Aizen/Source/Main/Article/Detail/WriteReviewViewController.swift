@@ -67,6 +67,9 @@ class WriteReviewViewController: UIViewController {
     }
     
     
+    @IBAction func backBtnListener(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
 //    // 내비게이션 바 디자인
 //    func initNavigationBar() {
