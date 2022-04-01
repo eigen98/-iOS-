@@ -277,14 +277,14 @@
   <div markdown="1">
    
 
-    <img width="395" alt="스크린샷 2022-04-01 오후 3 42 18" src="https://user-images.githubusercontent.com/68258365/161209827-da2c745b-0592-403b-999a-73776e0f82ef.png">
+<img width="395" alt="스크린샷 2022-04-01 오후 3 42 18" src="https://user-images.githubusercontent.com/68258365/161209827-da2c745b-0592-403b-999a-73776e0f82ef.png">
 
-    <img width="403" alt="스크린샷 2022-04-01 오후 3 43 51" src="https://user-images.githubusercontent.com/68258365/161209839-e2592532-0ff7-4df1-a7a6-0ea33fdc11bd.png">
+<img width="403" alt="스크린샷 2022-04-01 오후 3 43 51" src="https://user-images.githubusercontent.com/68258365/161209839-e2592532-0ff7-4df1-a7a6-0ea33fdc11bd.png">
 
-    <img width="391" alt="스크린샷 2022-04-01 오후 3 43 33" src="https://user-images.githubusercontent.com/68258365/161209860-15c28981-484f-4dfc-ae27-f88034a61f73.png">
+<img width="391" alt="스크린샷 2022-04-01 오후 3 43 33" src="https://user-images.githubusercontent.com/68258365/161209860-15c28981-484f-4dfc-ae27-f88034a61f73.png">
 
     
-    <img width="395" alt="스크린샷 2022-04-01 오후 3 41 39" src="https://user-images.githubusercontent.com/68258365/161209887-fbfffb17-b3ad-47b1-aba2-179f58cc6bb6.png">
+<img width="395" alt="스크린샷 2022-04-01 오후 3 41 39" src="https://user-images.githubusercontent.com/68258365/161209887-fbfffb17-b3ad-47b1-aba2-179f58cc6bb6.png">
 
     
 
@@ -297,3 +297,9 @@
 - 하고자 했던 작업들이 생각보다 양이 많아서 결국 완벽하게 구현하지 못해 아쉬웠습니다.
 - 후기 작성 가능 여부를 보여주는 경고창, 구매가 되었음을 알려주는 알림창, 프로그레스바, 상세화면의 네비게이션바 사라지는 효과 등등 욕심을 부리다가 애매하게 틀만 만들어둔 것 같아서 아쉬웠던 프로젝트였습니다.
 - 로그인과 비로그인일때 각 아이템을 불러오는 api를 미리 생각하고 백엔드 분과 상의하였다면 더 원활하게 작업이 진행되었을 것 같아서 앞으로는 이러한 사용자가 앱을 사용할 때 필요한 시퀀스를 미리 생각해보고 그러한 부분은 미리미리 백엔드 분과 상의해야겠다고 느꼈습니다.
+
+
+
+https://user-images.githubusercontent.com/68258365/161273653-de40fd54-2035-4b9c-b6fd-58e2e9ad759c.mp4
+
+
