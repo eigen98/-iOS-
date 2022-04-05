@@ -81,7 +81,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="kGX-nN-2is" customClass="ButtonBarView" customModule="XLPagerTabStrip">
-                                <rect key="frame" x="0.0" y="88" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="138" width="414" height="50"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="o5s-n5-vuh"/>
@@ -95,19 +95,41 @@
                                 <cells/>
                             </collectionView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Si-5I-8HN">
-                                <rect key="frame" x="0.0" y="138" width="414" height="675"/>
+                                <rect key="frame" x="0.0" y="188" width="414" height="625"/>
                             </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AzE-7T-wCi">
+                                <rect key="frame" x="0.0" y="88" width="414" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Kl-9z-4TU">
+                                        <rect key="frame" x="16" y="4" width="382" height="42"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="img_searchBar_btn"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="5Kl-9z-4TU" secondAttribute="trailing" constant="16" id="Iv4-Zn-GkR"/>
+                                    <constraint firstAttribute="height" constant="50" id="QHc-5G-1iy"/>
+                                    <constraint firstItem="5Kl-9z-4TU" firstAttribute="top" secondItem="AzE-7T-wCi" secondAttribute="top" constant="4" id="b5t-e4-nt1"/>
+                                    <constraint firstAttribute="bottom" secondItem="5Kl-9z-4TU" secondAttribute="bottom" constant="4" id="cJQ-8t-3qO"/>
+                                    <constraint firstItem="5Kl-9z-4TU" firstAttribute="leading" secondItem="AzE-7T-wCi" secondAttribute="leading" constant="16" id="vzy-a8-l0q"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="z6H-jN-n79"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="AzE-7T-wCi" firstAttribute="leading" secondItem="z6H-jN-n79" secondAttribute="leading" id="2xA-y7-Ze7"/>
+                            <constraint firstItem="kGX-nN-2is" firstAttribute="top" secondItem="AzE-7T-wCi" secondAttribute="bottom" id="CYw-7t-G0q"/>
                             <constraint firstItem="7Si-5I-8HN" firstAttribute="top" secondItem="kGX-nN-2is" secondAttribute="bottom" id="Iii-u4-Akz"/>
                             <constraint firstItem="z6H-jN-n79" firstAttribute="trailing" secondItem="7Si-5I-8HN" secondAttribute="trailing" id="JqR-NC-m0B"/>
                             <constraint firstItem="kGX-nN-2is" firstAttribute="leading" secondItem="z6H-jN-n79" secondAttribute="leading" id="Kri-k7-CLK"/>
                             <constraint firstItem="7Si-5I-8HN" firstAttribute="leading" secondItem="z6H-jN-n79" secondAttribute="leading" id="LE4-Xi-kfm"/>
                             <constraint firstItem="kGX-nN-2is" firstAttribute="trailing" secondItem="z6H-jN-n79" secondAttribute="trailing" id="RCJ-Qx-9Sy"/>
+                            <constraint firstItem="AzE-7T-wCi" firstAttribute="trailing" secondItem="z6H-jN-n79" secondAttribute="trailing" id="S9j-Of-5du"/>
                             <constraint firstItem="z6H-jN-n79" firstAttribute="bottom" secondItem="7Si-5I-8HN" secondAttribute="bottom" id="YcT-am-aIO"/>
-                            <constraint firstItem="kGX-nN-2is" firstAttribute="top" secondItem="z6H-jN-n79" secondAttribute="top" id="tQ5-BQ-Drt"/>
+                            <constraint firstItem="AzE-7T-wCi" firstAttribute="top" secondItem="z6H-jN-n79" secondAttribute="top" id="kK5-KN-FzP"/>
+                            <constraint firstItem="kGX-nN-2is" firstAttribute="top" secondItem="z6H-jN-n79" secondAttribute="top" constant="50" id="tQ5-BQ-Drt"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="작품" image="img_bottom_article" selectedImage="img_bottom_article_selected" id="6ed-pc-YGB">
@@ -128,12 +150,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N9H-c8-lG4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="123" y="-552"/>
+            <point key="canvasLocation" x="121.73913043478262" y="-552.45535714285711"/>
         </scene>
     </scenes>
     <resources>
         <image name="img_bottom_article" width="42" height="44"/>
         <image name="img_bottom_article_selected" width="46" height="52"/>
+        <image name="img_searchBar_btn" width="728" height="88"/>
         <image name="상단_장바구니" width="25" height="23"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

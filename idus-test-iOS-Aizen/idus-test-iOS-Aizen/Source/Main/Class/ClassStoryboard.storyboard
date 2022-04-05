@@ -35,7 +35,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LwB-Dg-9Po" customClass="ButtonBarView" customModule="XLPagerTabStrip">
-                                <rect key="frame" x="0.0" y="88" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="138" width="414" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ICR-t7-JP0"/>
                                 </constraints>
@@ -57,10 +57,10 @@
                                 </cells>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D3Y-ey-BGt">
-                                <rect key="frame" x="0.0" y="146" width="414" height="667"/>
+                                <rect key="frame" x="0.0" y="196" width="414" height="617"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GOZ-Ga-Qc6">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="667"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="617"/>
                                     </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -71,17 +71,39 @@
                                     <constraint firstAttribute="bottom" secondItem="GOZ-Ga-Qc6" secondAttribute="bottom" id="gD6-y7-WUc"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6K6-Vb-iEH">
+                                <rect key="frame" x="0.0" y="88" width="414" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4V-oP-xx2">
+                                        <rect key="frame" x="16" y="4" width="382" height="42"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="img_searchbar_class_btn"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="l4V-oP-xx2" firstAttribute="leading" secondItem="6K6-Vb-iEH" secondAttribute="leading" constant="16" id="7mj-Kw-6kx"/>
+                                    <constraint firstAttribute="trailing" secondItem="l4V-oP-xx2" secondAttribute="trailing" constant="16" id="LUM-ZG-zqi"/>
+                                    <constraint firstAttribute="bottom" secondItem="l4V-oP-xx2" secondAttribute="bottom" constant="4" id="UDx-GD-GUI"/>
+                                    <constraint firstItem="l4V-oP-xx2" firstAttribute="top" secondItem="6K6-Vb-iEH" secondAttribute="top" constant="4" id="gqn-xE-GmT"/>
+                                    <constraint firstAttribute="height" constant="50" id="nuz-dO-eV8"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bhV-JM-IiP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="D3Y-ey-BGt" firstAttribute="leading" secondItem="bhV-JM-IiP" secondAttribute="leading" id="9ve-ZI-Nm8"/>
                             <constraint firstItem="D3Y-ey-BGt" firstAttribute="top" secondItem="LwB-Dg-9Po" secondAttribute="bottom" constant="8" symbolic="YES" id="Eug-tN-ZK0"/>
-                            <constraint firstItem="LwB-Dg-9Po" firstAttribute="top" secondItem="bhV-JM-IiP" secondAttribute="top" id="KzE-CG-atV"/>
+                            <constraint firstItem="D3Y-ey-BGt" firstAttribute="top" secondItem="LwB-Dg-9Po" secondAttribute="bottom" constant="8" id="HpR-pe-34V"/>
+                            <constraint firstItem="LwB-Dg-9Po" firstAttribute="top" secondItem="bhV-JM-IiP" secondAttribute="top" constant="50" id="KzE-CG-atV"/>
                             <constraint firstItem="D3Y-ey-BGt" firstAttribute="trailing" secondItem="bhV-JM-IiP" secondAttribute="trailing" id="Off-IL-G6U"/>
                             <constraint firstItem="D3Y-ey-BGt" firstAttribute="bottom" secondItem="bhV-JM-IiP" secondAttribute="bottom" id="XIW-UB-Wxx"/>
+                            <constraint firstItem="6K6-Vb-iEH" firstAttribute="trailing" secondItem="bhV-JM-IiP" secondAttribute="trailing" id="d9W-g4-ge5"/>
                             <constraint firstItem="LwB-Dg-9Po" firstAttribute="trailing" secondItem="bhV-JM-IiP" secondAttribute="trailing" id="iUQ-BX-qeS"/>
                             <constraint firstItem="LwB-Dg-9Po" firstAttribute="leading" secondItem="bhV-JM-IiP" secondAttribute="leading" id="idM-wa-q1w"/>
+                            <constraint firstItem="6K6-Vb-iEH" firstAttribute="leading" secondItem="bhV-JM-IiP" secondAttribute="leading" id="qgv-BH-hru"/>
+                            <constraint firstItem="6K6-Vb-iEH" firstAttribute="top" secondItem="bhV-JM-IiP" secondAttribute="top" id="w1Q-7k-ayg"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="클래스" image="img_bottom_class" selectedImage="img_bottom_class_selected" id="5jt-ch-G9x">
@@ -157,6 +179,7 @@
     <resources>
         <image name="img_bottom_class" width="44" height="42"/>
         <image name="img_bottom_class_selected" width="44" height="40"/>
+        <image name="img_searchbar_class_btn" width="656" height="72"/>
         <image name="img_temp_offline_class" width="628" height="938"/>
         <image name="img_temp_online_class" width="630" height="944"/>
         <systemColor name="systemBackgroundColor">

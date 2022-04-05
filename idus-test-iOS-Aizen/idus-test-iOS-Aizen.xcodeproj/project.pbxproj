@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8235E26C5663DE9951E2CD49 /* Pods_idus_test_iOS_Aizen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDB0FF13BFE3CEE8B16256F /* Pods_idus_test_iOS_Aizen.framework */; };
+		EE18513727FC8F7D004B821C /* ReviewDeleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE18513627FC8F7D004B821C /* ReviewDeleteViewController.swift */; };
 		EE1A56F427F5F536000CFA4E /* ReviewDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1A56F327F5F536000CFA4E /* ReviewDataManager.swift */; };
 		EE1A56F627F5F5C0000CFA4E /* ReviewRepuest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1A56F527F5F5C0000CFA4E /* ReviewRepuest.swift */; };
 		EE1A56F827F5F6E8000CFA4E /* ReviewResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1A56F727F5F6E8000CFA4E /* ReviewResponse.swift */; };
@@ -41,6 +42,11 @@
 		EE6551E127EE4C5800BBCF90 /* EmailLoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6551E027EE4C5800BBCF90 /* EmailLoginResponse.swift */; };
 		EE6551E527EE605E00BBCF90 /* ProfileDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6551E427EE605E00BBCF90 /* ProfileDataManager.swift */; };
 		EE6551E727EE608E00BBCF90 /* ProfileResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6551E627EE608E00BBCF90 /* ProfileResponse.swift */; };
+		EE74AEAB27FC3DEB0097643B /* SearchPresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE74AEAA27FC3DEB0097643B /* SearchPresentViewController.swift */; };
+		EE74AEAF27FC3EC70097643B /* RankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE74AEAD27FC3EC70097643B /* RankingTableViewCell.swift */; };
+		EE74AEB027FC3EC70097643B /* RankingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE74AEAE27FC3EC70097643B /* RankingTableViewCell.xib */; };
+		EE74AEB327FC3F7F0097643B /* PopularTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE74AEB127FC3F7F0097643B /* PopularTableViewCell.swift */; };
+		EE74AEB427FC3F7F0097643B /* PopularTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE74AEB227FC3F7F0097643B /* PopularTableViewCell.xib */; };
 		EE8594C127EAF12F00F274A4 /* OnlyImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8594BF27EAF12F00F274A4 /* OnlyImageCollectionViewCell.swift */; };
 		EE8594C227EAF12F00F274A4 /* OnlyImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE8594C027EAF12F00F274A4 /* OnlyImageCollectionViewCell.xib */; };
 		EE8594C527EAF30A00F274A4 /* NewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8594C327EAF30A00F274A4 /* NewCollectionViewCell.swift */; };
@@ -137,6 +143,8 @@
 		EEEA527327F4EC8800981813 /* ReviewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA527127F4EC8800981813 /* ReviewCellTableViewCell.swift */; };
 		EEEA527427F4EC8800981813 /* ReviewCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEEA527227F4EC8800981813 /* ReviewCellTableViewCell.xib */; };
 		EEEA527627F5022F00981813 /* WriteReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEA527527F5022F00981813 /* WriteReviewViewController.swift */; };
+		EEF4224727FBFB6C00F27F6C /* CommentDeleteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF4224627FBFB6C00F27F6C /* CommentDeleteResponse.swift */; };
+		EEF4224927FC025100F27F6C /* ReviewDeleteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF4224827FC025100F27F6C /* ReviewDeleteResponse.swift */; };
 		EEFC9ABF27F11BAF000704D0 /* DetailBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFC9ABE27F11BAF000704D0 /* DetailBottomSheetViewController.swift */; };
 		EEFC9AC327F1267B000704D0 /* DetailBottomSheetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFC9AC127F1267B000704D0 /* DetailBottomSheetTableViewCell.swift */; };
 		EEFC9AC427F1267B000704D0 /* DetailBottomSheetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEFC9AC227F1267B000704D0 /* DetailBottomSheetTableViewCell.xib */; };
@@ -158,6 +166,7 @@
 		7CDB0FF13BFE3CEE8B16256F /* Pods_idus_test_iOS_Aizen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_idus_test_iOS_Aizen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9891BBBE67D939487AA54A93 /* Pods-idus-test-iOS-Aizen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-idus-test-iOS-Aizen.release.xcconfig"; path = "Target Support Files/Pods-idus-test-iOS-Aizen/Pods-idus-test-iOS-Aizen.release.xcconfig"; sourceTree = "<group>"; };
 		B1CD12B4D5E4A8B60F313535 /* Pods-idus-test-iOS-Aizen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-idus-test-iOS-Aizen.debug.xcconfig"; path = "Target Support Files/Pods-idus-test-iOS-Aizen/Pods-idus-test-iOS-Aizen.debug.xcconfig"; sourceTree = "<group>"; };
+		EE18513627FC8F7D004B821C /* ReviewDeleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDeleteViewController.swift; sourceTree = "<group>"; };
 		EE1A56F327F5F536000CFA4E /* ReviewDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDataManager.swift; sourceTree = "<group>"; };
 		EE1A56F527F5F5C0000CFA4E /* ReviewRepuest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRepuest.swift; sourceTree = "<group>"; };
 		EE1A56F727F5F6E8000CFA4E /* ReviewResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewResponse.swift; sourceTree = "<group>"; };
@@ -191,6 +200,11 @@
 		EE6551E027EE4C5800BBCF90 /* EmailLoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginResponse.swift; sourceTree = "<group>"; };
 		EE6551E427EE605E00BBCF90 /* ProfileDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataManager.swift; sourceTree = "<group>"; };
 		EE6551E627EE608E00BBCF90 /* ProfileResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileResponse.swift; sourceTree = "<group>"; };
+		EE74AEAA27FC3DEB0097643B /* SearchPresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresentViewController.swift; sourceTree = "<group>"; };
+		EE74AEAD27FC3EC70097643B /* RankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingTableViewCell.swift; sourceTree = "<group>"; };
+		EE74AEAE27FC3EC70097643B /* RankingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankingTableViewCell.xib; sourceTree = "<group>"; };
+		EE74AEB127FC3F7F0097643B /* PopularTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTableViewCell.swift; sourceTree = "<group>"; };
+		EE74AEB227FC3F7F0097643B /* PopularTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopularTableViewCell.xib; sourceTree = "<group>"; };
 		EE8594BF27EAF12F00F274A4 /* OnlyImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlyImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		EE8594C027EAF12F00F274A4 /* OnlyImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnlyImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		EE8594C327EAF30A00F274A4 /* NewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -289,6 +303,8 @@
 		EEEA527127F4EC8800981813 /* ReviewCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCellTableViewCell.swift; sourceTree = "<group>"; };
 		EEEA527227F4EC8800981813 /* ReviewCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewCellTableViewCell.xib; sourceTree = "<group>"; };
 		EEEA527527F5022F00981813 /* WriteReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteReviewViewController.swift; sourceTree = "<group>"; };
+		EEF4224627FBFB6C00F27F6C /* CommentDeleteResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentDeleteResponse.swift; sourceTree = "<group>"; };
+		EEF4224827FC025100F27F6C /* ReviewDeleteResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDeleteResponse.swift; sourceTree = "<group>"; };
 		EEFC9ABE27F11BAF000704D0 /* DetailBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBottomSheetViewController.swift; sourceTree = "<group>"; };
 		EEFC9AC127F1267B000704D0 /* DetailBottomSheetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBottomSheetTableViewCell.swift; sourceTree = "<group>"; };
 		EEFC9AC227F1267B000704D0 /* DetailBottomSheetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailBottomSheetTableViewCell.xib; sourceTree = "<group>"; };
@@ -349,8 +365,10 @@
 		EE3CC32E27EA12F30075D5AA /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				EE74AEAC27FC3E840097643B /* Cell */,
 				EE3CC32F27EA130A0075D5AA /* SearchStoryboard.storyboard */,
 				EE3CC33127EA13180075D5AA /* SearchViewController.swift */,
+				EE74AEAA27FC3DEB0097643B /* SearchPresentViewController.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -410,6 +428,8 @@
 				EE4C30A127F424E200E07BB1 /* CommentWriteResponse.swift */,
 				EE1A56F527F5F5C0000CFA4E /* ReviewRepuest.swift */,
 				EE1A56F727F5F6E8000CFA4E /* ReviewResponse.swift */,
+				EEF4224627FBFB6C00F27F6C /* CommentDeleteResponse.swift */,
+				EEF4224827FC025100F27F6C /* ReviewDeleteResponse.swift */,
 			);
 			path = DetailEntity;
 			sourceTree = "<group>";
@@ -498,6 +518,17 @@
 			children = (
 				EEEA527127F4EC8800981813 /* ReviewCellTableViewCell.swift */,
 				EEEA527227F4EC8800981813 /* ReviewCellTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EE74AEAC27FC3E840097643B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EE74AEAD27FC3EC70097643B /* RankingTableViewCell.swift */,
+				EE74AEAE27FC3EC70097643B /* RankingTableViewCell.xib */,
+				EE74AEB127FC3F7F0097643B /* PopularTableViewCell.swift */,
+				EE74AEB227FC3F7F0097643B /* PopularTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -648,6 +679,7 @@
 				EEBEBE9927EC11E400037059 /* DetailStoryboard.storyboard */,
 				EEBEBE9C27EC1A2E00037059 /* DetailViewController.swift */,
 				EEEA527527F5022F00981813 /* WriteReviewViewController.swift */,
+				EE18513627FC8F7D004B821C /* ReviewDeleteViewController.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -1031,6 +1063,7 @@
 			files = (
 				EED3AFF327E5AFD100C4DBC7 /* LaunchScreen.storyboard in Resources */,
 				EEA2966B27ED470F00D09ECB /* ReviewTableViewCell.xib in Resources */,
+				EE74AEB427FC3F7F0097643B /* PopularTableViewCell.xib in Resources */,
 				EE3CC33027EA130A0075D5AA /* SearchStoryboard.storyboard in Resources */,
 				EEE2B8CF27E82A4900A97E8E /* MyInfoPlusTableViewCell.xib in Resources */,
 				EEA2967027ED4CFA00D09ECB /* CommentTableViewCell.xib in Resources */,
@@ -1059,6 +1092,7 @@
 				EEFC9AC427F1267B000704D0 /* DetailBottomSheetTableViewCell.xib in Resources */,
 				EEFC9AD427F15805000704D0 /* ThirdArticleInfoTableViewCell.xib in Resources */,
 				EEE2B8E527E82C2200A97E8E /* MyInfoNoLoginTableViewCell.xib in Resources */,
+				EE74AEB027FC3EC70097643B /* RankingTableViewCell.xib in Resources */,
 				EEE2B8C027E81A4C00A97E8E /* MainStoryboard.storyboard in Resources */,
 				EE3CC33527EA13340075D5AA /* CategoryStoryboard.storyboard in Resources */,
 				EEEA527427F4EC8800981813 /* ReviewCellTableViewCell.xib in Resources */,
@@ -1154,6 +1188,7 @@
 				EEB9569827ECACD40085C64C /* PostTableViewCell.swift in Sources */,
 				EEDFFDA327E64E4B00B572C3 /* UIViewController.swift in Sources */,
 				EEFC9ADB27F158B5000704D0 /* FifthPayInfoTableViewCell.swift in Sources */,
+				EE74AEAB27FC3DEB0097643B /* SearchPresentViewController.swift in Sources */,
 				EEBC6FA327F0120D006F8072 /* NewResponse.swift in Sources */,
 				EE42A93227E9B53100A4002F /* ParentViewController.swift in Sources */,
 				EE4C309E27F422DE00E07BB1 /* CommentDataManager.swift in Sources */,
@@ -1170,6 +1205,7 @@
 				EEBAB38F27F16BDA00A53A30 /* OrderPayViewController.swift in Sources */,
 				EEA2967427ED4F8200D09ECB /* ArtistInfoTableViewCell.swift in Sources */,
 				EE643FC827F0875E00935857 /* DetailResponse.swift in Sources */,
+				EE74AEB327FC3F7F0097643B /* PopularTableViewCell.swift in Sources */,
 				EEFC9AC327F1267B000704D0 /* DetailBottomSheetTableViewCell.swift in Sources */,
 				EEE95D3527EF6EDC00860F15 /* MyAccountTabTableViewCell.swift in Sources */,
 				EE6551E127EE4C5800BBCF90 /* EmailLoginResponse.swift in Sources */,
@@ -1179,6 +1215,7 @@
 				EEBEBEAD27EC45B700037059 /* MiniImageCollectionViewCell.swift in Sources */,
 				EE3CC34127EA13D30075D5AA /* OfflineViewController.swift in Sources */,
 				EEEA527327F4EC8800981813 /* ReviewCellTableViewCell.swift in Sources */,
+				EEF4224927FC025100F27F6C /* ReviewDeleteResponse.swift in Sources */,
 				EE3CC33227EA13180075D5AA /* SearchViewController.swift in Sources */,
 				EEE95D4827EF7D3300860F15 /* MyProfileSetViewController.swift in Sources */,
 				EEE95D4527EF730400860F15 /* LogOutTableViewCell.swift in Sources */,
@@ -1189,9 +1226,11 @@
 				EE8594C127EAF12F00F274A4 /* OnlyImageCollectionViewCell.swift in Sources */,
 				EEE2B8CE27E82A4900A97E8E /* MyInfoPlusTableViewCell.swift in Sources */,
 				EEDFFDA027E645FF00B572C3 /* LoginMainViewController.swift in Sources */,
+				EE18513727FC8F7D004B821C /* ReviewDeleteViewController.swift in Sources */,
 				EEFC9ABF27F11BAF000704D0 /* DetailBottomSheetViewController.swift in Sources */,
 				EEE95D4127EF72F000860F15 /* AlarmTableViewCell.swift in Sources */,
 				EEBAB38D27F16BA300A53A30 /* DirectBuyViewController.swift in Sources */,
+				EE74AEAF27FC3EC70097643B /* RankingTableViewCell.swift in Sources */,
 				EEA2965C27ED347000D09ECB /* ArticleInfoTableViewCell.swift in Sources */,
 				EEFC9ACF27F15513000704D0 /* SecondAddressTableViewCell.swift in Sources */,
 				EE6551D827EE314800BBCF90 /* SignUpResponse.swift in Sources */,
@@ -1213,6 +1252,7 @@
 				EEE2B8D227E82A6F00A97E8E /* addBannerTableViewCell.swift in Sources */,
 				EEE95D3D27EF72C900860F15 /* RefundManageTableViewCell.swift in Sources */,
 				EE6551D027EE2CDF00BBCF90 /* SignUpDataManager.swift in Sources */,
+				EEF4224727FBFB6C00F27F6C /* CommentDeleteResponse.swift in Sources */,
 				EEBEBEB527EC45E800037059 /* MiniCell.swift in Sources */,
 				EEE95D2A27EF563B00860F15 /* ProfilePatchRequest.swift in Sources */,
 				EEFC9AD327F15805000704D0 /* ThirdArticleInfoTableViewCell.swift in Sources */,

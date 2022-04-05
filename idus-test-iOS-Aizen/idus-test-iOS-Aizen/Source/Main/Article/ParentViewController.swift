@@ -71,20 +71,27 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
         navigationItem.rightBarButtonItem = buttonView
         
         
-        //검색 서치바 설정
-        let searchController = UISearchController(searchResultsController: nil)
-        searchController.searchBar.placeholder = "봄맞이를 검색해보세요."
-        searchController.searchBar.backgroundColor = UIColor.white
-
-        searchController.searchBar.tintColor = UIColor.white
-        searchController.searchBar.barTintColor = UIColor.white
-        searchController.hidesNavigationBarDuringPresentation = true
-        searchController.automaticallyShowsCancelButton = false
-        self.navigationItem.searchController = searchController
-        
+//        //검색 서치바 설정
+//        let searchController = UISearchController(searchResultsController: nil)
+//        searchController.searchBar.placeholder = "봄맞이를 검색해보세요."
+//        searchController.searchBar.backgroundColor = UIColor.clear
+//
+//        searchController.searchBar.tintColor = UIColor.clear
+//        searchController.searchBar.barTintColor = UIColor.clear
+//        searchController.hidesNavigationBarDuringPresentation = true
+//        searchController.automaticallyShowsCancelButton = false
+//
+//
+//
+//
+//
+//        self.navigationItem.searchController = searchController
+       
         
        
     }
+    
+   
     
     // buttonBarView디자인
     func initButtonBar() {

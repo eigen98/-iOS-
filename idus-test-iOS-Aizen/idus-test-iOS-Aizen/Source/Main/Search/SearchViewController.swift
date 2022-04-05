@@ -16,6 +16,7 @@ class SearchViewController: BaseViewController {
         textField.becomeFirstResponder()
 
         // Do any additional setup after loading the view.
+        initSearchBar()
     }
     
     @IBAction func backToPrevious(_ sender: UIButton) {
@@ -23,6 +24,33 @@ class SearchViewController: BaseViewController {
         
         
     }
+    
+    private func initSearchBar() {
+        // 검색 버튼
+       
+       
+        // 검색 버튼
+            let search = UIBarButtonItem(systemItem: .search, primaryAction: UIAction(handler: { _ in
+                // search action
+            }))
+            self.navigationItem.rightBarButtonItem = search
+            let searchBar = UISearchBar(frame: CGRect(x: 0, y: 0, width: view.frame.width - 80, height: 0))
+            searchBar.placeholder = "맥주를 검색해보세요"
+            self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: searchBar)
+       
+       
+       
+       
+       
+        
+        
+        //뒤로가기 버튼
+//        let backBtn = UIBarButtonItem(systemItem: , primaryAction: UIAction(handler: { _ in
+//            // back action
+//        }))
+        self.navigationItem.leftBarButtonItem = search
+    }
+    
     func initNavigationBar() {
 
     

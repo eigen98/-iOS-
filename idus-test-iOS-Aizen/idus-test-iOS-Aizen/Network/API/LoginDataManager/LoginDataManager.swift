@@ -9,7 +9,6 @@ import Foundation
 import Alamofire
 
 class LoginDataManager {
-    
     let keyChainManager = KeyChainManager.shared
     //이메일 로그인
     //로그인 api -> Post 방식 (/app/users/login)
@@ -43,9 +42,6 @@ class LoginDataManager {
                             delegate.failedLogin(message: "데이터베이스 연결에 실패하였습니다.")
                         }
                     }
-                    
-                    
-                    
                     
                 case .failure(let error):
                     print(error.localizedDescription)
