@@ -35,10 +35,24 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="메시지로 남겼는데요 주소를 잘못적어서요 ~확인 후 발송 부탁드릴게요." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rql-oL-X4J">
                                 <rect key="frame" x="56" y="51" width="350" height="97"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDS-sg-bFB">
+                                <rect key="frame" x="366" y="16" width="32" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="5bV-ae-0ud"/>
+                                    <constraint firstAttribute="width" constant="32" id="uKW-2N-u4f"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system">
+                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tapDeleteCommentBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="AKg-sK-OzK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
@@ -49,9 +63,11 @@
                             <constraint firstItem="Rql-oL-X4J" firstAttribute="leading" secondItem="TwU-8j-4dj" secondAttribute="leading" constant="56" id="IbL-BN-xiH"/>
                             <constraint firstItem="jYc-ls-CBW" firstAttribute="leading" secondItem="c8S-jh-vAr" secondAttribute="trailing" constant="8" id="KjF-fg-eEo"/>
                             <constraint firstItem="c8S-jh-vAr" firstAttribute="top" secondItem="TwU-8j-4dj" secondAttribute="top" constant="16" id="LL7-Ev-IG9"/>
+                            <constraint firstItem="dDS-sg-bFB" firstAttribute="top" secondItem="TwU-8j-4dj" secondAttribute="top" constant="16" id="MJL-F3-9u0"/>
                             <constraint firstAttribute="width" constant="414" id="TqL-fb-YgX"/>
                             <constraint firstAttribute="trailing" secondItem="Rql-oL-X4J" secondAttribute="trailing" constant="8" id="cnl-EP-awP"/>
                             <constraint firstItem="Rql-oL-X4J" firstAttribute="top" secondItem="jYc-ls-CBW" secondAttribute="bottom" constant="8" id="kS6-9R-oOR"/>
+                            <constraint firstAttribute="trailing" secondItem="dDS-sg-bFB" secondAttribute="trailing" constant="16" id="pr0-rx-HWz"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -64,6 +80,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="deleteCommentBtn" destination="dDS-sg-bFB" id="fHV-5i-h6F"/>
                 <outlet property="userCommentText" destination="Rql-oL-X4J" id="AHg-Wd-P9L"/>
                 <outlet property="userNameText" destination="jYc-ls-CBW" id="PU5-kv-uIA"/>
             </connections>
@@ -72,8 +89,12 @@
     </objects>
     <resources>
         <image name="img_mark_sample" width="44" height="44"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

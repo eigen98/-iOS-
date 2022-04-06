@@ -18,11 +18,15 @@ class NewDataManager{
         var jwt = KeyChainManager.shared.readUser()?.jwtToken
         
         let url = "\(Constant.BASE_URL)/app/works/new"
-        print("jwt is = \(jwt!)")
+        print("jwt is = \(jwt)")
         
         
         //"Content-Type":"application/json",
-        let header: HTTPHeaders = ["X-ACCESS-TOKEN" : jwt!  ]
+        var header: HTTPHeaders = [ ]
+        if jwt != nil {
+        header = ["X-ACCESS-TOKEN" : jwt!  ]
+            
+        }
         
         AF.request(url, method: .get ,parameters: nil, encoding: JSONEncoding.default, headers: header)
             .validate()

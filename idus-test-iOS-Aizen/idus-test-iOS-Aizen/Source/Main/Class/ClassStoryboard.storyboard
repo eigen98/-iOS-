@@ -78,6 +78,9 @@
                                         <rect key="frame" x="16" y="4" width="382" height="42"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="img_searchbar_class_btn"/>
+                                        <connections>
+                                            <action selector="moveSearch:" destination="IPm-od-CNL" eventType="touchUpInside" id="yAz-hH-lve"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -107,6 +110,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="클래스" image="img_bottom_class" selectedImage="img_bottom_class_selected" id="5jt-ch-G9x">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="5"/>
                         <color key="badgeColor" systemColor="systemOrangeColor"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="bIk-9D-xTS">
@@ -116,6 +120,7 @@
                     <connections>
                         <outlet property="buttonBar" destination="LwB-Dg-9Po" id="UYk-ec-Ejs"/>
                         <outlet property="buttonBarView" destination="LwB-Dg-9Po" id="YMF-Ju-5kb"/>
+                        <outlet property="classTabbar" destination="5jt-ch-G9x" id="w6T-Hx-JyH"/>
                         <outlet property="containerView" destination="GOZ-Ga-Qc6" id="PxF-gw-snX"/>
                     </connections>
                 </viewController>

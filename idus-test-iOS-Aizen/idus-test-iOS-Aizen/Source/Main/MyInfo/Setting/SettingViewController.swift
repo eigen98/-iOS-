@@ -162,7 +162,7 @@ extension SettingViewController : LogoutProtocol {
         //로그인화면으로  전환
         let loginController = UIStoryboard(name: "LoginStoryboard", bundle: nil).instantiateViewController(identifier: "LoginMainViewController")
         changeRootViewController(loginController)
-        
+        UserDefaults.standard.set("", forKey: "name")
         //self.dismiss(animated: false, completion: nil)
     }
     

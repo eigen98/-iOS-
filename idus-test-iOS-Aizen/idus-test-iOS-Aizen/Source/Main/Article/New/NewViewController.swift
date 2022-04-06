@@ -80,17 +80,8 @@ class NewViewController: UIViewController , IndicatorInfoProvider, NewProtocol {
         
         dataManager.getNewArticles(delegate: self)
         (newCollectionView.collectionViewLayout as? UICollectionViewFlowLayout)?.estimatedItemSize = .zero
-        
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        
         self.newCollectionView.delegate = self
         self.newCollectionView.dataSource = self
-        
-        
         //xib 셀 등록
         let onlyImageXib = UINib(nibName: "OnlyImageCollectionViewCell", bundle: nil)
         
@@ -98,6 +89,19 @@ class NewViewController: UIViewController , IndicatorInfoProvider, NewProtocol {
         
         let newXib = UINib(nibName: "NewCollectionViewCell", bundle: nil)
         self.newCollectionView.register(newXib, forCellWithReuseIdentifier: "NewCollectionViewCell")
+        
+        self.newCollectionView.reloadData()
+        
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        
+       
+        
+        
+       
     
         
     }

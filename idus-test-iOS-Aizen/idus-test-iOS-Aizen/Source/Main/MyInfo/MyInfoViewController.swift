@@ -28,7 +28,14 @@ struct typeOfCell{
     }
 }
 
-class MyInfoViewController: ViewController, SettingProtocol {
+class MyInfoViewController: ViewController, SettingProtocol,NologinProtocol {
+    func moveLoginPage() {
+        //로그인화면으로  전환
+        let loginController = UIStoryboard(name: "LoginStoryboard", bundle: nil).instantiateViewController(identifier: "LoginMainViewController")
+        self.changeRootViewController(loginController)
+    }
+    
+    @IBOutlet weak var myInfoTab: UITabBarItem!
     //???
 //    required init?(coder: NSCoder) {
 //        fatalError("init(coder:) has not been implemented")
@@ -50,6 +57,7 @@ class MyInfoViewController: ViewController, SettingProtocol {
     @IBOutlet weak var myInfotableView: UITableView!
     
     
+    
     //세팅버튼 구현 프로토콜 메소드
     func clickedSettingBtn() {
         
@@ -65,15 +73,15 @@ class MyInfoViewController: ViewController, SettingProtocol {
         super.viewWillAppear(animated)
         
         self.dataManager.getUserProfile(delegate: self)
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //테이블 뷰 배경 
-        self.myInfotableView.backgroundColor = .systemGray6
+
         
-        
-    
+        self.myInfoTab.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.orange], for: .selected)
         
         
 
@@ -195,7 +203,7 @@ extension MyInfoViewController :UITableViewDelegate, UITableViewDataSource {
             if(userData?.isSuccess == nil || userData?.isSuccess == false ){ //로그인 실패 시
                 if let cell = tableView.dequeueReusableCell(withIdentifier: "MyInfoNoLoginTableViewCell") as? MyInfoNoLoginTableViewCell {
                     
-                    
+                    cell.noLoginDelegate = self
                     return cell
                 }
             }else {

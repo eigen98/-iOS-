@@ -51,11 +51,15 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="검색" id="dmD-Gs-TVX">
                         <imageReference key="image" image="magnifyingglass" catalog="system" symbolScale="large"/>
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="3"/>
                         <color key="badgeColor" systemColor="systemOrangeColor"/>
-                        <imageReference key="selectedImage" image="magnifyingglass" catalog="system" symbolScale="large"/>
+                        <imageReference key="selectedImage" image="img_bottom_search" symbolScale="large"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="g06-AB-JtE"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="searchTabbar" destination="dmD-Gs-TVX" id="hZe-8F-K6k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bcS-Wv-5gg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -64,7 +68,7 @@
         <!--Search Present View Controller-->
         <scene sceneID="rcV-fP-Pll">
             <objects>
-                <viewController id="bog-pT-QS5" customClass="SearchPresentViewController" customModule="idus_test_iOS_Aizen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchPresentViewController" id="bog-pT-QS5" customClass="SearchPresentViewController" customModule="idus_test_iOS_Aizen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aPV-Nd-NEc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -81,6 +85,9 @@
                                 <state key="normal">
                                     <imageReference key="image" image="arrow.backward" catalog="system" symbolScale="large"/>
                                 </state>
+                                <connections>
+                                    <action selector="backBtn:" destination="bog-pT-QS5" eventType="touchUpInside" id="Pfz-ag-aqO"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="봄맞이를 검색해보세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HuR-7q-FyX">
                                 <rect key="frame" x="73" y="41.5" width="261" height="34"/>
@@ -120,6 +127,9 @@
                             <constraint firstItem="N7m-EM-KFL" firstAttribute="centerY" secondItem="HuR-7q-FyX" secondAttribute="centerY" id="zay-5a-h8Q"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="searchTableVIew" destination="mXb-Xh-QWT" id="Mod-8J-RBG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hCe-bm-WMG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -128,6 +138,7 @@
     </scenes>
     <resources>
         <image name="arrow.backward" catalog="system" width="128" height="98"/>
+        <image name="img_bottom_search" width="42" height="42"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

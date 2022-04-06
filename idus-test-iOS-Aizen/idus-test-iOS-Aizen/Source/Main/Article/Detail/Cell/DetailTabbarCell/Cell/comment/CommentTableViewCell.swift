@@ -2,18 +2,22 @@
 //  CommentTableViewCell.swift
 //  idus-test-iOS-Aizen
 //
-//  Created by JeongMin Ko on 2022/03/25.
+
 //
 
 import UIKit
 // 테이블 뷰 안에 또다른 셀인 댓글 테이블 뷰 안으로 데이터를 전송하기 위한 딜리게이트
 protocol CommentInTableProtocol{
     func transferCommentData(commentData : [CommentResponse], workId : Int)
+
     
 }
 
-class CommentTableViewCell: UITableViewCell, CommentInTableProtocol {
+class CommentTableViewCell: UITableViewCell, CommentInTableProtocol{
+   
+    var commentDeleteDelegate : CommentDeleteProtocol? = nil
     
+    var delegateViewController : UIViewController? = nil
     @IBOutlet weak var firstMessageText: UILabel!
     @IBOutlet weak var firstMessageImg1: UIImageView!
     //댓글쓰기 데이터매니저
@@ -97,6 +101,19 @@ class CommentTableViewCell: UITableViewCell, CommentInTableProtocol {
    //전송 버튼 리스너
     @IBAction func uploadCommentBtn(_ sender: UIButton) {
         isCommentUploaded = true
+        
+        //로컬에 저장된 jwt토큰
+        var jwt = KeyChainManager.shared.readUser()?.jwtToken
+        //로그인 상태가 아니라면
+        if jwt != nil {
+       
+            
+        }else {
+            //로그인화면으로  전환
+            let loginController = UIStoryboard(name: "LoginStoryboard", bundle: nil).instantiateViewController(identifier: "LoginMainViewController")
+            delegateViewController?.changeRootViewController(loginController)
+            return
+        }
         let content = self.commentTextField.text
         let workId = self.workId
         self.commentDataManager.commentPost(CommentRequest(workId: workId, content: content!), delegate: self)
@@ -136,8 +153,22 @@ extension CommentTableViewCell : UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "CommentListTableViewCell", for: indexPath) as? CommentListTableViewCell else{ return UITableViewCell()}
-        cell.userNameText.text = commentData[2 - indexPath.row].name
-        cell.userCommentText.text = commentData[2 - indexPath.row].comment
+        cell.commentData = commentData[indexPath.row]
+        cell.userNameText.text = commentData[ indexPath.row].name
+        cell.userCommentText.text = commentData[ indexPath.row].comment
+        cell.commentDeleteDelegate = self.commentDeleteDelegate
+        cell.cell = self
+        
+        print("댓글 이름은 \(cell.commentData?.name)")
+        print("내  이름은 \(UserDefaults.standard.string(forKey: "name"))")
+        if cell.commentData?.name != UserDefaults.standard.string(forKey: "name"){
+            cell.deleteCommentBtn.isHidden = true
+            
+            print(cell.commentData?.name == UserDefaults.standard.string(forKey: "name"))
+        }else{
+            cell.deleteCommentBtn.isHidden = false
+        }
+        
         return cell
     }
     

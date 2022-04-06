@@ -11,6 +11,8 @@ import XLPagerTabStrip
 class ParentViewController: ButtonBarPagerTabStripViewController {
 
     
+    @IBOutlet weak var articleTabbar: UITabBarItem!
+    
     @IBOutlet weak var buttonBar: ButtonBarView!
     
     
@@ -20,8 +22,55 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
         super.viewDidLoad()
         initNavigationBar()
         initButtonBar()
+        self.articleTabbar.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.orange], for: .selected)
+        
+        
 
         // Do any additional setup after loading the view.
+    }
+    
+
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        var hasOpened : Int = UserDefaults.standard.integer(forKey: "hasOpened")
+        //처음 여는 상태라면
+        print( "메인화면 hasOpened = \(UserDefaults.standard.integer(forKey: "hasOpened") )" )
+        if hasOpened == 0 {
+       
+            
+            self.tabBarController?.selectedIndex = 4
+            UserDefaults.standard.set(1, forKey: "hasOpened")
+            print( "hasOpened 변경 = \(UserDefaults.standard.integer(forKey: "hasOpened") )" )
+            
+        }else {
+           //처음이 아니라면
+            self.tabBarController?.selectedIndex = 0
+            
+        }
+        
+    }
+    
+    @IBAction func moveSearch(_ sender: UIButton) {
+        guard let vc = UIStoryboard(name: "SearchStoryboard", bundle: nil).instantiateViewController(withIdentifier: "SearchPresentViewController") as? SearchPresentViewController else { return
+            print("DirectBuy 생성 실패")
+        }
+         //작품 정보를 다음 바로결제 화면으로 넘겨줌
+        
+        //self.navigationController?.pushViewController(directBuyVC, animated: true)
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true, completion: nil)
+        
+    }
+    
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+       
+        
+        
     }
     
     //pager
@@ -30,11 +79,11 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
         new.tabName = "New"
 
 
-           let realtime = UIStoryboard(name: "NewStoryboard", bundle: nil).instantiateViewController(withIdentifier: "NewVC") as! NewViewController
-        realtime.tabName = "실시간"
+           let realtime = UIStoryboard(name: "RealTimeStoryboard", bundle: nil).instantiateViewController(withIdentifier: "RealVC") as! RealTimeViewController
+        //realtime.tabName = "실시간"
 
-           let today = UIStoryboard(name: "NewStoryboard", bundle: nil).instantiateViewController(withIdentifier: "NewVC") as! NewViewController
-        today.tabName = "투데이"
+           let today = UIStoryboard(name: "TodayStoryboard", bundle: nil).instantiateViewController(withIdentifier: "TodayVC") as! TodayViewController
+        //today.tabName = "투데이"
 
            return [today, realtime, new]
        }
@@ -71,18 +120,7 @@ class ParentViewController: ButtonBarPagerTabStripViewController {
         navigationItem.rightBarButtonItem = buttonView
         
         
-//        //검색 서치바 설정
-//        let searchController = UISearchController(searchResultsController: nil)
-//        searchController.searchBar.placeholder = "봄맞이를 검색해보세요."
-//        searchController.searchBar.backgroundColor = UIColor.clear
-//
-//        searchController.searchBar.tintColor = UIColor.clear
-//        searchController.searchBar.barTintColor = UIColor.clear
-//        searchController.hidesNavigationBarDuringPresentation = true
-//        searchController.automaticallyShowsCancelButton = false
-//
-//
-//
+//    
 //
 //
 //        self.navigationItem.searchController = searchController

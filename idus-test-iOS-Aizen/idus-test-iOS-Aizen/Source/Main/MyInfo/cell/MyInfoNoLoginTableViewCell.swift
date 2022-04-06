@@ -6,9 +6,14 @@
 //
 
 import UIKit
+protocol NologinProtocol{
+    func moveLoginPage()
+}
 
 class MyInfoNoLoginTableViewCell: UITableViewCell {
 
+    var noLoginDelegate : NologinProtocol? = nil
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,4 +25,8 @@ class MyInfoNoLoginTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    @IBAction func moveLoginPageBtn(_ sender: UIButton) {
+        noLoginDelegate?.moveLoginPage()
+        
+    }
 }

@@ -21,9 +21,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="280"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="miy-zd-y9N">
-                                <rect key="frame" x="0.0" y="88" width="414" height="192"/>
+                                <rect key="frame" x="32" y="88" width="350" height="192"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate </string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -64,12 +64,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="miy-zd-y9N" secondAttribute="trailing" id="1fE-oP-HaZ"/>
+                            <constraint firstAttribute="trailing" secondItem="miy-zd-y9N" secondAttribute="trailing" constant="32" id="1fE-oP-HaZ"/>
                             <constraint firstItem="61v-lu-DOE" firstAttribute="top" secondItem="b1J-fp-3ZW" secondAttribute="top" constant="8" id="53v-1y-63W"/>
                             <constraint firstItem="61v-lu-DOE" firstAttribute="leading" secondItem="b1J-fp-3ZW" secondAttribute="leading" constant="8" id="OSO-xF-PS3"/>
                             <constraint firstItem="miy-zd-y9N" firstAttribute="top" secondItem="b1J-fp-3ZW" secondAttribute="top" constant="88" id="QSI-Vx-R9S"/>
                             <constraint firstAttribute="bottom" secondItem="miy-zd-y9N" secondAttribute="bottom" id="cdE-Op-b1N"/>
-                            <constraint firstItem="miy-zd-y9N" firstAttribute="leading" secondItem="b1J-fp-3ZW" secondAttribute="leading" id="n3I-d3-XHE"/>
+                            <constraint firstItem="miy-zd-y9N" firstAttribute="leading" secondItem="b1J-fp-3ZW" secondAttribute="leading" constant="32" id="n3I-d3-XHE"/>
                             <constraint firstAttribute="width" constant="414" id="ux9-wa-FtJ"/>
                             <constraint firstAttribute="height" constant="280" id="y0m-tW-D6o"/>
                             <constraint firstAttribute="trailing" secondItem="61v-lu-DOE" secondAttribute="trailing" constant="8" id="ygx-tl-K8G"/>

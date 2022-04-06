@@ -104,6 +104,9 @@
                                         <rect key="frame" x="16" y="4" width="382" height="42"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="img_searchBar_btn"/>
+                                        <connections>
+                                            <action selector="moveSearch:" destination="BWI-PQ-Xcg" eventType="touchUpInside" id="O0f-Jv-u1c"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -133,6 +136,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="작품" image="img_bottom_article" selectedImage="img_bottom_article_selected" id="6ed-pc-YGB">
+                        <inset key="imageInsets" minX="0.0" minY="10" maxX="0.0" maxY="6"/>
                         <color key="badgeColor" systemColor="systemOrangeColor"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="F3m-EO-FGR">
@@ -143,6 +147,7 @@
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="articleTabbar" destination="6ed-pc-YGB" id="U0C-Dw-Bnc"/>
                         <outlet property="buttonBar" destination="kGX-nN-2is" id="04D-3k-7lg"/>
                         <outlet property="buttonBarView" destination="kGX-nN-2is" id="ha6-bi-gI4"/>
                         <outlet property="containerView" destination="7Si-5I-8HN" id="e7t-nf-Z5P"/>

@@ -49,6 +49,8 @@ class EmailLoginViewController: BaseViewController {
         //로그인 성공시 메인 화면으로 넘어가기
         
         let mainController = UIStoryboard(name: "MainStoryboard", bundle: nil).instantiateViewController(identifier: "MainTabbarController")
+        UserDefaults.standard.set(0, forKey: "hasOpened")
+        print( "hasOpened = \(UserDefaults.standard.integer(forKey: "hasOpened") )" )
         changeRootViewController(mainController)
         print("로그인 성공")
     }

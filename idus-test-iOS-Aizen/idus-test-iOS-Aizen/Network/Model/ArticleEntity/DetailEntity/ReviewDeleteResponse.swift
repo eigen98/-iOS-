@@ -15,6 +15,6 @@ struct ReviewDeleteResponse : Codable {
 }
 
 struct DeletedReviewEntity : Codable {
-    var deletedId : Int
+    var deleteId : Int
     var result : String
 }

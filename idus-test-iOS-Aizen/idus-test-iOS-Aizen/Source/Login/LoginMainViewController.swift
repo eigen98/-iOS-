@@ -42,6 +42,8 @@ class LoginMainViewController: BaseViewController {
 //        self.present(vc, animated: true)
         
         let mainController = UIStoryboard(name: "MainStoryboard", bundle: nil).instantiateViewController(identifier: "MainTabbarController")
+        UserDefaults.standard.set(0, forKey: "hasOpened")
+        print( "hasOpened = \(UserDefaults.standard.integer(forKey: "hasOpened") )" )
         changeRootViewController(mainController)
         print("회원가입없이 메인페이지 이동")
     }

@@ -11,6 +11,8 @@ import XLPagerTabStrip
 
 class ClassViewController: ButtonBarPagerTabStripViewController {
     
+    @IBOutlet weak var classTabbar: UITabBarItem!
+    
     @IBOutlet weak var buttonBar: ButtonBarView!
     
     override func viewDidLoad() {
@@ -19,7 +21,11 @@ class ClassViewController: ButtonBarPagerTabStripViewController {
         // Do any additional setup after loading the view.
         
         initNavigationBar()
-        initButtonBar() 
+        initButtonBar()
+        self.classTabbar.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.orange], for: .selected)
+        
+        self.tabBarController?.tabBarItem.setTitleTextAttributes([NSAttributedString.Key(NSAttributedString.Key.foregroundColor.rawValue):UIColor.gray], for: .disabled)
+        self.tabBarController?.tabBarItem.setTitleTextAttributes([NSAttributedString.Key(NSAttributedString.Key.foregroundColor.rawValue):UIColor.orange], for: .selected)
     }
     
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
@@ -72,6 +78,16 @@ class ClassViewController: ButtonBarPagerTabStripViewController {
 //        searchController.automaticallyShowsCancelButton = false
     }
     
+    @IBAction func moveSearch(_ sender: UIButton) {
+        guard let vc = UIStoryboard(name: "SearchStoryboard", bundle: nil).instantiateViewController(withIdentifier: "SearchPresentViewController") as? SearchPresentViewController else { return
+            print("DirectBuy 생성 실패")
+        }
+         //작품 정보를 다음 바로결제 화면으로 넘겨줌
+        
+        //self.navigationController?.pushViewController(directBuyVC, animated: true)
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true, completion: nil)
+    }
     // buttonBarView디자인
     func initButtonBar() {
         settings.style.selectedBarBackgroundColor = UIColor.orange

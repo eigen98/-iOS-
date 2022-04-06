@@ -9,8 +9,11 @@ import UIKit
 
 class CategoryViewController: BaseViewController {
 
+    @IBOutlet weak var categoryTabbar: UITabBarItem!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.categoryTabbar.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.orange], for: .selected)
 
         // Do any additional setup after loading the view.
         initNavigationBar()

@@ -9,9 +9,11 @@ import UIKit
 //셀안에서 버튼을 눌렀을 때 리뷰 작성화면으로 이동하기 위한 프로토콜
 protocol MoveReviewProtocol{
     func moveWriteReview()
+    func moveDeleteReview(reviewData : ReviewEntity)
 }
 
 class ReviewTableViewCell: UITableViewCell, ReviewCompleteProtocol {
+    
     func updateReview() {
         self.reviewTableView.reloadData()
     }
@@ -79,5 +81,10 @@ extension ReviewTableViewCell : UITableViewDelegate, UITableViewDataSource{
         return 200
     }
     
+    //선택되었을 때
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        reviewCellDelegate?.moveDeleteReview(reviewData: (self.reviewData?[indexPath.row])!)
+        
+    }
     
 }

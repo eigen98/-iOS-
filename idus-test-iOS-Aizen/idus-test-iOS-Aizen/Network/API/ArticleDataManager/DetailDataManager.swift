@@ -25,7 +25,13 @@ class DetailDataManager{
         print("detail ID is = \(articleId)")
         
         //"Content-Type":"application/json",
-        let header: HTTPHeaders = ["X-ACCESS-TOKEN" : jwt!  ]
+        var header: HTTPHeaders = [ ]
+        if jwt != nil {
+        header = ["X-ACCESS-TOKEN" : jwt!  ]
+        }else {
+            
+           
+        }
         
         AF.request(url, method: .get ,parameters: nil, encoding: JSONEncoding.default, headers: header)
             .validate()

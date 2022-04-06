@@ -11,9 +11,57 @@ import MaterialComponents
 
 
 
-class DetailViewController: UIViewController, StartBuyProtocol, AlbumPageObserver, MiniPageObserver ,MoveReviewProtocol {
-    func moveWriteReview() {
+class DetailViewController: UIViewController, StartBuyProtocol, AlbumPageObserver, MiniPageObserver ,MoveReviewProtocol, CommentDeleteProtocol {
+    var commentDataManger : CommentDataManager = CommentDataManager()
+    func removeComment(workCommentId: Int, cell : CommentTableViewCell) {
         
+        self.presentAlert(title: "", message: "댓글을 삭제하시겠습니까?", isCancelActionIncluded: true, preferredStyle: .alert, handler: {action in
+            self.commentDataManger.commentDelete(workCommentId: workCommentId, delegate: self, cell: cell)
+        })
+       
+    
+    }
+    @IBOutlet weak var navigationView: UINavigationBar!
+    
+    func moveDeleteReview(reviewData : ReviewEntity) {
+        //로컬에 저장된 jwt토큰
+        var jwt = KeyChainManager.shared.readUser()?.jwtToken
+        //로그인 상태가 아니라면
+        if jwt != nil {
+       
+            
+        }else {
+            //로그인화면으로  전환
+            let loginController = UIStoryboard(name: "LoginStoryboard", bundle: nil).instantiateViewController(identifier: "LoginMainViewController")
+            self.changeRootViewController(loginController)
+            return
+        }
+        guard let reviewDeleteVC = self.storyboard?.instantiateViewController(withIdentifier: "ReviewDeleteViewController") as? ReviewDeleteViewController else {
+            
+            print("nothing vc")
+                    return
+                }
+        
+        reviewDeleteVC.reviewEntity = reviewData
+        print("후기 작성 화면 이동 \(reviewDeleteVC)")
+        reviewDeleteVC.modalPresentationStyle = .fullScreen
+        
+        present(reviewDeleteVC, animated: true, completion: nil)
+    }
+    
+    func moveWriteReview() {
+        //로컬에 저장된 jwt토큰
+        var jwt = KeyChainManager.shared.readUser()?.jwtToken
+        //로그인 상태가 아니라면
+        if jwt != nil {
+       
+            
+        }else {
+            //로그인화면으로  전환
+            let loginController = UIStoryboard(name: "LoginStoryboard", bundle: nil).instantiateViewController(identifier: "LoginMainViewController")
+            self.changeRootViewController(loginController)
+            return
+        }
         guard let reviewVC = self.storyboard?.instantiateViewController(withIdentifier: "WriteReviewViewController") as? WriteReviewViewController else {
             
             print("nothing vc")
@@ -81,10 +129,13 @@ class DetailViewController: UIViewController, StartBuyProtocol, AlbumPageObserve
         }
         
     
+
+
+    //상단 탭바
+    @IBOutlet weak var upperTabbar: UIStackView!
     
 
     @IBOutlet weak var detailTableView: UITableView!
-    
     //데이터 매니저
     let dataManager = DetailDataManager()
     //서버에서 받을 작품 상세 데이터
@@ -104,6 +155,7 @@ class DetailViewController: UIViewController, StartBuyProtocol, AlbumPageObserve
             self.detailTableView.reloadData()
         })
             
+        self.detailTableView.reloadData()
        
     }
     func moveDirectBuy(){
@@ -146,6 +198,8 @@ class DetailViewController: UIViewController, StartBuyProtocol, AlbumPageObserve
         
         detailTableView.dataSource  = self
         detailTableView.delegate = self
+        
+        self.upperTabbar.isHidden = true
         
         //MARK : nib등록
         //사진 넘겨보기 셀
@@ -209,6 +263,20 @@ class DetailViewController: UIViewController, StartBuyProtocol, AlbumPageObserve
     //구입하기 버튼 클릭 리스너
     @IBAction func tapPurchaseBtn(_ sender: UIButton) {
         print("구입하기 버튼 클릭")
+        
+        //로컬에 저장된 jwt토큰
+        var jwt = KeyChainManager.shared.readUser()?.jwtToken
+        //로그인 상태가 아니라면
+        if jwt != nil {
+       
+            
+        }else {
+            //로그인화면으로  전환
+            let loginController = UIStoryboard(name: "LoginStoryboard", bundle: nil).instantiateViewController(identifier: "LoginMainViewController")
+            self.changeRootViewController(loginController)
+            return
+        }
+       
         //바텀 시트로 쓰일 뷰 컨트롤러
         let bottomSheetVC = storyboard?.instantiateViewController(withIdentifier: "DetailBottomSheetVC") as! DetailBottomSheetViewController
         bottomSheetVC.articleData = self.detailArticleData
@@ -377,10 +445,12 @@ extension DetailViewController : UITableViewDataSource, UITableViewDelegate {
                 self.delegateComment = cell
                 self.delegateComment?.transferCommentData(commentData: detailArticleData?.workComment ?? [], workId: detailArticleData?.workId ?? 0 )
                 
+                cell.commentDeleteDelegate = self
                 if self.detailArticleData?.workComment.count != 0{
                     cell.firstMessageImg1.isHidden = true
                     cell.firstMessageText.isHidden = true
                 }
+                cell.delegateViewController = self
                
                 
                 return cell
@@ -441,7 +511,15 @@ extension DetailViewController : UITableViewDataSource, UITableViewDelegate {
     }
     
     
+    
+    
+    
+    
+    
 }
+
+
+
 
 extension DetailViewController : MDCBottomSheetControllerDelegate{
     func bottomSheetControllerDidDismissBottomSheet(_ controller: MDCBottomSheetController) {

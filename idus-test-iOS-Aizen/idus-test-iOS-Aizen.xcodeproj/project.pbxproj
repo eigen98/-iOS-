@@ -52,6 +52,10 @@
 		EE8594C527EAF30A00F274A4 /* NewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8594C327EAF30A00F274A4 /* NewCollectionViewCell.swift */; };
 		EE8594C627EAF30A00F274A4 /* NewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE8594C427EAF30A00F274A4 /* NewCollectionViewCell.xib */; };
 		EE88137727EF0CD300715130 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE88137627EF0CD300715130 /* String.swift */; };
+		EE9A188927FD55AE00C85F4C /* RealTimeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9A188827FD55AE00C85F4C /* RealTimeStoryboard.storyboard */; };
+		EE9A188C27FD55CB00C85F4C /* TodayStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9A188B27FD55CB00C85F4C /* TodayStoryboard.storyboard */; };
+		EE9A188E27FD590F00C85F4C /* RealTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9A188D27FD590F00C85F4C /* RealTimeViewController.swift */; };
+		EE9A189027FD591E00C85F4C /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9A188F27FD591E00C85F4C /* TodayViewController.swift */; };
 		EEA2965C27ED347000D09ECB /* ArticleInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA2965A27ED347000D09ECB /* ArticleInfoTableViewCell.swift */; };
 		EEA2965D27ED347000D09ECB /* ArticleInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEA2965B27ED347000D09ECB /* ArticleInfoTableViewCell.xib */; };
 		EEA2966027ED401B00D09ECB /* TabbarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA2965E27ED401B00D09ECB /* TabbarTableViewCell.swift */; };
@@ -210,6 +214,10 @@
 		EE8594C327EAF30A00F274A4 /* NewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCollectionViewCell.swift; sourceTree = "<group>"; };
 		EE8594C427EAF30A00F274A4 /* NewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewCollectionViewCell.xib; sourceTree = "<group>"; };
 		EE88137627EF0CD300715130 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		EE9A188827FD55AE00C85F4C /* RealTimeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RealTimeStoryboard.storyboard; sourceTree = "<group>"; };
+		EE9A188B27FD55CB00C85F4C /* TodayStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TodayStoryboard.storyboard; sourceTree = "<group>"; };
+		EE9A188D27FD590F00C85F4C /* RealTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeViewController.swift; sourceTree = "<group>"; };
+		EE9A188F27FD591E00C85F4C /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		EEA2965A27ED347000D09ECB /* ArticleInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleInfoTableViewCell.swift; sourceTree = "<group>"; };
 		EEA2965B27ED347000D09ECB /* ArticleInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleInfoTableViewCell.xib; sourceTree = "<group>"; };
 		EEA2965E27ED401B00D09ECB /* TabbarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarTableViewCell.swift; sourceTree = "<group>"; };
@@ -544,6 +552,24 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		EE9A188627FD558700C85F4C /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				EE9A188B27FD55CB00C85F4C /* TodayStoryboard.storyboard */,
+				EE9A188F27FD591E00C85F4C /* TodayViewController.swift */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		EE9A188727FD559000C85F4C /* RealTime */ = {
+			isa = PBXGroup;
+			children = (
+				EE9A188827FD55AE00C85F4C /* RealTimeStoryboard.storyboard */,
+				EE9A188D27FD590F00C85F4C /* RealTimeViewController.swift */,
+			);
+			path = RealTime;
+			sourceTree = "<group>";
+		};
 		EEA2965527ED2E8400D09ECB /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -862,6 +888,8 @@
 		EEE2B8BE27E81A3500A97E8E /* Article */ = {
 			isa = PBXGroup;
 			children = (
+				EE9A188727FD559000C85F4C /* RealTime */,
+				EE9A188627FD558700C85F4C /* Today */,
 				EEBEBE9827EC119300037059 /* Detail */,
 				EE471CEC27E9E66F00C777C8 /* New */,
 				EE42A92D27E9B23D00A4002F /* ArticleStoryboard.storyboard */,
@@ -1078,6 +1106,7 @@
 				EEE2B8DB27E82AF100A97E8E /* NoticeTableViewCell.xib in Resources */,
 				EEE2B8E127E82B6200A97E8E /* CorInfoTableViewCell.xib in Resources */,
 				EEDFFDA927E6517000B572C3 /* NotoSansCJKkr-Regular.otf in Resources */,
+				EE9A188C27FD55CB00C85F4C /* TodayStoryboard.storyboard in Resources */,
 				EEE95D3E27EF72C900860F15 /* RefundManageTableViewCell.xib in Resources */,
 				EEBEBEB627EC45E800037059 /* MiniCell.xib in Resources */,
 				EEE95D3227EF63A400860F15 /* SettingProfileTableViewCell.xib in Resources */,
@@ -1089,6 +1118,7 @@
 				EEA2967527ED4F8200D09ECB /* ArtistInfoTableViewCell.xib in Resources */,
 				EEBEBE9A27EC11E400037059 /* DetailStoryboard.storyboard in Resources */,
 				EED3AFF027E5AFD100C4DBC7 /* Assets.xcassets in Resources */,
+				EE9A188927FD55AE00C85F4C /* RealTimeStoryboard.storyboard in Resources */,
 				EEFC9AC427F1267B000704D0 /* DetailBottomSheetTableViewCell.xib in Resources */,
 				EEFC9AD427F15805000704D0 /* ThirdArticleInfoTableViewCell.xib in Resources */,
 				EEE2B8E527E82C2200A97E8E /* MyInfoNoLoginTableViewCell.xib in Resources */,
@@ -1180,6 +1210,7 @@
 				EE88137727EF0CD300715130 /* String.swift in Sources */,
 				EEDFFD9E27E645B500B572C3 /* BaseViewController.swift in Sources */,
 				EE3CC33727EA13420075D5AA /* CategoryViewController.swift in Sources */,
+				EE9A189027FD591E00C85F4C /* TodayViewController.swift in Sources */,
 				EEBC6FA527F0440C006F8072 /* NewResponseList.swift in Sources */,
 				EE1A56F827F5F6E8000CFA4E /* ReviewResponse.swift in Sources */,
 				EEFC9AD727F15884000704D0 /* FourthPayTypeTableViewCell.swift in Sources */,
@@ -1235,6 +1266,7 @@
 				EEFC9ACF27F15513000704D0 /* SecondAddressTableViewCell.swift in Sources */,
 				EE6551D827EE314800BBCF90 /* SignUpResponse.swift in Sources */,
 				EE643FCC27F08D0500935857 /* ReviewEntity.swift in Sources */,
+				EE9A188E27FD590F00C85F4C /* RealTimeViewController.swift in Sources */,
 				EEA2966F27ED4CFA00D09ECB /* CommentTableViewCell.swift in Sources */,
 				EEE2B8E927E8539800A97E8E /* MyInfoViewController.swift in Sources */,
 				EEDFFDAE27E6523E00B572C3 /* IndicatorView.swift in Sources */,

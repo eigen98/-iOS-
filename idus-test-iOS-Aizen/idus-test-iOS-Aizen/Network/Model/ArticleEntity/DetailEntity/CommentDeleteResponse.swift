@@ -17,7 +17,7 @@ struct CommentDeleteResponse : Codable {
 }
 
 struct DeletedCommentEntity : Codable {
-    var deletedId : Int
+    var deleteId : Int
     var result : String // 삭제 완료
 }
 

@@ -58,6 +58,9 @@
                         </constraints>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                         <state key="normal" title="로그인/회원가입" image="imp_profile_login_btn"/>
+                        <connections>
+                            <action selector="moveLoginPageBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="acs-tL-YNG"/>
+                        </connections>
                     </button>
                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5CV-CH-mwu">
                         <rect key="frame" x="16" y="218" width="381" height="94"/>

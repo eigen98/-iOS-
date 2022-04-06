@@ -18,10 +18,14 @@ class ProfileDataManager{
     func getUserProfile(delegate: MyInfoViewController) {
         let url = "\(Constant.BASE_URL)/app/users/profile"
         var jwt = KeyChainManager.shared.readUser()?.jwtToken
-        print("jwt is = \(jwt!)")
+        print("jwt is = \(jwt)")
         
         //"Content-Type":"application/json",
-        let header: HTTPHeaders = ["X-ACCESS-TOKEN" : jwt!  ]
+        var header: HTTPHeaders = []
+        if jwt != nil {
+            header = ["X-ACCESS-TOKEN" : jwt!  ]
+        }
+        
         
         AF.request(url, method: .get ,parameters: nil, encoding: JSONEncoding.default, headers: header)
             .validate()
@@ -33,7 +37,8 @@ class ProfileDataManager{
                         print("response = \(response.code)" )
                         print("jwt가 = \(response.message)")
                         delegate.didSuccessProfileRequest(response: response)
-                        
+                        // 유저 이름 저장 (댓글과 후기를 내가 쓴것인지 식별하기 위해 이름을 사용. api에서 불가함.)
+                        UserDefaults.standard.set(response.result!.name, forKey: "name")
                         // 유저 정보 로컬에 저장
                     }else {
                         //프로필 조회 불가

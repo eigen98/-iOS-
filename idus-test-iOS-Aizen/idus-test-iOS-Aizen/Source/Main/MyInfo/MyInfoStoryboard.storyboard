@@ -24,7 +24,7 @@
             </objects>
             <point key="canvasLocation" x="-625" y="52"/>
         </scene>
-        <!--내 정보-->
+        <!--내정보-->
         <scene sceneID="RZc-vE-aPx">
             <objects>
                 <viewController storyboardIdentifier="MyInfoViewController" id="gfd-Rm-cNO" customClass="MyInfoViewController" customModule="idus_test_iOS_Aizen" customModuleProvider="target" sceneMemberID="viewController">
@@ -42,8 +42,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="내 정보" image="img_bottom_my_info" selectedImage="img_bottom_my_info_selected" id="r9O-KA-ySb">
-                        <color key="badgeColor" systemColor="systemOrangeColor"/>
+                    <tabBarItem key="tabBarItem" title="내정보" image="img_bottom_my_info" selectedImage="img_bottom_my_info_selected" id="r9O-KA-ySb">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="6"/>
+                        <color key="badgeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="fDy-Y9-1Ay">
                         <barButtonItem key="leftBarButtonItem" title="내 정보" width="2" id="3zv-h4-Au8">
@@ -52,6 +53,7 @@
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="myInfoTab" destination="r9O-KA-ySb" id="UK4-Iu-deg"/>
                         <outlet property="myInfotableView" destination="8qU-wm-O9N" id="CL1-ex-pNZ"/>
                     </connections>
                 </viewController>
@@ -83,9 +85,10 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="g5L-uk-Ky2">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="g5L-uk-Ky2">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oP9-xe-gSa"/>

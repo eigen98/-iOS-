@@ -9,14 +9,22 @@ import UIKit
 
 class SearchViewController: BaseViewController {
 
+    @IBOutlet weak var searchTabbar: UITabBarItem!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var textField = UITextField()
-        textField.becomeFirstResponder()
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "SearchPresentViewController") as? SearchPresentViewController else { return
+            print("서치뷰 생성 실패")
+        }
+        
+        //self.navigationController?.pushViewController(directBuyVC, animated: true)
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true, completion: nil)
 
         // Do any additional setup after loading the view.
-        initSearchBar()
+        self.searchTabbar.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.orange], for: .selected)
+        
+        
     }
     
     @IBAction func backToPrevious(_ sender: UIButton) {

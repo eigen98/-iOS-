@@ -58,10 +58,14 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="카테고리" image="img_bottom_category" selectedImage="img_bottom_category_selected" id="fb2-aT-neM">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="5"/>
                         <color key="badgeColor" systemColor="systemOrangeColor"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="6aW-UN-s2s"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="categoryTabbar" destination="fb2-aT-neM" id="Q6V-pt-JKt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
