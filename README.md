@@ -308,12 +308,15 @@
 |          후기남기기API 클라이언트 반영            |                    POST                     |     ✅     |
 |                 구매하기 API 클라이언트 반영       |          POST       |      ✅     |
 
->>>>>>> 32172805e35480d6a74ba068b5a6f166da5f1ecb
-=======
 
 
 
-https://user-images.githubusercontent.com/68258365/161273653-de40fd54-2035-4b9c-b6fd-58e2e9ad759c.mp4
 
 
->>>>>>> d92ba91d33ff8379712f9aa8806d6fb2423716ed
+
+https://user-images.githubusercontent.com/68258365/162218846-bfa0ada2-fb6c-4660-b812-784472bc4f08.mov
+
+
+
+
+
