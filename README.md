@@ -1,12 +1,26 @@
 # idus-test-iOS-Aizen
 라이징테스트 4기 아이디어스 B
 
+## 적용한 API
+    1. 회원가입API POST
+    2. 로그인 API POST
+    3. 유저 프로필 조회 API GET
+    4. 유저 프로필 수정 API PATCH
+    5. New 탭 작품 조회 API GET
+    6. 작품 상세 조회 API GET
+    7. 작품 찜하기 API GET
+    8. 작품 댓글 작성 API POST
+    9. 작품 후기 작성 API POST
+    10. 댓글 삭제 API GET
+    11. 후기 삭제 API GET
+    12. 작품 구매 API GET
 
 ## To-do List
 
 ✅  **Done** <br>
 ❌  **Not Done** <br>
 ♾️  **Permanently** <br>
+
 
 
 
